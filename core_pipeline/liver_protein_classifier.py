@@ -1,43 +1,212 @@
+# Standard library imports
+import re
+import sys
+
+# Third-party imports
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib_venn import venn3
-import os
-import re
 
-# Read the input files
-print("Loading data files...")
+# Local imports
+from config import (
+    INPUT_DIR, OUTPUT_DIR, TRACE_DIR,
+    PROTEIN_ATLAS_FILE, CSV_PATTERN,
+    NTPM_HIGH_THRESHOLD, DPI, FIGURE_SIZE_VENN,
+    TRACE_DATA_FILE, CLASSIFICATION_SUMMARY_FILE,
+    VENN_DIAGRAM_OUTPUT
+)
+
+# =============================================================================
+# INPUT VALIDATION FUNCTIONS
+# =============================================================================
+
+def validate_input_files():
+    """
+    Validate that all required input files exist and are readable.
+
+    Returns:
+        bool: True if all files are valid, False otherwise
+    """
+    errors = []
+
+    # Check if input directory exists
+    if not INPUT_DIR.exists():
+        errors.append(f"Input directory not found: {INPUT_DIR}")
+        return False, errors
+
+    # Check if protein atlas file exists
+    if not PROTEIN_ATLAS_FILE.exists():
+        errors.append(f"Protein atlas file not found: {PROTEIN_ATLAS_FILE}")
+
+    # Check if at least one CSV file exists
+    csv_files = list(INPUT_DIR.glob(CSV_PATTERN))
+    if not csv_files:
+        errors.append(f"No CSV files found in {INPUT_DIR} matching pattern: {CSV_PATTERN}")
+
+    # Check if output and trace directories exist, create if not
+    for directory in [OUTPUT_DIR, TRACE_DIR]:
+        if not directory.exists():
+            try:
+                directory.mkdir(parents=True, exist_ok=True)
+                print(f"Created directory: {directory}")
+            except Exception as e:
+                errors.append(f"Failed to create directory {directory}: {str(e)}")
+
+    if errors:
+        return False, errors
+    return True, []
+
+
+def validate_dataframe(df, name, required_columns):
+    """
+    Validate that a dataframe contains required columns and is not empty.
+
+    Args:
+        df: pandas DataFrame to validate
+        name: Name of the dataframe (for error messages)
+        required_columns: List of column names that must be present
+
+    Returns:
+        tuple: (is_valid, errors, warnings)
+            is_valid (bool): True if no critical errors
+            errors (list): List of critical error messages
+            warnings (list): List of warning messages
+    """
+    errors = []
+    warnings = []
+
+    # Check if dataframe is empty
+    if df.empty:
+        errors.append(f"{name} is empty")
+        return False, errors, warnings
+
+    # Check for required columns
+    missing_columns = [col for col in required_columns if col not in df.columns]
+    if missing_columns:
+        errors.append(f"{name} missing required columns: {missing_columns}")
+        errors.append(f"Available columns: {list(df.columns)}")
+
+    # Check for duplicate gene names (if Gene column exists) - WARNING, not error
+    if 'Gene' in df.columns:
+        duplicates = df[df['Gene'].duplicated(keep=False)]['Gene'].dropna().unique()
+        if len(duplicates) > 0:
+            warnings.append(f"{name} contains {len(duplicates)} duplicate gene names (first 5): {list(duplicates[:5])}")
+
+    if errors:
+        return False, errors, warnings
+    return True, [], warnings
+
+# =============================================================================
+# MAIN EXECUTION
+# =============================================================================
+
+print("="*80)
+print("LIVER PROTEIN CLASSIFICATION PIPELINE")
+print("="*80)
+
+# Step 1: Validate input files
+print("\n[Step 1/5] Validating input files...")
+valid, errors = validate_input_files()
+if not valid:
+    print("\n❌ Input validation failed:")
+    for error in errors:
+        print(f"  - {error}")
+    sys.exit(1)
+print("✓ All input files validated successfully")
+
+# Step 2: Load data files
+print("\n[Step 2/5] Loading data files...")
 
 # Find CSV file in input folder
-import glob
-csv_files = glob.glob('input/*.csv')
-if not csv_files:
-    raise FileNotFoundError("No CSV file found in input folder")
+csv_files = list(INPUT_DIR.glob(CSV_PATTERN))
 if len(csv_files) > 1:
-    print(f"Warning: Multiple CSV files found. Using: {csv_files[0]}")
-    print(f"Other files: {csv_files[1:]}")
+    print(f"⚠ Warning: Multiple CSV files found. Using: {csv_files[0]}")
+    print(f"  Other files: {csv_files[1:]}")
 
 gene_data_file = csv_files[0]
-print(f"Loading gene data from: {gene_data_file}")
-gene_data = pd.read_csv(gene_data_file)
+print(f"  Loading gene data from: {gene_data_file}")
+try:
+    gene_data = pd.read_csv(gene_data_file)
+except Exception as e:
+    print(f"❌ Failed to read {gene_data_file}: {str(e)}")
+    sys.exit(1)
 
 # Load protein atlas TSV file
-protein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\t')
+print(f"  Loading protein atlas from: {PROTEIN_ATLAS_FILE}")
+try:
+    protein_atlas = pd.read_csv(PROTEIN_ATLAS_FILE, sep='\t')
+except Exception as e:
+    print(f"❌ Failed to read {PROTEIN_ATLAS_FILE}: {str(e)}")
+    sys.exit(1)
 
-# Extract Gene column from gene_data (it's in the "Gene" column)
-print(f"Total genes in input file: {len(gene_data)}")
-print(f"Total genes in protein atlas: {len(protein_atlas)}")
+print("✓ Data files loaded successfully")
 
-# Merge the two dataframes on Gene column
+# Step 3: Validate data structure
+print("\n[Step 3/5] Validating data structure...")
+
+# Validate gene_data
+valid, errors, warnings = validate_dataframe(gene_data, "Gene data", ['Gene'])
+if not valid:
+    print("\n❌ Gene data validation failed:")
+    for error in errors:
+        print(f"  - {error}")
+    sys.exit(1)
+
+# Print warnings if any
+for warning in warnings:
+    print(f"  ⚠ Warning: {warning}")
+
+# Validate protein_atlas
+required_protein_atlas_columns = [
+    'Gene',
+    'RNA tissue specific nTPM',
+    'Tissue expression cluster',
+    'RNA tissue cell type enrichment'
+]
+valid, errors, warnings_pa = validate_dataframe(protein_atlas, "Protein atlas", required_protein_atlas_columns)
+if not valid:
+    print("\n❌ Protein atlas validation failed:")
+    for error in errors:
+        print(f"  - {error}")
+    sys.exit(1)
+
+# Print warnings if any
+for warning in warnings_pa:
+    print(f"  ⚠ Warning: {warning}")
+
+print(f"  Gene data: {len(gene_data)} genes")
+print(f"  Protein atlas: {len(protein_atlas)} genes")
+print("✓ Data structure validated successfully")
+
+# Step 4: Merge datasets
+print("\n[Step 4/5] Merging datasets...")
+
 merged_data = gene_data.merge(
     protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster', 'RNA tissue cell type enrichment']],
     on='Gene',
     how='left'
 )
 
-print(f"Total merged records: {len(merged_data)}")
+print(f"  Merged {len(merged_data)} records")
+if len(merged_data) < len(gene_data):
+    print(f"  ⚠ Warning: {len(gene_data) - len(merged_data)} genes lost during merge")
 
-# Function to extract liver nTPM value
+print("✓ Datasets merged successfully")
+
+# =============================================================================
+# CLASSIFICATION FUNCTIONS
+# =============================================================================
+
 def extract_liver_ntpm(text):
+    """
+    Extract numerical liver nTPM value from text.
+
+    Args:
+        text: String containing liver nTPM data
+
+    Returns:
+        float: Liver nTPM value if found, None otherwise
+    """
     if pd.isna(text) or text == '':
         return None
     # Search for pattern "liver: number" or "liver:number"
@@ -47,24 +216,22 @@ def extract_liver_ntpm(text):
         return float(match.group(1))
     return None
 
-# Classification based on the criteria
-# 1. liver protein_1: "liver" in "RNA tissue specific nTPM" column OR nTPM value >= 100
-# 2. liver protein_2: "liver" in "Tissue expression cluster" column
-# 3. liver protein_3: "liver" in "RNA tissue cell type enrichment" column
-# 4. liver protein: "liver" in all three columns (or combinations)
+# Step 5: Classify liver proteins
+print("\n[Step 5/5] Classifying liver proteins...")
 
 # Extract liver nTPM values
+print("  Extracting liver nTPM values...")
 merged_data['liver_nTPM_value'] = merged_data['RNA tissue specific nTPM'].apply(extract_liver_ntpm)
 
 # Split nTPM into two categories: high (>=100) and low (<100)
 merged_data['has_liver_in_ntpm'] = merged_data['RNA tissue specific nTPM'].fillna('').str.lower().str.contains('liver')
 merged_data['has_liver_nTPM_high'] = (
     merged_data['has_liver_in_ntpm'] &
-    (merged_data['liver_nTPM_value'] >= 100)
+    (merged_data['liver_nTPM_value'] >= NTPM_HIGH_THRESHOLD)
 )
 merged_data['has_liver_nTPM_low'] = (
     merged_data['has_liver_in_ntpm'] &
-    (merged_data['liver_nTPM_value'] < 100)
+    (merged_data['liver_nTPM_value'] < NTPM_HIGH_THRESHOLD)
 )
 merged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')
 merged_data['has_liver_enrichment'] = merged_data['RNA tissue cell type enrichment'].fillna('').str.lower().str.contains('liver')
@@ -118,12 +285,16 @@ def classify_liver_protein(row):
 
     return 'non-liver protein'
 
+print("  Applying classification rules...")
 merged_data['Classification'] = merged_data.apply(classify_liver_protein, axis=1)
 
 # Count each category
 classification_counts = merged_data['Classification'].value_counts()
-print("\nClassification Results:")
+print("\n" + "="*80)
+print("CLASSIFICATION RESULTS")
+print("="*80)
 print(classification_counts)
+print("="*80)
 
 # Print statistics about extracted liver nTPM values
 liver_ntpm_stats = merged_data[merged_data['liver_nTPM_value'].notna()]['liver_nTPM_value']
@@ -158,7 +329,7 @@ print(f"Genes with liver in RNA tissue cell type enrichment: {len(liver_enrichme
 print(f"Genes in all 4 categories: {len(liver_ntpm_high_genes & liver_ntpm_low_genes & liver_cluster_genes & liver_enrichment_genes)}")
 
 # Create 4-way Venn diagram using two 3-way diagrams
-fig = plt.figure(figsize=(20, 10))
+fig = plt.figure(figsize=FIGURE_SIZE_VENN)
 
 # Add overall title with statistics
 title_text = f'Liver Protein Classification (4 Criteria: nTPM Split by Threshold 100)'
@@ -289,14 +460,13 @@ ax2.text(0, -0.72, 'Enrichment', ha='center', va='center',
         bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#98FB98', linewidth=2))
 
 # Save the Venn diagram
-output_dir = 'output'
-os.makedirs(output_dir, exist_ok=True)
-plt.savefig(f'{output_dir}/liver_protein_venn_diagram.png', dpi=300, bbox_inches='tight')
-print(f"\nVenn diagram saved to: {output_dir}/liver_protein_venn_diagram.png")
+OUTPUT_DIR.mkdir(exist_ok=True)
+plt.savefig(VENN_DIAGRAM_OUTPUT, dpi=DPI, bbox_inches='tight')
+print(f"\nVenn diagram saved to: {VENN_DIAGRAM_OUTPUT}")
+plt.close()  # Free memory
 
 # Create Trace folder and save tracing data
-trace_dir = 'Trace'
-os.makedirs(trace_dir, exist_ok=True)
+TRACE_DIR.mkdir(exist_ok=True)
 
 # Prepare tracing data with all relevant columns
 trace_data = merged_data[[
@@ -313,14 +483,12 @@ trace_data = merged_data[[
 ]].copy()
 
 # Save tracing data
-trace_file = f'{trace_dir}/Data tracing.csv'
-trace_data.to_csv(trace_file, index=False)
-print(f"Tracing data saved to: {trace_file}")
+trace_data.to_csv(TRACE_DATA_FILE, index=False)
+print(f"Tracing data saved to: {TRACE_DATA_FILE}")
 
 # Save summary statistics to Trace folder
-summary_file = f'{trace_dir}/classification_summary.csv'
-classification_counts.to_csv(summary_file, header=['Count'])
-print(f"Summary statistics saved to: {summary_file}")
+classification_counts.to_csv(CLASSIFICATION_SUMMARY_FILE, header=['Count'])
+print(f"Summary statistics saved to: {CLASSIFICATION_SUMMARY_FILE}")
 
 # Save classified gene lists with liver nTPM values to Trace folder
 # Get all unique classifications
@@ -330,8 +498,10 @@ liver_classifications = [c for c in all_classifications if c.startswith('liver p
 for classification in liver_classifications:
     subset = merged_data[merged_data['Classification'] == classification]
     if len(subset) > 0:
-        genes_file = f'{trace_dir}/{classification.replace(" ", "_").replace("(", "").replace(")", "").replace("+", "and")}_genes.csv'
+        genes_file = TRACE_DIR / f'{classification.replace(" ", "_").replace("(", "").replace(")", "").replace("+", "and")}_genes.csv'
         subset[['Gene', 'liver_nTPM_value']].to_csv(genes_file, index=False)
         print(f"{classification} genes ({len(subset)}): saved to {genes_file}")
 
-print("\nClassification complete!")
+print("\n" + "="*80)
+print("✓ CLASSIFICATION PIPELINE COMPLETED SUCCESSFULLY")
+print("="*80)

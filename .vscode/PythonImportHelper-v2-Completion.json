@@ -91,20 +91,27 @@
         "documentation": {}
     },
     {
-        "label": "venn3",
-        "importPath": "matplotlib_venn",
-        "description": "matplotlib_venn",
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
         "isExtraImport": true,
-        "detail": "matplotlib_venn",
+        "detail": "pathlib",
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
         "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
         "documentation": {}
     },
     {
@@ -117,21 +124,172 @@
         "documentation": {}
     },
     {
-        "label": "glob",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "glob",
-        "description": "glob",
-        "detail": "glob",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "venn3",
+        "importPath": "matplotlib_venn",
+        "description": "matplotlib_venn",
+        "isExtraImport": true,
+        "detail": "matplotlib_venn",
+        "documentation": {}
+    },
+    {
+        "label": "INPUT_DIR",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_DIR",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "TRACE_DIR",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "PROTEIN_ATLAS_FILE",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "CSV_PATTERN",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "NTPM_HIGH_THRESHOLD",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "DPI",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "FIGURE_SIZE_VENN",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "TRACE_DATA_FILE",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "CLASSIFICATION_SUMMARY_FILE",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "VENN_DIAGRAM_OUTPUT",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "TRACE_DATA_FILE",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_DIR",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "DPI",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "TRACE_DATA_FILE",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_DIR",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "TRACE_DIR",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "TOP_N_GENES",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "DPI",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
         "documentation": {}
     },
     {
@@ -153,19 +311,51 @@
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "Colors",
+        "importPath": "console_utils",
+        "description": "console_utils",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "console_utils",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
+        "label": "print_header",
+        "importPath": "console_utils",
+        "description": "console_utils",
         "isExtraImport": true,
-        "detail": "pathlib",
+        "detail": "console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_step",
+        "importPath": "console_utils",
+        "description": "console_utils",
+        "isExtraImport": true,
+        "detail": "console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_success",
+        "importPath": "console_utils",
+        "description": "console_utils",
+        "isExtraImport": true,
+        "detail": "console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_error",
+        "importPath": "console_utils",
+        "description": "console_utils",
+        "isExtraImport": true,
+        "detail": "console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_warning",
+        "importPath": "console_utils",
+        "description": "console_utils",
+        "isExtraImport": true,
+        "detail": "console_utils",
         "documentation": {}
     },
     {
@@ -186,12 +376,92 @@
         "documentation": {}
     },
     {
+        "label": "CLASSIFICATION_COLOR_MAP",
+        "importPath": "visualization_config",
+        "description": "visualization_config",
+        "isExtraImport": true,
+        "detail": "visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "CLASSIFICATION_ORDER",
+        "importPath": "visualization_config",
+        "description": "visualization_config",
+        "isExtraImport": true,
+        "detail": "visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "CLASSIFICATION_COLOR_MAP",
+        "importPath": "visualization_config",
+        "description": "visualization_config",
+        "isExtraImport": true,
+        "detail": "visualization_config",
+        "documentation": {}
+    },
+    {
         "label": "argparse",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "argparse",
         "description": "argparse",
         "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "Colors",
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "isExtraImport": true,
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_header",
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "isExtraImport": true,
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_step",
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "isExtraImport": true,
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_success",
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "isExtraImport": true,
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_error",
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "isExtraImport": true,
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_warning",
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "isExtraImport": true,
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_info",
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "isExtraImport": true,
+        "detail": "core_pipeline.console_utils",
         "documentation": {}
     },
     {
@@ -915,11 +1185,416 @@
         "documentation": {}
     },
     {
+        "label": "get_output_path",
+        "kind": 2,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "def get_output_path(filename: str) -> Path:\n    \"\"\"Get full path for an output file.\"\"\"\n    return OUTPUT_DIR / filename\ndef get_trace_path(filename: str) -> Path:\n    \"\"\"Get full path for a trace file.\"\"\"\n    return TRACE_DIR / filename\ndef get_log_path(filename: str) -> Path:\n    \"\"\"Get full path for a log file.\"\"\"\n    return LOG_DIR / filename",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_trace_path",
+        "kind": 2,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "def get_trace_path(filename: str) -> Path:\n    \"\"\"Get full path for a trace file.\"\"\"\n    return TRACE_DIR / filename\ndef get_log_path(filename: str) -> Path:\n    \"\"\"Get full path for a log file.\"\"\"\n    return LOG_DIR / filename",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_log_path",
+        "kind": 2,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "def get_log_path(filename: str) -> Path:\n    \"\"\"Get full path for a log file.\"\"\"\n    return LOG_DIR / filename",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "PROJECT_ROOT",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "PROJECT_ROOT = Path(__file__).parent.parent\nINPUT_DIR = PROJECT_ROOT / 'input'\nOUTPUT_DIR = PROJECT_ROOT / 'output'\nTRACE_DIR = PROJECT_ROOT / 'Trace'\nLOG_DIR = PROJECT_ROOT / 'logs'\n# Ensure directories exist\nfor directory in [OUTPUT_DIR, TRACE_DIR, LOG_DIR]:\n    directory.mkdir(exist_ok=True)\n# =============================================================================\n# INPUT FILES",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "INPUT_DIR",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "INPUT_DIR = PROJECT_ROOT / 'input'\nOUTPUT_DIR = PROJECT_ROOT / 'output'\nTRACE_DIR = PROJECT_ROOT / 'Trace'\nLOG_DIR = PROJECT_ROOT / 'logs'\n# Ensure directories exist\nfor directory in [OUTPUT_DIR, TRACE_DIR, LOG_DIR]:\n    directory.mkdir(exist_ok=True)\n# =============================================================================\n# INPUT FILES\n# =============================================================================",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_DIR",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "OUTPUT_DIR = PROJECT_ROOT / 'output'\nTRACE_DIR = PROJECT_ROOT / 'Trace'\nLOG_DIR = PROJECT_ROOT / 'logs'\n# Ensure directories exist\nfor directory in [OUTPUT_DIR, TRACE_DIR, LOG_DIR]:\n    directory.mkdir(exist_ok=True)\n# =============================================================================\n# INPUT FILES\n# =============================================================================\nPROTEIN_ATLAS_FILE = INPUT_DIR / 'proteinatlas.tsv'",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "TRACE_DIR",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "TRACE_DIR = PROJECT_ROOT / 'Trace'\nLOG_DIR = PROJECT_ROOT / 'logs'\n# Ensure directories exist\nfor directory in [OUTPUT_DIR, TRACE_DIR, LOG_DIR]:\n    directory.mkdir(exist_ok=True)\n# =============================================================================\n# INPUT FILES\n# =============================================================================\nPROTEIN_ATLAS_FILE = INPUT_DIR / 'proteinatlas.tsv'\nCSV_PATTERN = '*.csv'",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "LOG_DIR",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "LOG_DIR = PROJECT_ROOT / 'logs'\n# Ensure directories exist\nfor directory in [OUTPUT_DIR, TRACE_DIR, LOG_DIR]:\n    directory.mkdir(exist_ok=True)\n# =============================================================================\n# INPUT FILES\n# =============================================================================\nPROTEIN_ATLAS_FILE = INPUT_DIR / 'proteinatlas.tsv'\nCSV_PATTERN = '*.csv'\n# =============================================================================",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "PROTEIN_ATLAS_FILE",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "PROTEIN_ATLAS_FILE = INPUT_DIR / 'proteinatlas.tsv'\nCSV_PATTERN = '*.csv'\n# =============================================================================\n# OUTPUT FILES\n# =============================================================================\n# Visualization outputs\nVENN_DIAGRAM_OUTPUT = OUTPUT_DIR / 'liver_protein_venn_diagram.png'\nNTPM_DISTRIBUTION_OUTPUT = OUTPUT_DIR / 'liver_ntpm_distribution.png'\nGROUP_DISTRIBUTION_OUTPUT = OUTPUT_DIR / 'liver_ntpm_group_distribution.png'\nROC_CURVE_OUTPUT = OUTPUT_DIR / 'roc_auc_analysis.png'",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "CSV_PATTERN",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "CSV_PATTERN = '*.csv'\n# =============================================================================\n# OUTPUT FILES\n# =============================================================================\n# Visualization outputs\nVENN_DIAGRAM_OUTPUT = OUTPUT_DIR / 'liver_protein_venn_diagram.png'\nNTPM_DISTRIBUTION_OUTPUT = OUTPUT_DIR / 'liver_ntpm_distribution.png'\nGROUP_DISTRIBUTION_OUTPUT = OUTPUT_DIR / 'liver_ntpm_group_distribution.png'\nROC_CURVE_OUTPUT = OUTPUT_DIR / 'roc_auc_analysis.png'\nSTRATEGY_COMPARISON_OUTPUT = OUTPUT_DIR / 'classification_strategy_comparison.png'",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "VENN_DIAGRAM_OUTPUT",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "VENN_DIAGRAM_OUTPUT = OUTPUT_DIR / 'liver_protein_venn_diagram.png'\nNTPM_DISTRIBUTION_OUTPUT = OUTPUT_DIR / 'liver_ntpm_distribution.png'\nGROUP_DISTRIBUTION_OUTPUT = OUTPUT_DIR / 'liver_ntpm_group_distribution.png'\nROC_CURVE_OUTPUT = OUTPUT_DIR / 'roc_auc_analysis.png'\nSTRATEGY_COMPARISON_OUTPUT = OUTPUT_DIR / 'classification_strategy_comparison.png'\n# Trace/data outputs\nTRACE_DATA_FILE = TRACE_DIR / 'Data tracing.csv'\nCLASSIFICATION_SUMMARY_FILE = TRACE_DIR / 'classification_summary.csv'\nSORTED_GENES_FILE = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nSTRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "NTPM_DISTRIBUTION_OUTPUT",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "NTPM_DISTRIBUTION_OUTPUT = OUTPUT_DIR / 'liver_ntpm_distribution.png'\nGROUP_DISTRIBUTION_OUTPUT = OUTPUT_DIR / 'liver_ntpm_group_distribution.png'\nROC_CURVE_OUTPUT = OUTPUT_DIR / 'roc_auc_analysis.png'\nSTRATEGY_COMPARISON_OUTPUT = OUTPUT_DIR / 'classification_strategy_comparison.png'\n# Trace/data outputs\nTRACE_DATA_FILE = TRACE_DIR / 'Data tracing.csv'\nCLASSIFICATION_SUMMARY_FILE = TRACE_DIR / 'classification_summary.csv'\nSORTED_GENES_FILE = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nSTRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'\n# =============================================================================",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "GROUP_DISTRIBUTION_OUTPUT",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "GROUP_DISTRIBUTION_OUTPUT = OUTPUT_DIR / 'liver_ntpm_group_distribution.png'\nROC_CURVE_OUTPUT = OUTPUT_DIR / 'roc_auc_analysis.png'\nSTRATEGY_COMPARISON_OUTPUT = OUTPUT_DIR / 'classification_strategy_comparison.png'\n# Trace/data outputs\nTRACE_DATA_FILE = TRACE_DIR / 'Data tracing.csv'\nCLASSIFICATION_SUMMARY_FILE = TRACE_DIR / 'classification_summary.csv'\nSORTED_GENES_FILE = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nSTRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'\n# =============================================================================\n# CLASSIFICATION THRESHOLDS",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "ROC_CURVE_OUTPUT",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "ROC_CURVE_OUTPUT = OUTPUT_DIR / 'roc_auc_analysis.png'\nSTRATEGY_COMPARISON_OUTPUT = OUTPUT_DIR / 'classification_strategy_comparison.png'\n# Trace/data outputs\nTRACE_DATA_FILE = TRACE_DIR / 'Data tracing.csv'\nCLASSIFICATION_SUMMARY_FILE = TRACE_DIR / 'classification_summary.csv'\nSORTED_GENES_FILE = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nSTRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'\n# =============================================================================\n# CLASSIFICATION THRESHOLDS\n# =============================================================================",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "STRATEGY_COMPARISON_OUTPUT",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "STRATEGY_COMPARISON_OUTPUT = OUTPUT_DIR / 'classification_strategy_comparison.png'\n# Trace/data outputs\nTRACE_DATA_FILE = TRACE_DIR / 'Data tracing.csv'\nCLASSIFICATION_SUMMARY_FILE = TRACE_DIR / 'classification_summary.csv'\nSORTED_GENES_FILE = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nSTRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'\n# =============================================================================\n# CLASSIFICATION THRESHOLDS\n# =============================================================================\n# nTPM thresholds",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "TRACE_DATA_FILE",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "TRACE_DATA_FILE = TRACE_DIR / 'Data tracing.csv'\nCLASSIFICATION_SUMMARY_FILE = TRACE_DIR / 'classification_summary.csv'\nSORTED_GENES_FILE = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nSTRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'\n# =============================================================================\n# CLASSIFICATION THRESHOLDS\n# =============================================================================\n# nTPM thresholds\nNTPM_HIGH_THRESHOLD = 100\nNTPM_VERY_HIGH_THRESHOLD = 200",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "CLASSIFICATION_SUMMARY_FILE",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "CLASSIFICATION_SUMMARY_FILE = TRACE_DIR / 'classification_summary.csv'\nSORTED_GENES_FILE = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nSTRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'\n# =============================================================================\n# CLASSIFICATION THRESHOLDS\n# =============================================================================\n# nTPM thresholds\nNTPM_HIGH_THRESHOLD = 100\nNTPM_VERY_HIGH_THRESHOLD = 200\nNTPM_LOW_THRESHOLD = 0",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "SORTED_GENES_FILE",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "SORTED_GENES_FILE = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nSTRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'\n# =============================================================================\n# CLASSIFICATION THRESHOLDS\n# =============================================================================\n# nTPM thresholds\nNTPM_HIGH_THRESHOLD = 100\nNTPM_VERY_HIGH_THRESHOLD = 200\nNTPM_LOW_THRESHOLD = 0\n# Confidence scoring thresholds",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "STRATEGY_ANALYSIS_FILE",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "STRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'\n# =============================================================================\n# CLASSIFICATION THRESHOLDS\n# =============================================================================\n# nTPM thresholds\nNTPM_HIGH_THRESHOLD = 100\nNTPM_VERY_HIGH_THRESHOLD = 200\nNTPM_LOW_THRESHOLD = 0\n# Confidence scoring thresholds\nCONFIDENCE_HIGH = 80",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "NTPM_HIGH_THRESHOLD",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "NTPM_HIGH_THRESHOLD = 100\nNTPM_VERY_HIGH_THRESHOLD = 200\nNTPM_LOW_THRESHOLD = 0\n# Confidence scoring thresholds\nCONFIDENCE_HIGH = 80\nCONFIDENCE_MEDIUM_HIGH = 60\nCONFIDENCE_MEDIUM = 40\nCONFIDENCE_LOW_MEDIUM = 20\n# =============================================================================\n# VISUALIZATION SETTINGS",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "NTPM_VERY_HIGH_THRESHOLD",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "NTPM_VERY_HIGH_THRESHOLD = 200\nNTPM_LOW_THRESHOLD = 0\n# Confidence scoring thresholds\nCONFIDENCE_HIGH = 80\nCONFIDENCE_MEDIUM_HIGH = 60\nCONFIDENCE_MEDIUM = 40\nCONFIDENCE_LOW_MEDIUM = 20\n# =============================================================================\n# VISUALIZATION SETTINGS\n# =============================================================================",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "NTPM_LOW_THRESHOLD",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "NTPM_LOW_THRESHOLD = 0\n# Confidence scoring thresholds\nCONFIDENCE_HIGH = 80\nCONFIDENCE_MEDIUM_HIGH = 60\nCONFIDENCE_MEDIUM = 40\nCONFIDENCE_LOW_MEDIUM = 20\n# =============================================================================\n# VISUALIZATION SETTINGS\n# =============================================================================\n# General settings",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIDENCE_HIGH",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "CONFIDENCE_HIGH = 80\nCONFIDENCE_MEDIUM_HIGH = 60\nCONFIDENCE_MEDIUM = 40\nCONFIDENCE_LOW_MEDIUM = 20\n# =============================================================================\n# VISUALIZATION SETTINGS\n# =============================================================================\n# General settings\nDPI = 300\nTOP_N_GENES = 50",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIDENCE_MEDIUM_HIGH",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "CONFIDENCE_MEDIUM_HIGH = 60\nCONFIDENCE_MEDIUM = 40\nCONFIDENCE_LOW_MEDIUM = 20\n# =============================================================================\n# VISUALIZATION SETTINGS\n# =============================================================================\n# General settings\nDPI = 300\nTOP_N_GENES = 50\n# Figure sizes (width, height)",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIDENCE_MEDIUM",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "CONFIDENCE_MEDIUM = 40\nCONFIDENCE_LOW_MEDIUM = 20\n# =============================================================================\n# VISUALIZATION SETTINGS\n# =============================================================================\n# General settings\nDPI = 300\nTOP_N_GENES = 50\n# Figure sizes (width, height)\nFIGURE_SIZE_LARGE = (20, 13)",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIDENCE_LOW_MEDIUM",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "CONFIDENCE_LOW_MEDIUM = 20\n# =============================================================================\n# VISUALIZATION SETTINGS\n# =============================================================================\n# General settings\nDPI = 300\nTOP_N_GENES = 50\n# Figure sizes (width, height)\nFIGURE_SIZE_LARGE = (20, 13)\nFIGURE_SIZE_MEDIUM = (14, 16)",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "DPI",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "DPI = 300\nTOP_N_GENES = 50\n# Figure sizes (width, height)\nFIGURE_SIZE_LARGE = (20, 13)\nFIGURE_SIZE_MEDIUM = (14, 16)\nFIGURE_SIZE_SMALL = (10, 8)\nFIGURE_SIZE_VENN = (20, 10)\n# =============================================================================\n# KNOWN LIVER MARKERS (for validation)\n# =============================================================================",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "TOP_N_GENES",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "TOP_N_GENES = 50\n# Figure sizes (width, height)\nFIGURE_SIZE_LARGE = (20, 13)\nFIGURE_SIZE_MEDIUM = (14, 16)\nFIGURE_SIZE_SMALL = (10, 8)\nFIGURE_SIZE_VENN = (20, 10)\n# =============================================================================\n# KNOWN LIVER MARKERS (for validation)\n# =============================================================================\nKNOWN_LIVER_MARKERS = [",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "FIGURE_SIZE_LARGE",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "FIGURE_SIZE_LARGE = (20, 13)\nFIGURE_SIZE_MEDIUM = (14, 16)\nFIGURE_SIZE_SMALL = (10, 8)\nFIGURE_SIZE_VENN = (20, 10)\n# =============================================================================\n# KNOWN LIVER MARKERS (for validation)\n# =============================================================================\nKNOWN_LIVER_MARKERS = [\n    'ALB', 'HP', 'APOA1', 'APOA2', 'APOC3', 'SERPINA1',\n    'FGA', 'FGB', 'FGG', 'CYP3A4', 'CYP2E1', 'FABP1',",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "FIGURE_SIZE_MEDIUM",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "FIGURE_SIZE_MEDIUM = (14, 16)\nFIGURE_SIZE_SMALL = (10, 8)\nFIGURE_SIZE_VENN = (20, 10)\n# =============================================================================\n# KNOWN LIVER MARKERS (for validation)\n# =============================================================================\nKNOWN_LIVER_MARKERS = [\n    'ALB', 'HP', 'APOA1', 'APOA2', 'APOC3', 'SERPINA1',\n    'FGA', 'FGB', 'FGG', 'CYP3A4', 'CYP2E1', 'FABP1',\n    'ALDOB', 'ORM1', 'ORM2', 'GC', 'TF', 'APOH', 'APOE',",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "FIGURE_SIZE_SMALL",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "FIGURE_SIZE_SMALL = (10, 8)\nFIGURE_SIZE_VENN = (20, 10)\n# =============================================================================\n# KNOWN LIVER MARKERS (for validation)\n# =============================================================================\nKNOWN_LIVER_MARKERS = [\n    'ALB', 'HP', 'APOA1', 'APOA2', 'APOC3', 'SERPINA1',\n    'FGA', 'FGB', 'FGG', 'CYP3A4', 'CYP2E1', 'FABP1',\n    'ALDOB', 'ORM1', 'ORM2', 'GC', 'TF', 'APOH', 'APOE',\n    'CRP', 'SAA1', 'SAA2', 'RBP4', 'AMBP', 'SELENOP',",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "FIGURE_SIZE_VENN",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "FIGURE_SIZE_VENN = (20, 10)\n# =============================================================================\n# KNOWN LIVER MARKERS (for validation)\n# =============================================================================\nKNOWN_LIVER_MARKERS = [\n    'ALB', 'HP', 'APOA1', 'APOA2', 'APOC3', 'SERPINA1',\n    'FGA', 'FGB', 'FGG', 'CYP3A4', 'CYP2E1', 'FABP1',\n    'ALDOB', 'ORM1', 'ORM2', 'GC', 'TF', 'APOH', 'APOE',\n    'CRP', 'SAA1', 'SAA2', 'RBP4', 'AMBP', 'SELENOP',\n    'HRG', 'F2', 'FTL', 'AHSG', 'C3', 'HPX', 'VTN',",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "KNOWN_LIVER_MARKERS",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "KNOWN_LIVER_MARKERS = [\n    'ALB', 'HP', 'APOA1', 'APOA2', 'APOC3', 'SERPINA1',\n    'FGA', 'FGB', 'FGG', 'CYP3A4', 'CYP2E1', 'FABP1',\n    'ALDOB', 'ORM1', 'ORM2', 'GC', 'TF', 'APOH', 'APOE',\n    'CRP', 'SAA1', 'SAA2', 'RBP4', 'AMBP', 'SELENOP',\n    'HRG', 'F2', 'FTL', 'AHSG', 'C3', 'HPX', 'VTN',\n    'ITIH4', 'ITIH3', 'FETUB', 'KNG1', 'SERPINC1',\n    'SERPIND1', 'F9', 'F10', 'F11', 'CYP1A2', 'CYP2A6',\n    'CYP2C8', 'CYP2C9', 'CYP2D6', 'UGT1A1', 'UGT2B7',\n    'GSTA1', 'GSTA2', 'G6PC', 'PCK1'",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "PROTEIN_ATLAS_REQUIRED_COLUMNS",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "PROTEIN_ATLAS_REQUIRED_COLUMNS = [\n    'Gene',\n    'RNA tissue specific nTPM',\n    'Tissue expression cluster',\n    'RNA tissue cell type enrichment'\n]\n# Columns required in gene data\nGENE_DATA_REQUIRED_COLUMNS = ['Gene']\n# =============================================================================\n# HELPER FUNCTIONS",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "GENE_DATA_REQUIRED_COLUMNS",
+        "kind": 5,
+        "importPath": "core_pipeline.config",
+        "description": "core_pipeline.config",
+        "peekOfCode": "GENE_DATA_REQUIRED_COLUMNS = ['Gene']\n# =============================================================================\n# HELPER FUNCTIONS\n# =============================================================================\ndef get_output_path(filename: str) -> Path:\n    \"\"\"Get full path for an output file.\"\"\"\n    return OUTPUT_DIR / filename\ndef get_trace_path(filename: str) -> Path:\n    \"\"\"Get full path for a trace file.\"\"\"\n    return TRACE_DIR / filename",
+        "detail": "core_pipeline.config",
+        "documentation": {}
+    },
+    {
+        "label": "Colors",
+        "kind": 6,
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "peekOfCode": "class Colors:\n    \"\"\"ANSI color codes for terminal output.\"\"\"\n    HEADER = '\\033[95m'\n    OKBLUE = '\\033[94m'\n    OKCYAN = '\\033[96m'\n    OKGREEN = '\\033[92m'\n    WARNING = '\\033[93m'\n    FAIL = '\\033[91m'\n    ENDC = '\\033[0m'\n    BOLD = '\\033[1m'",
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_header",
+        "kind": 2,
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "peekOfCode": "def print_header(message: str, width: int = 80) -> None:\n    \"\"\"\n    Print a formatted header message.\n    Args:\n        message: Header text to display\n        width: Total width of the header (default: 80)\n    \"\"\"\n    print(f\"\\n{Colors.HEADER}{Colors.BOLD}{'='*width}{Colors.ENDC}\")\n    print(f\"{Colors.HEADER}{Colors.BOLD}{message:^{width}}{Colors.ENDC}\")\n    print(f\"{Colors.HEADER}{Colors.BOLD}{'='*width}{Colors.ENDC}\\n\")",
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_step",
+        "kind": 2,
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "peekOfCode": "def print_step(step_num: int, total_steps: int, message: str) -> None:\n    \"\"\"\n    Print a formatted step message.\n    Args:\n        step_num: Current step number\n        total_steps: Total number of steps\n        message: Step description\n    \"\"\"\n    print(f\"\\n{Colors.OKCYAN}{Colors.BOLD}[Step {step_num}/{total_steps}]{Colors.ENDC} {message}\")\ndef print_success(message: str) -> None:",
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_success",
+        "kind": 2,
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "peekOfCode": "def print_success(message: str) -> None:\n    \"\"\"\n    Print a success message.\n    Args:\n        message: Success message to display\n    \"\"\"\n    print(f\"{Colors.OKGREEN}✓ {message}{Colors.ENDC}\")\ndef print_error(message: str) -> None:\n    \"\"\"\n    Print an error message.",
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_error",
+        "kind": 2,
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "peekOfCode": "def print_error(message: str) -> None:\n    \"\"\"\n    Print an error message.\n    Args:\n        message: Error message to display\n    \"\"\"\n    print(f\"{Colors.FAIL}✗ {message}{Colors.ENDC}\")\ndef print_warning(message: str) -> None:\n    \"\"\"\n    Print a warning message.",
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_warning",
+        "kind": 2,
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "peekOfCode": "def print_warning(message: str) -> None:\n    \"\"\"\n    Print a warning message.\n    Args:\n        message: Warning message to display\n    \"\"\"\n    print(f\"{Colors.WARNING}⚠ {message}{Colors.ENDC}\")\ndef print_info(message: str) -> None:\n    \"\"\"\n    Print an info message.",
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_info",
+        "kind": 2,
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "peekOfCode": "def print_info(message: str) -> None:\n    \"\"\"\n    Print an info message.\n    Args:\n        message: Info message to display\n    \"\"\"\n    print(f\"{Colors.OKBLUE}ℹ {message}{Colors.ENDC}\")\ndef print_section(title: str) -> None:\n    \"\"\"\n    Print a section title.",
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "print_section",
+        "kind": 2,
+        "importPath": "core_pipeline.console_utils",
+        "description": "core_pipeline.console_utils",
+        "peekOfCode": "def print_section(title: str) -> None:\n    \"\"\"\n    Print a section title.\n    Args:\n        title: Section title to display\n    \"\"\"\n    print(f\"\\n{Colors.BOLD}{title}{Colors.ENDC}\")\n    print(f\"{Colors.BOLD}{'-' * len(title)}{Colors.ENDC}\")",
+        "detail": "core_pipeline.console_utils",
+        "documentation": {}
+    },
+    {
+        "label": "validate_input_files",
+        "kind": 2,
+        "importPath": "core_pipeline.liver_protein_classifier",
+        "description": "core_pipeline.liver_protein_classifier",
+        "peekOfCode": "def validate_input_files():\n    \"\"\"\n    Validate that all required input files exist and are readable.\n    Returns:\n        bool: True if all files are valid, False otherwise\n    \"\"\"\n    errors = []\n    # Check if input directory exists\n    if not INPUT_DIR.exists():\n        errors.append(f\"Input directory not found: {INPUT_DIR}\")",
+        "detail": "core_pipeline.liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "validate_dataframe",
+        "kind": 2,
+        "importPath": "core_pipeline.liver_protein_classifier",
+        "description": "core_pipeline.liver_protein_classifier",
+        "peekOfCode": "def validate_dataframe(df, name, required_columns):\n    \"\"\"\n    Validate that a dataframe contains required columns and is not empty.\n    Args:\n        df: pandas DataFrame to validate\n        name: Name of the dataframe (for error messages)\n        required_columns: List of column names that must be present\n    Returns:\n        tuple: (is_valid, errors, warnings)\n            is_valid (bool): True if no critical errors",
+        "detail": "core_pipeline.liver_protein_classifier",
+        "documentation": {}
+    },
+    {
         "label": "extract_liver_ntpm",
         "kind": 2,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "def extract_liver_ntpm(text):\n    if pd.isna(text) or text == '':\n        return None\n    # Search for pattern \"liver: number\" or \"liver:number\"\n    pattern = r'liver:\\s*(\\d+\\.?\\d*)'\n    match = re.search(pattern, str(text).lower())\n    if match:\n        return float(match.group(1))\n    return None\n# Classification based on the criteria",
+        "peekOfCode": "def extract_liver_ntpm(text):\n    \"\"\"\n    Extract numerical liver nTPM value from text.\n    Args:\n        text: String containing liver nTPM data\n    Returns:\n        float: Liver nTPM value if found, None otherwise\n    \"\"\"\n    if pd.isna(text) or text == '':\n        return None",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -937,7 +1612,7 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "csv_files = glob.glob('input/*.csv')\nif not csv_files:\n    raise FileNotFoundError(\"No CSV file found in input folder\")\nif len(csv_files) > 1:\n    print(f\"Warning: Multiple CSV files found. Using: {csv_files[0]}\")\n    print(f\"Other files: {csv_files[1:]}\")\ngene_data_file = csv_files[0]\nprint(f\"Loading gene data from: {gene_data_file}\")\ngene_data = pd.read_csv(gene_data_file)\n# Load protein atlas TSV file",
+        "peekOfCode": "csv_files = list(INPUT_DIR.glob(CSV_PATTERN))\nif len(csv_files) > 1:\n    print(f\"⚠ Warning: Multiple CSV files found. Using: {csv_files[0]}\")\n    print(f\"  Other files: {csv_files[1:]}\")\ngene_data_file = csv_files[0]\nprint(f\"  Loading gene data from: {gene_data_file}\")\ntry:\n    gene_data = pd.read_csv(gene_data_file)\nexcept Exception as e:\n    print(f\"❌ Failed to read {gene_data_file}: {str(e)}\")",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -946,25 +1621,16 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "gene_data_file = csv_files[0]\nprint(f\"Loading gene data from: {gene_data_file}\")\ngene_data = pd.read_csv(gene_data_file)\n# Load protein atlas TSV file\nprotein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\\t')\n# Extract Gene column from gene_data (it's in the \"Gene\" column)\nprint(f\"Total genes in input file: {len(gene_data)}\")\nprint(f\"Total genes in protein atlas: {len(protein_atlas)}\")\n# Merge the two dataframes on Gene column\nmerged_data = gene_data.merge(",
+        "peekOfCode": "gene_data_file = csv_files[0]\nprint(f\"  Loading gene data from: {gene_data_file}\")\ntry:\n    gene_data = pd.read_csv(gene_data_file)\nexcept Exception as e:\n    print(f\"❌ Failed to read {gene_data_file}: {str(e)}\")\n    sys.exit(1)\n# Load protein atlas TSV file\nprint(f\"  Loading protein atlas from: {PROTEIN_ATLAS_FILE}\")\ntry:",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
     {
-        "label": "gene_data",
+        "label": "required_protein_atlas_columns",
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "gene_data = pd.read_csv(gene_data_file)\n# Load protein atlas TSV file\nprotein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\\t')\n# Extract Gene column from gene_data (it's in the \"Gene\" column)\nprint(f\"Total genes in input file: {len(gene_data)}\")\nprint(f\"Total genes in protein atlas: {len(protein_atlas)}\")\n# Merge the two dataframes on Gene column\nmerged_data = gene_data.merge(\n    protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster', 'RNA tissue cell type enrichment']],\n    on='Gene',",
-        "detail": "core_pipeline.liver_protein_classifier",
-        "documentation": {}
-    },
-    {
-        "label": "protein_atlas",
-        "kind": 5,
-        "importPath": "core_pipeline.liver_protein_classifier",
-        "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "protein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\\t')\n# Extract Gene column from gene_data (it's in the \"Gene\" column)\nprint(f\"Total genes in input file: {len(gene_data)}\")\nprint(f\"Total genes in protein atlas: {len(protein_atlas)}\")\n# Merge the two dataframes on Gene column\nmerged_data = gene_data.merge(\n    protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster', 'RNA tissue cell type enrichment']],\n    on='Gene',\n    how='left'\n)",
+        "peekOfCode": "required_protein_atlas_columns = [\n    'Gene',\n    'RNA tissue specific nTPM',\n    'Tissue expression cluster',\n    'RNA tissue cell type enrichment'\n]\nvalid, errors, warnings_pa = validate_dataframe(protein_atlas, \"Protein atlas\", required_protein_atlas_columns)\nif not valid:\n    print(\"\\n❌ Protein atlas validation failed:\")\n    for error in errors:",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -973,7 +1639,7 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "merged_data = gene_data.merge(\n    protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster', 'RNA tissue cell type enrichment']],\n    on='Gene',\n    how='left'\n)\nprint(f\"Total merged records: {len(merged_data)}\")\n# Function to extract liver nTPM value\ndef extract_liver_ntpm(text):\n    if pd.isna(text) or text == '':\n        return None",
+        "peekOfCode": "merged_data = gene_data.merge(\n    protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster', 'RNA tissue cell type enrichment']],\n    on='Gene',\n    how='left'\n)\nprint(f\"  Merged {len(merged_data)} records\")\nif len(merged_data) < len(gene_data):\n    print(f\"  ⚠ Warning: {len(gene_data) - len(merged_data)} genes lost during merge\")\nprint(\"✓ Datasets merged successfully\")\n# =============================================================================",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -982,7 +1648,7 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "merged_data['liver_nTPM_value'] = merged_data['RNA tissue specific nTPM'].apply(extract_liver_ntpm)\n# Split nTPM into two categories: high (>=100) and low (<100)\nmerged_data['has_liver_in_ntpm'] = merged_data['RNA tissue specific nTPM'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_nTPM_high'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] >= 100)\n)\nmerged_data['has_liver_nTPM_low'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] < 100)",
+        "peekOfCode": "merged_data['liver_nTPM_value'] = merged_data['RNA tissue specific nTPM'].apply(extract_liver_ntpm)\n# Split nTPM into two categories: high (>=100) and low (<100)\nmerged_data['has_liver_in_ntpm'] = merged_data['RNA tissue specific nTPM'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_nTPM_high'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] >= NTPM_HIGH_THRESHOLD)\n)\nmerged_data['has_liver_nTPM_low'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] < NTPM_HIGH_THRESHOLD)",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -991,7 +1657,7 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "merged_data['has_liver_in_ntpm'] = merged_data['RNA tissue specific nTPM'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_nTPM_high'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] >= 100)\n)\nmerged_data['has_liver_nTPM_low'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] < 100)\n)\nmerged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')",
+        "peekOfCode": "merged_data['has_liver_in_ntpm'] = merged_data['RNA tissue specific nTPM'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_nTPM_high'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] >= NTPM_HIGH_THRESHOLD)\n)\nmerged_data['has_liver_nTPM_low'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] < NTPM_HIGH_THRESHOLD)\n)\nmerged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -1000,7 +1666,7 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "merged_data['has_liver_nTPM_high'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] >= 100)\n)\nmerged_data['has_liver_nTPM_low'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] < 100)\n)\nmerged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_enrichment'] = merged_data['RNA tissue cell type enrichment'].fillna('').str.lower().str.contains('liver')",
+        "peekOfCode": "merged_data['has_liver_nTPM_high'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] >= NTPM_HIGH_THRESHOLD)\n)\nmerged_data['has_liver_nTPM_low'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] < NTPM_HIGH_THRESHOLD)\n)\nmerged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_enrichment'] = merged_data['RNA tissue cell type enrichment'].fillna('').str.lower().str.contains('liver')",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -1009,7 +1675,7 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "merged_data['has_liver_nTPM_low'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] < 100)\n)\nmerged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_enrichment'] = merged_data['RNA tissue cell type enrichment'].fillna('').str.lower().str.contains('liver')\n# Create classification column with more detailed logic\ndef classify_liver_protein(row):\n    has_ntpm_high = row['has_liver_nTPM_high']\n    has_ntpm_low = row['has_liver_nTPM_low']",
+        "peekOfCode": "merged_data['has_liver_nTPM_low'] = (\n    merged_data['has_liver_in_ntpm'] &\n    (merged_data['liver_nTPM_value'] < NTPM_HIGH_THRESHOLD)\n)\nmerged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_enrichment'] = merged_data['RNA tissue cell type enrichment'].fillna('').str.lower().str.contains('liver')\n# Create classification column with more detailed logic\ndef classify_liver_protein(row):\n    has_ntpm_high = row['has_liver_nTPM_high']\n    has_ntpm_low = row['has_liver_nTPM_low']",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -1036,7 +1702,7 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "merged_data['Classification'] = merged_data.apply(classify_liver_protein, axis=1)\n# Count each category\nclassification_counts = merged_data['Classification'].value_counts()\nprint(\"\\nClassification Results:\")\nprint(classification_counts)\n# Print statistics about extracted liver nTPM values\nliver_ntpm_stats = merged_data[merged_data['liver_nTPM_value'].notna()]['liver_nTPM_value']\nif len(liver_ntpm_stats) > 0:\n    print(f\"\\nLiver nTPM Value Statistics:\")\n    print(f\"Total genes with liver nTPM values: {len(liver_ntpm_stats)}\")",
+        "peekOfCode": "merged_data['Classification'] = merged_data.apply(classify_liver_protein, axis=1)\n# Count each category\nclassification_counts = merged_data['Classification'].value_counts()\nprint(\"\\n\" + \"=\"*80)\nprint(\"CLASSIFICATION RESULTS\")\nprint(\"=\"*80)\nprint(classification_counts)\nprint(\"=\"*80)\n# Print statistics about extracted liver nTPM values\nliver_ntpm_stats = merged_data[merged_data['liver_nTPM_value'].notna()]['liver_nTPM_value']",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -1045,7 +1711,7 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "classification_counts = merged_data['Classification'].value_counts()\nprint(\"\\nClassification Results:\")\nprint(classification_counts)\n# Print statistics about extracted liver nTPM values\nliver_ntpm_stats = merged_data[merged_data['liver_nTPM_value'].notna()]['liver_nTPM_value']\nif len(liver_ntpm_stats) > 0:\n    print(f\"\\nLiver nTPM Value Statistics:\")\n    print(f\"Total genes with liver nTPM values: {len(liver_ntpm_stats)}\")\n    print(f\"Mean: {liver_ntpm_stats.mean():.2f}\")\n    print(f\"Median: {liver_ntpm_stats.median():.2f}\")",
+        "peekOfCode": "classification_counts = merged_data['Classification'].value_counts()\nprint(\"\\n\" + \"=\"*80)\nprint(\"CLASSIFICATION RESULTS\")\nprint(\"=\"*80)\nprint(classification_counts)\nprint(\"=\"*80)\n# Print statistics about extracted liver nTPM values\nliver_ntpm_stats = merged_data[merged_data['liver_nTPM_value'].notna()]['liver_nTPM_value']\nif len(liver_ntpm_stats) > 0:\n    print(f\"\\nLiver nTPM Value Statistics:\")",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -1144,7 +1810,7 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "fig = plt.figure(figsize=(20, 10))\n# Add overall title with statistics\ntitle_text = f'Liver Protein Classification (4 Criteria: nTPM Split by Threshold 100)'\nsubtitle_text = f'Total: {total_genes} proteins | Liver candidates: {liver_candidates} ({liver_candidates/total_genes*100:.1f}%) | Non-liver: {len(non_liver_genes)}'\nfig.suptitle(title_text, fontsize=18, fontweight='bold', y=0.98)\nplt.text(0.5, 0.93, subtitle_text, ha='center', fontsize=13, transform=fig.transFigure)\n# Left subplot: nTPM >= 100 with cluster and enrichment\nax1 = fig.add_subplot(121)\nvenn1 = venn3(\n    [liver_ntpm_high_genes, liver_cluster_genes, liver_enrichment_genes],",
+        "peekOfCode": "fig = plt.figure(figsize=FIGURE_SIZE_VENN)\n# Add overall title with statistics\ntitle_text = f'Liver Protein Classification (4 Criteria: nTPM Split by Threshold 100)'\nsubtitle_text = f'Total: {total_genes} proteins | Liver candidates: {liver_candidates} ({liver_candidates/total_genes*100:.1f}%) | Non-liver: {len(non_liver_genes)}'\nfig.suptitle(title_text, fontsize=18, fontweight='bold', y=0.98)\nplt.text(0.5, 0.93, subtitle_text, ha='center', fontsize=13, transform=fig.transFigure)\n# Left subplot: nTPM >= 100 with cluster and enrichment\nax1 = fig.add_subplot(121)\nvenn1 = venn3(\n    [liver_ntpm_high_genes, liver_cluster_genes, liver_enrichment_genes],",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -1329,24 +1995,6 @@
         "documentation": {}
     },
     {
-        "label": "output_dir",
-        "kind": 5,
-        "importPath": "core_pipeline.liver_protein_classifier",
-        "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "output_dir = 'output'\nos.makedirs(output_dir, exist_ok=True)\nplt.savefig(f'{output_dir}/liver_protein_venn_diagram.png', dpi=300, bbox_inches='tight')\nprint(f\"\\nVenn diagram saved to: {output_dir}/liver_protein_venn_diagram.png\")\n# Create Trace folder and save tracing data\ntrace_dir = 'Trace'\nos.makedirs(trace_dir, exist_ok=True)\n# Prepare tracing data with all relevant columns\ntrace_data = merged_data[[\n    'Gene',",
-        "detail": "core_pipeline.liver_protein_classifier",
-        "documentation": {}
-    },
-    {
-        "label": "trace_dir",
-        "kind": 5,
-        "importPath": "core_pipeline.liver_protein_classifier",
-        "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "trace_dir = 'Trace'\nos.makedirs(trace_dir, exist_ok=True)\n# Prepare tracing data with all relevant columns\ntrace_data = merged_data[[\n    'Gene',\n    'RNA tissue specific nTPM',\n    'liver_nTPM_value',\n    'Tissue expression cluster',\n    'RNA tissue cell type enrichment',\n    'has_liver_nTPM_high',",
-        "detail": "core_pipeline.liver_protein_classifier",
-        "documentation": {}
-    },
-    {
         "label": "trace_data",
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
@@ -1356,29 +2004,11 @@
         "documentation": {}
     },
     {
-        "label": "trace_file",
-        "kind": 5,
-        "importPath": "core_pipeline.liver_protein_classifier",
-        "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "trace_file = f'{trace_dir}/Data tracing.csv'\ntrace_data.to_csv(trace_file, index=False)\nprint(f\"Tracing data saved to: {trace_file}\")\n# Save summary statistics to Trace folder\nsummary_file = f'{trace_dir}/classification_summary.csv'\nclassification_counts.to_csv(summary_file, header=['Count'])\nprint(f\"Summary statistics saved to: {summary_file}\")\n# Save classified gene lists with liver nTPM values to Trace folder\n# Get all unique classifications\nall_classifications = merged_data['Classification'].unique()",
-        "detail": "core_pipeline.liver_protein_classifier",
-        "documentation": {}
-    },
-    {
-        "label": "summary_file",
-        "kind": 5,
-        "importPath": "core_pipeline.liver_protein_classifier",
-        "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "summary_file = f'{trace_dir}/classification_summary.csv'\nclassification_counts.to_csv(summary_file, header=['Count'])\nprint(f\"Summary statistics saved to: {summary_file}\")\n# Save classified gene lists with liver nTPM values to Trace folder\n# Get all unique classifications\nall_classifications = merged_data['Classification'].unique()\nliver_classifications = [c for c in all_classifications if c.startswith('liver protein')]\nfor classification in liver_classifications:\n    subset = merged_data[merged_data['Classification'] == classification]\n    if len(subset) > 0:",
-        "detail": "core_pipeline.liver_protein_classifier",
-        "documentation": {}
-    },
-    {
         "label": "all_classifications",
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "all_classifications = merged_data['Classification'].unique()\nliver_classifications = [c for c in all_classifications if c.startswith('liver protein')]\nfor classification in liver_classifications:\n    subset = merged_data[merged_data['Classification'] == classification]\n    if len(subset) > 0:\n        genes_file = f'{trace_dir}/{classification.replace(\" \", \"_\").replace(\"(\", \"\").replace(\")\", \"\").replace(\"+\", \"and\")}_genes.csv'\n        subset[['Gene', 'liver_nTPM_value']].to_csv(genes_file, index=False)\n        print(f\"{classification} genes ({len(subset)}): saved to {genes_file}\")\nprint(\"\\nClassification complete!\")",
+        "peekOfCode": "all_classifications = merged_data['Classification'].unique()\nliver_classifications = [c for c in all_classifications if c.startswith('liver protein')]\nfor classification in liver_classifications:\n    subset = merged_data[merged_data['Classification'] == classification]\n    if len(subset) > 0:\n        genes_file = TRACE_DIR / f'{classification.replace(\" \", \"_\").replace(\"(\", \"\").replace(\")\", \"\").replace(\"+\", \"and\")}_genes.csv'\n        subset[['Gene', 'liver_nTPM_value']].to_csv(genes_file, index=False)\n        print(f\"{classification} genes ({len(subset)}): saved to {genes_file}\")\nprint(\"\\n\" + \"=\"*80)\nprint(\"✓ CLASSIFICATION PIPELINE COMPLETED SUCCESSFULLY\")",
         "detail": "core_pipeline.liver_protein_classifier",
         "documentation": {}
     },
@@ -1387,62 +2017,8 @@
         "kind": 5,
         "importPath": "core_pipeline.liver_protein_classifier",
         "description": "core_pipeline.liver_protein_classifier",
-        "peekOfCode": "liver_classifications = [c for c in all_classifications if c.startswith('liver protein')]\nfor classification in liver_classifications:\n    subset = merged_data[merged_data['Classification'] == classification]\n    if len(subset) > 0:\n        genes_file = f'{trace_dir}/{classification.replace(\" \", \"_\").replace(\"(\", \"\").replace(\")\", \"\").replace(\"+\", \"and\")}_genes.csv'\n        subset[['Gene', 'liver_nTPM_value']].to_csv(genes_file, index=False)\n        print(f\"{classification} genes ({len(subset)}): saved to {genes_file}\")\nprint(\"\\nClassification complete!\")",
+        "peekOfCode": "liver_classifications = [c for c in all_classifications if c.startswith('liver protein')]\nfor classification in liver_classifications:\n    subset = merged_data[merged_data['Classification'] == classification]\n    if len(subset) > 0:\n        genes_file = TRACE_DIR / f'{classification.replace(\" \", \"_\").replace(\"(\", \"\").replace(\")\", \"\").replace(\"+\", \"and\")}_genes.csv'\n        subset[['Gene', 'liver_nTPM_value']].to_csv(genes_file, index=False)\n        print(f\"{classification} genes ({len(subset)}): saved to {genes_file}\")\nprint(\"\\n\" + \"=\"*80)\nprint(\"✓ CLASSIFICATION PIPELINE COMPLETED SUCCESSFULLY\")\nprint(\"=\"*80)",
         "detail": "core_pipeline.liver_protein_classifier",
-        "documentation": {}
-    },
-    {
-        "label": "Colors",
-        "kind": 6,
-        "importPath": "core_pipeline.run_visualizations",
-        "description": "core_pipeline.run_visualizations",
-        "peekOfCode": "class Colors:\n    HEADER = '\\033[95m'\n    OKBLUE = '\\033[94m'\n    OKCYAN = '\\033[96m'\n    OKGREEN = '\\033[92m'\n    WARNING = '\\033[93m'\n    FAIL = '\\033[91m'\n    ENDC = '\\033[0m'\n    BOLD = '\\033[1m'\n    UNDERLINE = '\\033[4m'",
-        "detail": "core_pipeline.run_visualizations",
-        "documentation": {}
-    },
-    {
-        "label": "print_header",
-        "kind": 2,
-        "importPath": "core_pipeline.run_visualizations",
-        "description": "core_pipeline.run_visualizations",
-        "peekOfCode": "def print_header(message):\n    \"\"\"Print a formatted header message\"\"\"\n    print(f\"\\n{Colors.HEADER}{Colors.BOLD}{'='*70}{Colors.ENDC}\")\n    print(f\"{Colors.HEADER}{Colors.BOLD}{message:^70}{Colors.ENDC}\")\n    print(f\"{Colors.HEADER}{Colors.BOLD}{'='*70}{Colors.ENDC}\\n\")\ndef print_step(step_num, total_steps, message):\n    \"\"\"Print a formatted step message\"\"\"\n    print(f\"{Colors.OKCYAN}{Colors.BOLD}[Step {step_num}/{total_steps}]{Colors.ENDC} {message}\")\ndef print_success(message):\n    \"\"\"Print a success message\"\"\"",
-        "detail": "core_pipeline.run_visualizations",
-        "documentation": {}
-    },
-    {
-        "label": "print_step",
-        "kind": 2,
-        "importPath": "core_pipeline.run_visualizations",
-        "description": "core_pipeline.run_visualizations",
-        "peekOfCode": "def print_step(step_num, total_steps, message):\n    \"\"\"Print a formatted step message\"\"\"\n    print(f\"{Colors.OKCYAN}{Colors.BOLD}[Step {step_num}/{total_steps}]{Colors.ENDC} {message}\")\ndef print_success(message):\n    \"\"\"Print a success message\"\"\"\n    print(f\"{Colors.OKGREEN}✓ {message}{Colors.ENDC}\")\ndef print_error(message):\n    \"\"\"Print an error message\"\"\"\n    print(f\"{Colors.FAIL}✗ {message}{Colors.ENDC}\")\ndef print_warning(message):",
-        "detail": "core_pipeline.run_visualizations",
-        "documentation": {}
-    },
-    {
-        "label": "print_success",
-        "kind": 2,
-        "importPath": "core_pipeline.run_visualizations",
-        "description": "core_pipeline.run_visualizations",
-        "peekOfCode": "def print_success(message):\n    \"\"\"Print a success message\"\"\"\n    print(f\"{Colors.OKGREEN}✓ {message}{Colors.ENDC}\")\ndef print_error(message):\n    \"\"\"Print an error message\"\"\"\n    print(f\"{Colors.FAIL}✗ {message}{Colors.ENDC}\")\ndef print_warning(message):\n    \"\"\"Print a warning message\"\"\"\n    print(f\"{Colors.WARNING}⚠ {message}{Colors.ENDC}\")\ndef run_script(script_name, description):",
-        "detail": "core_pipeline.run_visualizations",
-        "documentation": {}
-    },
-    {
-        "label": "print_error",
-        "kind": 2,
-        "importPath": "core_pipeline.run_visualizations",
-        "description": "core_pipeline.run_visualizations",
-        "peekOfCode": "def print_error(message):\n    \"\"\"Print an error message\"\"\"\n    print(f\"{Colors.FAIL}✗ {message}{Colors.ENDC}\")\ndef print_warning(message):\n    \"\"\"Print a warning message\"\"\"\n    print(f\"{Colors.WARNING}⚠ {message}{Colors.ENDC}\")\ndef run_script(script_name, description):\n    \"\"\"\n    Run a Python script and return success status\n    Args:",
-        "detail": "core_pipeline.run_visualizations",
-        "documentation": {}
-    },
-    {
-        "label": "print_warning",
-        "kind": 2,
-        "importPath": "core_pipeline.run_visualizations",
-        "description": "core_pipeline.run_visualizations",
-        "peekOfCode": "def print_warning(message):\n    \"\"\"Print a warning message\"\"\"\n    print(f\"{Colors.WARNING}⚠ {message}{Colors.ENDC}\")\ndef run_script(script_name, description):\n    \"\"\"\n    Run a Python script and return success status\n    Args:\n        script_name (str): Name of the Python script to run\n        description (str): Description of what the script does\n    Returns:",
-        "detail": "core_pipeline.run_visualizations",
         "documentation": {}
     },
     {
@@ -1473,11 +2049,245 @@
         "documentation": {}
     },
     {
+        "label": "format_classification_label",
+        "kind": 2,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "def format_classification_label(classification: str, short: bool = True) -> str:\n    \"\"\"\n    Format classification labels for display in plots.\n    Args:\n        classification: Full classification name\n        short: If True, use abbreviated format (default: True)\n    Returns:\n        Formatted label string\n    \"\"\"\n    if not short:",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "CLASSIFICATION_COLOR_MAP",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "CLASSIFICATION_COLOR_MAP = {\n    # High nTPM (>=100) categories - Red spectrum\n    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',  # Bright red\n    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',  # Light red\n    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',  # Orange-red\n    'liver protein (nTPM≥100 only)': '#FFB6B6',  # Very light red\n    # Low nTPM (<100) categories - Blue spectrum\n    'liver protein (nTPM<100 + cluster + enrichment)': '#4169E1',  # Royal blue\n    'liver protein (nTPM<100 + cluster)': '#87CEEB',  # Sky blue\n    'liver protein (nTPM<100 + enrichment)': '#ADD8E6',  # Light blue",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "CLASSIFICATION_ORDER",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "CLASSIFICATION_ORDER = [\n    # High nTPM first\n    'liver protein (nTPM≥100 + cluster + enrichment)',\n    'liver protein (nTPM≥100 + cluster)',\n    'liver protein (nTPM≥100 + enrichment)',\n    'liver protein (nTPM≥100 only)',\n    # Low nTPM\n    'liver protein (nTPM<100 + cluster + enrichment)',\n    'liver protein (nTPM<100 + cluster)',\n    'liver protein (nTPM<100 + enrichment)',",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "VENN_HIGH_NTPM_COLOR",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "VENN_HIGH_NTPM_COLOR = '#FF6B6B'  # Light red for nTPM >= 100\nVENN_LOW_NTPM_COLOR = '#FFB6C1'   # Pink for nTPM < 100\nVENN_CLUSTER_COLOR = '#87CEEB'     # Sky blue for cluster\nVENN_ENRICHMENT_COLOR = '#98FB98'  # Pale green for enrichment\n# =============================================================================\n# PLOT AESTHETICS\n# =============================================================================\n# Default alpha transparency\nALPHA_DEFAULT = 0.65\nALPHA_HIGHLIGHT = 0.8",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "VENN_LOW_NTPM_COLOR",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "VENN_LOW_NTPM_COLOR = '#FFB6C1'   # Pink for nTPM < 100\nVENN_CLUSTER_COLOR = '#87CEEB'     # Sky blue for cluster\nVENN_ENRICHMENT_COLOR = '#98FB98'  # Pale green for enrichment\n# =============================================================================\n# PLOT AESTHETICS\n# =============================================================================\n# Default alpha transparency\nALPHA_DEFAULT = 0.65\nALPHA_HIGHLIGHT = 0.8\n# Line widths",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "VENN_CLUSTER_COLOR",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "VENN_CLUSTER_COLOR = '#87CEEB'     # Sky blue for cluster\nVENN_ENRICHMENT_COLOR = '#98FB98'  # Pale green for enrichment\n# =============================================================================\n# PLOT AESTHETICS\n# =============================================================================\n# Default alpha transparency\nALPHA_DEFAULT = 0.65\nALPHA_HIGHLIGHT = 0.8\n# Line widths\nLINE_WIDTH_THIN = 0.5",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "VENN_ENRICHMENT_COLOR",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "VENN_ENRICHMENT_COLOR = '#98FB98'  # Pale green for enrichment\n# =============================================================================\n# PLOT AESTHETICS\n# =============================================================================\n# Default alpha transparency\nALPHA_DEFAULT = 0.65\nALPHA_HIGHLIGHT = 0.8\n# Line widths\nLINE_WIDTH_THIN = 0.5\nLINE_WIDTH_MEDIUM = 1.5",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "ALPHA_DEFAULT",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "ALPHA_DEFAULT = 0.65\nALPHA_HIGHLIGHT = 0.8\n# Line widths\nLINE_WIDTH_THIN = 0.5\nLINE_WIDTH_MEDIUM = 1.5\nLINE_WIDTH_THICK = 2.0\nLINE_WIDTH_VERY_THICK = 2.5\n# Marker sizes\nMARKER_SIZE_SMALL = 3\nMARKER_SIZE_MEDIUM = 30",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "ALPHA_HIGHLIGHT",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "ALPHA_HIGHLIGHT = 0.8\n# Line widths\nLINE_WIDTH_THIN = 0.5\nLINE_WIDTH_MEDIUM = 1.5\nLINE_WIDTH_THICK = 2.0\nLINE_WIDTH_VERY_THICK = 2.5\n# Marker sizes\nMARKER_SIZE_SMALL = 3\nMARKER_SIZE_MEDIUM = 30\nMARKER_SIZE_LARGE = 50",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "LINE_WIDTH_THIN",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "LINE_WIDTH_THIN = 0.5\nLINE_WIDTH_MEDIUM = 1.5\nLINE_WIDTH_THICK = 2.0\nLINE_WIDTH_VERY_THICK = 2.5\n# Marker sizes\nMARKER_SIZE_SMALL = 3\nMARKER_SIZE_MEDIUM = 30\nMARKER_SIZE_LARGE = 50\n# Font sizes\nFONT_SIZE_SMALL = 8",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "LINE_WIDTH_MEDIUM",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "LINE_WIDTH_MEDIUM = 1.5\nLINE_WIDTH_THICK = 2.0\nLINE_WIDTH_VERY_THICK = 2.5\n# Marker sizes\nMARKER_SIZE_SMALL = 3\nMARKER_SIZE_MEDIUM = 30\nMARKER_SIZE_LARGE = 50\n# Font sizes\nFONT_SIZE_SMALL = 8\nFONT_SIZE_MEDIUM = 10",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "LINE_WIDTH_THICK",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "LINE_WIDTH_THICK = 2.0\nLINE_WIDTH_VERY_THICK = 2.5\n# Marker sizes\nMARKER_SIZE_SMALL = 3\nMARKER_SIZE_MEDIUM = 30\nMARKER_SIZE_LARGE = 50\n# Font sizes\nFONT_SIZE_SMALL = 8\nFONT_SIZE_MEDIUM = 10\nFONT_SIZE_LARGE = 12",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "LINE_WIDTH_VERY_THICK",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "LINE_WIDTH_VERY_THICK = 2.5\n# Marker sizes\nMARKER_SIZE_SMALL = 3\nMARKER_SIZE_MEDIUM = 30\nMARKER_SIZE_LARGE = 50\n# Font sizes\nFONT_SIZE_SMALL = 8\nFONT_SIZE_MEDIUM = 10\nFONT_SIZE_LARGE = 12\nFONT_SIZE_XLARGE = 14",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "MARKER_SIZE_SMALL",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "MARKER_SIZE_SMALL = 3\nMARKER_SIZE_MEDIUM = 30\nMARKER_SIZE_LARGE = 50\n# Font sizes\nFONT_SIZE_SMALL = 8\nFONT_SIZE_MEDIUM = 10\nFONT_SIZE_LARGE = 12\nFONT_SIZE_XLARGE = 14\nFONT_SIZE_TITLE = 18\n# =============================================================================",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "MARKER_SIZE_MEDIUM",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "MARKER_SIZE_MEDIUM = 30\nMARKER_SIZE_LARGE = 50\n# Font sizes\nFONT_SIZE_SMALL = 8\nFONT_SIZE_MEDIUM = 10\nFONT_SIZE_LARGE = 12\nFONT_SIZE_XLARGE = 14\nFONT_SIZE_TITLE = 18\n# =============================================================================\n# LEGEND CONFIGURATION",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "MARKER_SIZE_LARGE",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "MARKER_SIZE_LARGE = 50\n# Font sizes\nFONT_SIZE_SMALL = 8\nFONT_SIZE_MEDIUM = 10\nFONT_SIZE_LARGE = 12\nFONT_SIZE_XLARGE = 14\nFONT_SIZE_TITLE = 18\n# =============================================================================\n# LEGEND CONFIGURATION\n# =============================================================================",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_SIZE_SMALL",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "FONT_SIZE_SMALL = 8\nFONT_SIZE_MEDIUM = 10\nFONT_SIZE_LARGE = 12\nFONT_SIZE_XLARGE = 14\nFONT_SIZE_TITLE = 18\n# =============================================================================\n# LEGEND CONFIGURATION\n# =============================================================================\nLEGEND_LOCATION = 'best'\nLEGEND_FRAMEALPHA = 0.95",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_SIZE_MEDIUM",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "FONT_SIZE_MEDIUM = 10\nFONT_SIZE_LARGE = 12\nFONT_SIZE_XLARGE = 14\nFONT_SIZE_TITLE = 18\n# =============================================================================\n# LEGEND CONFIGURATION\n# =============================================================================\nLEGEND_LOCATION = 'best'\nLEGEND_FRAMEALPHA = 0.95\nLEGEND_EDGECOLOR = 'black'",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_SIZE_LARGE",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "FONT_SIZE_LARGE = 12\nFONT_SIZE_XLARGE = 14\nFONT_SIZE_TITLE = 18\n# =============================================================================\n# LEGEND CONFIGURATION\n# =============================================================================\nLEGEND_LOCATION = 'best'\nLEGEND_FRAMEALPHA = 0.95\nLEGEND_EDGECOLOR = 'black'\nLEGEND_FANCYBOX = True",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_SIZE_XLARGE",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "FONT_SIZE_XLARGE = 14\nFONT_SIZE_TITLE = 18\n# =============================================================================\n# LEGEND CONFIGURATION\n# =============================================================================\nLEGEND_LOCATION = 'best'\nLEGEND_FRAMEALPHA = 0.95\nLEGEND_EDGECOLOR = 'black'\nLEGEND_FANCYBOX = True\nLEGEND_SHADOW = True",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_SIZE_TITLE",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "FONT_SIZE_TITLE = 18\n# =============================================================================\n# LEGEND CONFIGURATION\n# =============================================================================\nLEGEND_LOCATION = 'best'\nLEGEND_FRAMEALPHA = 0.95\nLEGEND_EDGECOLOR = 'black'\nLEGEND_FANCYBOX = True\nLEGEND_SHADOW = True",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "LEGEND_LOCATION",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "LEGEND_LOCATION = 'best'\nLEGEND_FRAMEALPHA = 0.95\nLEGEND_EDGECOLOR = 'black'\nLEGEND_FANCYBOX = True\nLEGEND_SHADOW = True",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "LEGEND_FRAMEALPHA",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "LEGEND_FRAMEALPHA = 0.95\nLEGEND_EDGECOLOR = 'black'\nLEGEND_FANCYBOX = True\nLEGEND_SHADOW = True",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "LEGEND_EDGECOLOR",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "LEGEND_EDGECOLOR = 'black'\nLEGEND_FANCYBOX = True\nLEGEND_SHADOW = True",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "LEGEND_FANCYBOX",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "LEGEND_FANCYBOX = True\nLEGEND_SHADOW = True",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
+        "label": "LEGEND_SHADOW",
+        "kind": 5,
+        "importPath": "core_pipeline.visualization_config",
+        "description": "core_pipeline.visualization_config",
+        "peekOfCode": "LEGEND_SHADOW = True",
+        "detail": "core_pipeline.visualization_config",
+        "documentation": {}
+    },
+    {
         "label": "trace_data",
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "trace_data = pd.read_csv('Trace/Data tracing.csv')\n# Filter genes with liver nTPM values\nliver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\n# Group by classification\ngroups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()\n# Color mapping for new 4-category system\ncolor_map = {\n    # High nTPM (>=100) categories\n    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',",
+        "peekOfCode": "trace_data = pd.read_csv(TRACE_DATA_FILE)\n# Filter genes with liver nTPM values\nliver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\n# Group by classification\ngroups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()\n# Use shared color map and classification order from visualization_config\n# Filter groups that have nTPM values (only those in CLASSIFICATION_ORDER)\ngroups_with_values = {k: v for k, v in groups.items() if k in CLASSIFICATION_ORDER}\n# Create figure with multiple subplots - improved layout",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1486,7 +2296,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "liver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\n# Group by classification\ngroups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()\n# Color mapping for new 4-category system\ncolor_map = {\n    # High nTPM (>=100) categories\n    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',\n    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',\n    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',",
+        "peekOfCode": "liver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\n# Group by classification\ngroups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()\n# Use shared color map and classification order from visualization_config\n# Filter groups that have nTPM values (only those in CLASSIFICATION_ORDER)\ngroups_with_values = {k: v for k, v in groups.items() if k in CLASSIFICATION_ORDER}\n# Create figure with multiple subplots - improved layout\nfig = plt.figure(figsize=(22, 16), facecolor='white')\ngs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1495,25 +2305,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "groups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()\n# Color mapping for new 4-category system\ncolor_map = {\n    # High nTPM (>=100) categories\n    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',\n    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',\n    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',\n    'liver protein (nTPM≥100 only)': '#FFB6B6',\n    # Low nTPM (<100) categories\n    'liver protein (nTPM<100 + cluster + enrichment)': '#4169E1',",
-        "detail": "core_pipeline.visualize_group_distribution",
-        "documentation": {}
-    },
-    {
-        "label": "color_map",
-        "kind": 5,
-        "importPath": "core_pipeline.visualize_group_distribution",
-        "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "color_map = {\n    # High nTPM (>=100) categories\n    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',\n    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',\n    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',\n    'liver protein (nTPM≥100 only)': '#FFB6B6',\n    # Low nTPM (<100) categories\n    'liver protein (nTPM<100 + cluster + enrichment)': '#4169E1',\n    'liver protein (nTPM<100 + cluster)': '#87CEEB',\n    'liver protein (nTPM<100 + enrichment)': '#ADD8E6',",
-        "detail": "core_pipeline.visualize_group_distribution",
-        "documentation": {}
-    },
-    {
-        "label": "classification_order",
-        "kind": 5,
-        "importPath": "core_pipeline.visualize_group_distribution",
-        "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "classification_order = [\n    'liver protein (nTPM≥100 + cluster + enrichment)',\n    'liver protein (nTPM≥100 + cluster)',\n    'liver protein (nTPM≥100 + enrichment)',\n    'liver protein (nTPM≥100 only)',\n    'liver protein (nTPM<100 + cluster + enrichment)',\n    'liver protein (nTPM<100 + cluster)',\n    'liver protein (nTPM<100 + enrichment)',\n    'liver protein (nTPM<100 only)'\n]",
+        "peekOfCode": "groups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()\n# Use shared color map and classification order from visualization_config\n# Filter groups that have nTPM values (only those in CLASSIFICATION_ORDER)\ngroups_with_values = {k: v for k, v in groups.items() if k in CLASSIFICATION_ORDER}\n# Create figure with multiple subplots - improved layout\nfig = plt.figure(figsize=(22, 16), facecolor='white')\ngs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1522,7 +2314,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "groups_with_values = {k: v for k, v in groups.items() if k in classification_order}\n# Create figure with multiple subplots - improved layout\nfig = plt.figure(figsize=(22, 16), facecolor='white')\ngs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)\n# 1. Box Plot (Top Left)\nax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]",
+        "peekOfCode": "groups_with_values = {k: v for k, v in groups.items() if k in CLASSIFICATION_ORDER}\n# Create figure with multiple subplots - improved layout\nfig = plt.figure(figsize=(22, 16), facecolor='white')\ngs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)\n# 1. Box Plot (Top Left)\nax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in CLASSIFICATION_ORDER if cat in groups_with_values]",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1531,7 +2323,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "fig = plt.figure(figsize=(22, 16), facecolor='white')\ngs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)\n# 1. Box Plot (Top Left)\nax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]\n# Shorten labels for better display\nlabels_for_box = []",
+        "peekOfCode": "fig = plt.figure(figsize=(22, 16), facecolor='white')\ngs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)\n# 1. Box Plot (Top Left)\nax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in CLASSIFICATION_ORDER if cat in groups_with_values]\n# Shorten labels for better display\nlabels_for_box = []",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1540,7 +2332,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "gs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)\n# 1. Box Plot (Top Left)\nax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]\n# Shorten labels for better display\nlabels_for_box = []\nfor cat in classification_order:",
+        "peekOfCode": "gs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)\n# 1. Box Plot (Top Left)\nax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in CLASSIFICATION_ORDER if cat in groups_with_values]\n# Shorten labels for better display\nlabels_for_box = []\nfor cat in CLASSIFICATION_ORDER:",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1549,7 +2341,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "ax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]\n# Shorten labels for better display\nlabels_for_box = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')",
+        "peekOfCode": "ax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in CLASSIFICATION_ORDER if cat in groups_with_values]\n# Shorten labels for better display\nlabels_for_box = []\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1558,7 +2350,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "data_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]\n# Shorten labels for better display\nlabels_for_box = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        labels_for_box.append(label)",
+        "peekOfCode": "data_for_box = [groups_with_values[cat] for cat in CLASSIFICATION_ORDER if cat in groups_with_values]\n# Shorten labels for better display\nlabels_for_box = []\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        labels_for_box.append(label)",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1567,7 +2359,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "labels_for_box = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        labels_for_box.append(label)\nbp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,\n                 showmeans=True, meanline=True,",
+        "peekOfCode": "labels_for_box = []\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        labels_for_box.append(label)\nbp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,\n                 showmeans=True, meanline=True,",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1576,7 +2368,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "bp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,\n                 showmeans=True, meanline=True,\n                 boxprops=dict(linewidth=2),\n                 medianprops=dict(linewidth=2.5, color='red'),\n                 meanprops=dict(linewidth=2.5, color='blue', linestyle='--'),\n                 whiskerprops=dict(linewidth=1.5),\n                 capprops=dict(linewidth=1.5),\n                 flierprops=dict(marker='o', markersize=4, alpha=0.5))\n# Color the boxes\nfor patch, cat in zip(bp['boxes'], [c for c in classification_order if c in groups_with_values]):",
+        "peekOfCode": "bp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,\n                 showmeans=True, meanline=True,\n                 boxprops=dict(linewidth=2),\n                 medianprops=dict(linewidth=2.5, color='red'),\n                 meanprops=dict(linewidth=2.5, color='blue', linestyle='--'),\n                 whiskerprops=dict(linewidth=1.5),\n                 capprops=dict(linewidth=1.5),\n                 flierprops=dict(marker='o', markersize=4, alpha=0.5))\n# Color the boxes using shared color map\nfor patch, cat in zip(bp['boxes'], [c for c in CLASSIFICATION_ORDER if c in groups_with_values]):",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1594,7 +2386,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "ax2 = fig.add_subplot(gs[0, 1])\n# Prepare data for violin plot\nviolin_data = []\nviolin_labels = []\nviolin_colors = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')",
+        "peekOfCode": "ax2 = fig.add_subplot(gs[0, 1])\n# Prepare data for violin plot\nviolin_data = []\nviolin_labels = []\nviolin_colors = []\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1603,7 +2395,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "violin_data = []\nviolin_labels = []\nviolin_colors = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')",
+        "peekOfCode": "violin_data = []\nviolin_labels = []\nviolin_colors = []\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1612,7 +2404,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "violin_labels = []\nviolin_colors = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        violin_labels.append(label)",
+        "peekOfCode": "violin_labels = []\nviolin_colors = []\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        violin_labels.append(label)",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1621,7 +2413,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "violin_colors = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        violin_labels.append(label)\n        violin_colors.append(color_map[cat])",
+        "peekOfCode": "violin_colors = []\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        violin_labels.append(label)\n        violin_colors.append(CLASSIFICATION_COLOR_MAP[cat])",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1639,7 +2431,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "ax3 = fig.add_subplot(gs[1, 0])\npositions = []\nall_values = []\nall_colors = []\nfor i, cat in enumerate(classification_order):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([color_map[cat]] * len(values))",
+        "peekOfCode": "ax3 = fig.add_subplot(gs[1, 0])\npositions = []\nall_values = []\nall_colors = []\nfor i, cat in enumerate(CLASSIFICATION_ORDER):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([CLASSIFICATION_COLOR_MAP[cat]] * len(values))",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1648,7 +2440,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "positions = []\nall_values = []\nall_colors = []\nfor i, cat in enumerate(classification_order):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([color_map[cat]] * len(values))\n# Add jitter to x positions",
+        "peekOfCode": "positions = []\nall_values = []\nall_colors = []\nfor i, cat in enumerate(CLASSIFICATION_ORDER):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([CLASSIFICATION_COLOR_MAP[cat]] * len(values))\n# Add jitter to x positions",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1657,7 +2449,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "all_values = []\nall_colors = []\nfor i, cat in enumerate(classification_order):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([color_map[cat]] * len(values))\n# Add jitter to x positions\nnp.random.seed(42)",
+        "peekOfCode": "all_values = []\nall_colors = []\nfor i, cat in enumerate(CLASSIFICATION_ORDER):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([CLASSIFICATION_COLOR_MAP[cat]] * len(values))\n# Add jitter to x positions\nnp.random.seed(42)",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1666,7 +2458,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "all_colors = []\nfor i, cat in enumerate(classification_order):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([color_map[cat]] * len(values))\n# Add jitter to x positions\nnp.random.seed(42)\njittered_positions = np.array(positions) + np.random.normal(0, 0.1, len(positions))",
+        "peekOfCode": "all_colors = []\nfor i, cat in enumerate(CLASSIFICATION_ORDER):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([CLASSIFICATION_COLOR_MAP[cat]] * len(values))\n# Add jitter to x positions\nnp.random.seed(42)\njittered_positions = np.array(positions) + np.random.normal(0, 0.1, len(positions))",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1693,7 +2485,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "ax4 = fig.add_subplot(gs[1, 1])\nfor cat in classification_order:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        log_values = np.log10(values)\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        ax4.hist(log_values, bins=20, alpha=0.5, label=label,",
+        "peekOfCode": "ax4 = fig.add_subplot(gs[1, 1])\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        log_values = np.log10(values)\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        ax4.hist(log_values, bins=20, alpha=0.5, label=label,",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1702,7 +2494,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "ax5 = fig.add_subplot(gs[2, 0])\nfor cat in classification_order:\n    if cat in groups_with_values:\n        values = sorted(groups_with_values[cat])\n        cumulative = np.arange(1, len(values) + 1) / len(values) * 100\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        ax5.plot(values, cumulative, linewidth=2.5, label=label,",
+        "peekOfCode": "ax5 = fig.add_subplot(gs[2, 0])\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        values = sorted(groups_with_values[cat])\n        cumulative = np.arange(1, len(values) + 1) / len(values) * 100\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        ax5.plot(values, cumulative, linewidth=2.5, label=label,",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1711,7 +2503,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "ax6 = fig.add_subplot(gs[2, 1])\nax6.axis('off')\n# Calculate statistics\nstats_data = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')",
+        "peekOfCode": "ax6 = fig.add_subplot(gs[2, 1])\nax6.axis('off')\n# Calculate statistics\nstats_data = []\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1720,7 +2512,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_group_distribution",
         "description": "core_pipeline.visualize_group_distribution",
-        "peekOfCode": "stats_data = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        stats_data.append([\n            label,",
+        "peekOfCode": "stats_data = []\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')\n        label = label.replace('cluster', 'C').replace('enrichment', 'E')\n        label = label.replace(' + ', '+')\n        stats_data.append([\n            label,",
         "detail": "core_pipeline.visualize_group_distribution",
         "documentation": {}
     },
@@ -1743,11 +2535,20 @@
         "documentation": {}
     },
     {
+        "label": "output_file",
+        "kind": 5,
+        "importPath": "core_pipeline.visualize_group_distribution",
+        "description": "core_pipeline.visualize_group_distribution",
+        "peekOfCode": "output_file = OUTPUT_DIR / 'liver_ntpm_group_distribution.png'\nplt.savefig(output_file, dpi=DPI, bbox_inches='tight')\nprint(f\"\\nComprehensive group distribution saved to: {output_file}\")\n# Print summary\nprint(\"\\n=== Summary Statistics ===\")\nfor cat in CLASSIFICATION_ORDER:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        print(f\"\\n{cat}:\")\n        print(f\"  N: {len(values)}\")",
+        "detail": "core_pipeline.visualize_group_distribution",
+        "documentation": {}
+    },
+    {
         "label": "trace_data",
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "trace_data = pd.read_csv('Trace/Data tracing.csv')\n# Filter genes with liver nTPM values and sort by value\nliver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nliver_genes = liver_genes.sort_values('liver_nTPM_value', ascending=False)\n# Check liver protein_2 group (no nTPM values expected)\nliver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))",
+        "peekOfCode": "trace_data = pd.read_csv(TRACE_DATA_FILE)\n# Filter genes with liver nTPM values and sort by value\nliver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nliver_genes = liver_genes.sort_values('liver_nTPM_value', ascending=False)\n# Check liver protein_2 group (no nTPM values expected)\nliver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1765,7 +2566,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "liver_genes = liver_genes.sort_values('liver_nTPM_value', ascending=False)\n# Check liver protein_2 group (no nTPM values expected)\nliver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))\n# 1. Create horizontal bar plot for top genes\nfig, axes = plt.subplots(2, 1, figsize=(14, 16))\n# Top 50 genes",
+        "peekOfCode": "liver_genes = liver_genes.sort_values('liver_nTPM_value', ascending=False)\n# Check liver protein_2 group (no nTPM values expected)\nliver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))\n# 1. Create horizontal bar plot for top genes\nfig, axes = plt.subplots(2, 1, figsize=(14, 16))\n# Top N genes from config",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1774,16 +2575,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "liver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))\n# 1. Create horizontal bar plot for top genes\nfig, axes = plt.subplots(2, 1, figsize=(14, 16))\n# Top 50 genes\ntop_n = 50\ntop_genes = liver_genes.head(top_n)",
-        "detail": "core_pipeline.visualize_ntpm",
-        "documentation": {}
-    },
-    {
-        "label": "top_n",
-        "kind": 5,
-        "importPath": "core_pipeline.visualize_ntpm",
-        "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "top_n = 50\ntop_genes = liver_genes.head(top_n)\n# Color by classification - improved contrast with new 4-category system\ncolor_map = {\n    # High nTPM (>=100) categories\n    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',  # Bright red - highest priority\n    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',  # Light red\n    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',  # Orange-red\n    'liver protein (nTPM≥100 only)': '#FFB6B6',  # Very light red\n    # Low nTPM (<100) categories",
+        "peekOfCode": "liver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))\n# 1. Create horizontal bar plot for top genes\nfig, axes = plt.subplots(2, 1, figsize=(14, 16))\n# Top N genes from config\ntop_genes = liver_genes.head(TOP_N_GENES)\n# Use shared color map from visualization_config",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1792,16 +2584,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "top_genes = liver_genes.head(top_n)\n# Color by classification - improved contrast with new 4-category system\ncolor_map = {\n    # High nTPM (>=100) categories\n    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',  # Bright red - highest priority\n    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',  # Light red\n    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',  # Orange-red\n    'liver protein (nTPM≥100 only)': '#FFB6B6',  # Very light red\n    # Low nTPM (<100) categories\n    'liver protein (nTPM<100 + cluster + enrichment)': '#4169E1',  # Royal blue",
-        "detail": "core_pipeline.visualize_ntpm",
-        "documentation": {}
-    },
-    {
-        "label": "color_map",
-        "kind": 5,
-        "importPath": "core_pipeline.visualize_ntpm",
-        "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "color_map = {\n    # High nTPM (>=100) categories\n    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',  # Bright red - highest priority\n    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',  # Light red\n    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',  # Orange-red\n    'liver protein (nTPM≥100 only)': '#FFB6B6',  # Very light red\n    # Low nTPM (<100) categories\n    'liver protein (nTPM<100 + cluster + enrichment)': '#4169E1',  # Royal blue\n    'liver protein (nTPM<100 + cluster)': '#87CEEB',  # Sky blue\n    'liver protein (nTPM<100 + enrichment)': '#ADD8E6',  # Light blue",
+        "peekOfCode": "top_genes = liver_genes.head(TOP_N_GENES)\n# Use shared color map from visualization_config\ncolors = []\nfor classification in top_genes['Classification']:\n    colors.append(CLASSIFICATION_COLOR_MAP.get(classification, '#CCCCCC'))\n# Plot top 50\nax1 = axes[0]\nbars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colors, edgecolor='black', linewidth=0.5)\nax1.set_yticks(range(len(top_genes)))\nax1.set_yticklabels(top_genes['Gene'], fontsize=9)",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1810,7 +2593,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "colors = []\nfor classification in top_genes['Classification']:\n    colors.append(color_map.get(classification, '#CCCCCC'))\n# Plot top 50\nax1 = axes[0]\nbars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colors, edgecolor='black', linewidth=0.5)\nax1.set_yticks(range(len(top_genes)))\nax1.set_yticklabels(top_genes['Gene'], fontsize=9)\nax1.set_xlabel('Liver nTPM Value', fontsize=12, fontweight='bold')\nax1.set_title(f'Top {top_n} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)",
+        "peekOfCode": "colors = []\nfor classification in top_genes['Classification']:\n    colors.append(CLASSIFICATION_COLOR_MAP.get(classification, '#CCCCCC'))\n# Plot top 50\nax1 = axes[0]\nbars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colors, edgecolor='black', linewidth=0.5)\nax1.set_yticks(range(len(top_genes)))\nax1.set_yticklabels(top_genes['Gene'], fontsize=9)\nax1.set_xlabel('Liver nTPM Value', fontsize=12, fontweight='bold')\nax1.set_title(f'Top {TOP_N_GENES} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1819,7 +2602,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "ax1 = axes[0]\nbars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colors, edgecolor='black', linewidth=0.5)\nax1.set_yticks(range(len(top_genes)))\nax1.set_yticklabels(top_genes['Gene'], fontsize=9)\nax1.set_xlabel('Liver nTPM Value', fontsize=12, fontweight='bold')\nax1.set_title(f'Top {top_n} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)\nax1.invert_yaxis()\nax1.grid(axis='x', alpha=0.3, linestyle='--')\n# Add value labels on bars\nfor i, (idx, row) in enumerate(top_genes.iterrows()):",
+        "peekOfCode": "ax1 = axes[0]\nbars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colors, edgecolor='black', linewidth=0.5)\nax1.set_yticks(range(len(top_genes)))\nax1.set_yticklabels(top_genes['Gene'], fontsize=9)\nax1.set_xlabel('Liver nTPM Value', fontsize=12, fontweight='bold')\nax1.set_title(f'Top {TOP_N_GENES} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)\nax1.invert_yaxis()\nax1.grid(axis='x', alpha=0.3, linestyle='--')\n# Add value labels on bars\nfor i, (idx, row) in enumerate(top_genes.iterrows()):",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1828,7 +2611,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "bars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colors, edgecolor='black', linewidth=0.5)\nax1.set_yticks(range(len(top_genes)))\nax1.set_yticklabels(top_genes['Gene'], fontsize=9)\nax1.set_xlabel('Liver nTPM Value', fontsize=12, fontweight='bold')\nax1.set_title(f'Top {top_n} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)\nax1.invert_yaxis()\nax1.grid(axis='x', alpha=0.3, linestyle='--')\n# Add value labels on bars\nfor i, (idx, row) in enumerate(top_genes.iterrows()):\n    value = row['liver_nTPM_value']",
+        "peekOfCode": "bars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colors, edgecolor='black', linewidth=0.5)\nax1.set_yticks(range(len(top_genes)))\nax1.set_yticklabels(top_genes['Gene'], fontsize=9)\nax1.set_xlabel('Liver nTPM Value', fontsize=12, fontweight='bold')\nax1.set_title(f'Top {TOP_N_GENES} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)\nax1.invert_yaxis()\nax1.grid(axis='x', alpha=0.3, linestyle='--')\n# Add value labels on bars\nfor i, (idx, row) in enumerate(top_genes.iterrows()):\n    value = row['liver_nTPM_value']",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1855,7 +2638,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "ax2 = axes[1]\nliver_genes_sorted = liver_genes.sort_values('liver_nTPM_value', ascending=True)\nx_positions = range(len(liver_genes_sorted))\nvalues = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(color_map.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')",
+        "peekOfCode": "ax2 = axes[1]\nliver_genes_sorted = liver_genes.sort_values('liver_nTPM_value', ascending=True)\nx_positions = range(len(liver_genes_sorted))\nvalues = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification using shared color map\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(CLASSIFICATION_COLOR_MAP.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1864,7 +2647,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "liver_genes_sorted = liver_genes.sort_values('liver_nTPM_value', ascending=True)\nx_positions = range(len(liver_genes_sorted))\nvalues = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(color_map.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')\nax2.set_ylabel('Liver nTPM Value (log scale)', fontsize=12, fontweight='bold')",
+        "peekOfCode": "liver_genes_sorted = liver_genes.sort_values('liver_nTPM_value', ascending=True)\nx_positions = range(len(liver_genes_sorted))\nvalues = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification using shared color map\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(CLASSIFICATION_COLOR_MAP.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')\nax2.set_ylabel('Liver nTPM Value (log scale)', fontsize=12, fontweight='bold')",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1873,7 +2656,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "x_positions = range(len(liver_genes_sorted))\nvalues = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(color_map.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')\nax2.set_ylabel('Liver nTPM Value (log scale)', fontsize=12, fontweight='bold')\nax2.set_yscale('log')",
+        "peekOfCode": "x_positions = range(len(liver_genes_sorted))\nvalues = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification using shared color map\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(CLASSIFICATION_COLOR_MAP.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')\nax2.set_ylabel('Liver nTPM Value (log scale)', fontsize=12, fontweight='bold')\nax2.set_yscale('log')",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1882,7 +2665,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "values = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(color_map.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')\nax2.set_ylabel('Liver nTPM Value (log scale)', fontsize=12, fontweight='bold')\nax2.set_yscale('log')\nax2.set_title('Distribution of Liver nTPM Values Across All Genes', fontsize=14, fontweight='bold', pad=15)",
+        "peekOfCode": "values = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification using shared color map\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(CLASSIFICATION_COLOR_MAP.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')\nax2.set_ylabel('Liver nTPM Value (log scale)', fontsize=12, fontweight='bold')\nax2.set_yscale('log')\nax2.set_title('Distribution of Liver nTPM Values Across All Genes', fontsize=14, fontweight='bold', pad=15)",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -1891,7 +2674,7 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "scatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(color_map.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')\nax2.set_ylabel('Liver nTPM Value (log scale)', fontsize=12, fontweight='bold')\nax2.set_yscale('log')\nax2.set_title('Distribution of Liver nTPM Values Across All Genes', fontsize=14, fontweight='bold', pad=15)\nax2.grid(True, alpha=0.3, linestyle='--')\n# Create legend with updated classifications",
+        "peekOfCode": "scatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    scatter_colors.append(CLASSIFICATION_COLOR_MAP.get(classification, '#CCCCCC'))\nax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)\nax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')\nax2.set_ylabel('Liver nTPM Value (log scale)', fontsize=12, fontweight='bold')\nax2.set_yscale('log')\nax2.set_title('Distribution of Liver nTPM Values Across All Genes', fontsize=14, fontweight='bold', pad=15)\nax2.grid(True, alpha=0.3, linestyle='--')\n# Create legend with updated classifications",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -2022,11 +2805,11 @@
         "documentation": {}
     },
     {
-        "label": "liver_genes_detailed",
+        "label": "output_file",
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "liver_genes_detailed = liver_genes[['Gene', 'liver_nTPM_value', 'Classification',\n                                     'RNA tissue specific nTPM', 'Tissue expression cluster']].copy()\nliver_genes_detailed = liver_genes_detailed.sort_values('liver_nTPM_value', ascending=False)\nliver_genes_detailed.to_csv('Trace/liver_genes_sorted_by_ntpm.csv', index=False)\nprint(f\"Detailed sorted gene list saved to: Trace/liver_genes_sorted_by_ntpm.csv\")\nprint(\"\\nAll visualizations completed successfully!\")\nprint(f\"\\nGenerated files:\")\nprint(f\"1. output/liver_ntpm_distribution.png - Top 50 bar chart and distribution\")\nprint(f\"2. Trace/liver_genes_sorted_by_ntpm.csv - Complete sorted gene list\")",
+        "peekOfCode": "output_file = OUTPUT_DIR / 'liver_ntpm_distribution.png'\nplt.savefig(output_file, dpi=DPI, bbox_inches='tight')\nprint(f\"\\nDistribution plot saved to: {output_file}\")\nplt.close()\n# 3. Create a detailed table with all genes sorted by nTPM value\nprint(\"\\nCreating detailed CSV file sorted by nTPM value...\")\nliver_genes_detailed = liver_genes[['Gene', 'liver_nTPM_value', 'Classification',\n                                     'RNA tissue specific nTPM', 'Tissue expression cluster']].copy()\nliver_genes_detailed = liver_genes_detailed.sort_values('liver_nTPM_value', ascending=False)\nsorted_genes_file = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
@@ -2035,71 +2818,26 @@
         "kind": 5,
         "importPath": "core_pipeline.visualize_ntpm",
         "description": "core_pipeline.visualize_ntpm",
-        "peekOfCode": "liver_genes_detailed = liver_genes_detailed.sort_values('liver_nTPM_value', ascending=False)\nliver_genes_detailed.to_csv('Trace/liver_genes_sorted_by_ntpm.csv', index=False)\nprint(f\"Detailed sorted gene list saved to: Trace/liver_genes_sorted_by_ntpm.csv\")\nprint(\"\\nAll visualizations completed successfully!\")\nprint(f\"\\nGenerated files:\")\nprint(f\"1. output/liver_ntpm_distribution.png - Top 50 bar chart and distribution\")\nprint(f\"2. Trace/liver_genes_sorted_by_ntpm.csv - Complete sorted gene list\")",
+        "peekOfCode": "liver_genes_detailed = liver_genes[['Gene', 'liver_nTPM_value', 'Classification',\n                                     'RNA tissue specific nTPM', 'Tissue expression cluster']].copy()\nliver_genes_detailed = liver_genes_detailed.sort_values('liver_nTPM_value', ascending=False)\nsorted_genes_file = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nliver_genes_detailed.to_csv(sorted_genes_file, index=False)\nprint(f\"Detailed sorted gene list saved to: {sorted_genes_file}\")\nprint(\"\\nAll visualizations completed successfully!\")\nprint(f\"\\nGenerated files:\")\nprint(f\"1. {output_file} - Top {TOP_N_GENES} bar chart and distribution\")\nprint(f\"2. {sorted_genes_file} - Complete sorted gene list\")",
         "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
     {
-        "label": "Colors",
-        "kind": 6,
-        "importPath": "run_pipeline",
-        "description": "run_pipeline",
-        "peekOfCode": "class Colors:\n    HEADER = '\\033[95m'\n    OKBLUE = '\\033[94m'\n    OKCYAN = '\\033[96m'\n    OKGREEN = '\\033[92m'\n    WARNING = '\\033[93m'\n    FAIL = '\\033[91m'\n    ENDC = '\\033[0m'\n    BOLD = '\\033[1m'\n    UNDERLINE = '\\033[4m'",
-        "detail": "run_pipeline",
+        "label": "liver_genes_detailed",
+        "kind": 5,
+        "importPath": "core_pipeline.visualize_ntpm",
+        "description": "core_pipeline.visualize_ntpm",
+        "peekOfCode": "liver_genes_detailed = liver_genes_detailed.sort_values('liver_nTPM_value', ascending=False)\nsorted_genes_file = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nliver_genes_detailed.to_csv(sorted_genes_file, index=False)\nprint(f\"Detailed sorted gene list saved to: {sorted_genes_file}\")\nprint(\"\\nAll visualizations completed successfully!\")\nprint(f\"\\nGenerated files:\")\nprint(f\"1. {output_file} - Top {TOP_N_GENES} bar chart and distribution\")\nprint(f\"2. {sorted_genes_file} - Complete sorted gene list\")",
+        "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
     {
-        "label": "print_header",
-        "kind": 2,
-        "importPath": "run_pipeline",
-        "description": "run_pipeline",
-        "peekOfCode": "def print_header(message):\n    \"\"\"Print a formatted header message\"\"\"\n    print(f\"\\n{Colors.HEADER}{Colors.BOLD}{'='*80}{Colors.ENDC}\")\n    print(f\"{Colors.HEADER}{Colors.BOLD}{message:^80}{Colors.ENDC}\")\n    print(f\"{Colors.HEADER}{Colors.BOLD}{'='*80}{Colors.ENDC}\\n\")\ndef print_step(step_num, total_steps, message):\n    \"\"\"Print a formatted step message\"\"\"\n    print(f\"\\n{Colors.OKCYAN}{Colors.BOLD}[Step {step_num}/{total_steps}]{Colors.ENDC} {message}\")\ndef print_success(message):\n    \"\"\"Print a success message\"\"\"",
-        "detail": "run_pipeline",
-        "documentation": {}
-    },
-    {
-        "label": "print_step",
-        "kind": 2,
-        "importPath": "run_pipeline",
-        "description": "run_pipeline",
-        "peekOfCode": "def print_step(step_num, total_steps, message):\n    \"\"\"Print a formatted step message\"\"\"\n    print(f\"\\n{Colors.OKCYAN}{Colors.BOLD}[Step {step_num}/{total_steps}]{Colors.ENDC} {message}\")\ndef print_success(message):\n    \"\"\"Print a success message\"\"\"\n    print(f\"{Colors.OKGREEN}✓ {message}{Colors.ENDC}\")\ndef print_error(message):\n    \"\"\"Print an error message\"\"\"\n    print(f\"{Colors.FAIL}✗ {message}{Colors.ENDC}\")\ndef print_warning(message):",
-        "detail": "run_pipeline",
-        "documentation": {}
-    },
-    {
-        "label": "print_success",
-        "kind": 2,
-        "importPath": "run_pipeline",
-        "description": "run_pipeline",
-        "peekOfCode": "def print_success(message):\n    \"\"\"Print a success message\"\"\"\n    print(f\"{Colors.OKGREEN}✓ {message}{Colors.ENDC}\")\ndef print_error(message):\n    \"\"\"Print an error message\"\"\"\n    print(f\"{Colors.FAIL}✗ {message}{Colors.ENDC}\")\ndef print_warning(message):\n    \"\"\"Print a warning message\"\"\"\n    print(f\"{Colors.WARNING}⚠ {message}{Colors.ENDC}\")\ndef print_info(message):",
-        "detail": "run_pipeline",
-        "documentation": {}
-    },
-    {
-        "label": "print_error",
-        "kind": 2,
-        "importPath": "run_pipeline",
-        "description": "run_pipeline",
-        "peekOfCode": "def print_error(message):\n    \"\"\"Print an error message\"\"\"\n    print(f\"{Colors.FAIL}✗ {message}{Colors.ENDC}\")\ndef print_warning(message):\n    \"\"\"Print a warning message\"\"\"\n    print(f\"{Colors.WARNING}⚠ {message}{Colors.ENDC}\")\ndef print_info(message):\n    \"\"\"Print an info message\"\"\"\n    print(f\"{Colors.OKBLUE}ℹ {message}{Colors.ENDC}\")\ndef run_script(script_name, description):",
-        "detail": "run_pipeline",
-        "documentation": {}
-    },
-    {
-        "label": "print_warning",
-        "kind": 2,
-        "importPath": "run_pipeline",
-        "description": "run_pipeline",
-        "peekOfCode": "def print_warning(message):\n    \"\"\"Print a warning message\"\"\"\n    print(f\"{Colors.WARNING}⚠ {message}{Colors.ENDC}\")\ndef print_info(message):\n    \"\"\"Print an info message\"\"\"\n    print(f\"{Colors.OKBLUE}ℹ {message}{Colors.ENDC}\")\ndef run_script(script_name, description):\n    \"\"\"\n    Run a Python script and return success status\n    Args:",
-        "detail": "run_pipeline",
-        "documentation": {}
-    },
-    {
-        "label": "print_info",
-        "kind": 2,
-        "importPath": "run_pipeline",
-        "description": "run_pipeline",
-        "peekOfCode": "def print_info(message):\n    \"\"\"Print an info message\"\"\"\n    print(f\"{Colors.OKBLUE}ℹ {message}{Colors.ENDC}\")\ndef run_script(script_name, description):\n    \"\"\"\n    Run a Python script and return success status\n    Args:\n        script_name (str): Name of the Python script to run\n        description (str): Description of what the script does\n    Returns:",
-        "detail": "run_pipeline",
+        "label": "sorted_genes_file",
+        "kind": 5,
+        "importPath": "core_pipeline.visualize_ntpm",
+        "description": "core_pipeline.visualize_ntpm",
+        "peekOfCode": "sorted_genes_file = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'\nliver_genes_detailed.to_csv(sorted_genes_file, index=False)\nprint(f\"Detailed sorted gene list saved to: {sorted_genes_file}\")\nprint(\"\\nAll visualizations completed successfully!\")\nprint(f\"\\nGenerated files:\")\nprint(f\"1. {output_file} - Top {TOP_N_GENES} bar chart and distribution\")\nprint(f\"2. {sorted_genes_file} - Complete sorted gene list\")",
+        "detail": "core_pipeline.visualize_ntpm",
         "documentation": {}
     },
     {

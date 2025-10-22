@@ -14,49 +14,18 @@ Usage:
     python run_pipeline.py --viz-only   # Run only visualization (requires existing data)
 """
 
-import sys
-import subprocess
-import time
+# Standard library imports
 import argparse
+import subprocess
+import sys
+import time
 from pathlib import Path
 
-# ANSI color codes for terminal output
-class Colors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-
-def print_header(message):
-    """Print a formatted header message"""
-    print(f"\n{Colors.HEADER}{Colors.BOLD}{'='*80}{Colors.ENDC}")
-    print(f"{Colors.HEADER}{Colors.BOLD}{message:^80}{Colors.ENDC}")
-    print(f"{Colors.HEADER}{Colors.BOLD}{'='*80}{Colors.ENDC}\n")
-
-def print_step(step_num, total_steps, message):
-    """Print a formatted step message"""
-    print(f"\n{Colors.OKCYAN}{Colors.BOLD}[Step {step_num}/{total_steps}]{Colors.ENDC} {message}")
-
-def print_success(message):
-    """Print a success message"""
-    print(f"{Colors.OKGREEN}✓ {message}{Colors.ENDC}")
-
-def print_error(message):
-    """Print an error message"""
-    print(f"{Colors.FAIL}✗ {message}{Colors.ENDC}")
-
-def print_warning(message):
-    """Print a warning message"""
-    print(f"{Colors.WARNING}⚠ {message}{Colors.ENDC}")
-
-def print_info(message):
-    """Print an info message"""
-    print(f"{Colors.OKBLUE}ℹ {message}{Colors.ENDC}")
+# Local imports
+from core_pipeline.console_utils import (
+    Colors, print_header, print_step, print_success,
+    print_error, print_warning, print_info
+)
 
 def run_script(script_name, description):
     """

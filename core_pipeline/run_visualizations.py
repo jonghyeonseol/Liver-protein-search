@@ -4,44 +4,17 @@ Visualization Runner Module
 This module runs all visualization scripts in sequence to generate comprehensive analysis plots.
 """
 
-import sys
+# Standard library imports
 import subprocess
+import sys
 import time
 from pathlib import Path
 
-# ANSI color codes for terminal output
-class Colors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-
-def print_header(message):
-    """Print a formatted header message"""
-    print(f"\n{Colors.HEADER}{Colors.BOLD}{'='*70}{Colors.ENDC}")
-    print(f"{Colors.HEADER}{Colors.BOLD}{message:^70}{Colors.ENDC}")
-    print(f"{Colors.HEADER}{Colors.BOLD}{'='*70}{Colors.ENDC}\n")
-
-def print_step(step_num, total_steps, message):
-    """Print a formatted step message"""
-    print(f"{Colors.OKCYAN}{Colors.BOLD}[Step {step_num}/{total_steps}]{Colors.ENDC} {message}")
-
-def print_success(message):
-    """Print a success message"""
-    print(f"{Colors.OKGREEN}✓ {message}{Colors.ENDC}")
-
-def print_error(message):
-    """Print an error message"""
-    print(f"{Colors.FAIL}✗ {message}{Colors.ENDC}")
-
-def print_warning(message):
-    """Print a warning message"""
-    print(f"{Colors.WARNING}⚠ {message}{Colors.ENDC}")
+# Local imports
+from console_utils import (
+    Colors, print_header, print_step, print_success,
+    print_error, print_warning
+)
 
 def run_script(script_name, description):
     """

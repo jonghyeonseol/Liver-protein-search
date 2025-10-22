@@ -84,7 +84,9 @@ def calculate_confidence_score(row):
             score += 10
 
     # Criteria count (0-30 points)
-    criteria_count = sum([row['has_liver_nTPM'], row['has_liver_cluster'], row['has_liver_enrichment']])
+    # Check if gene has liver in nTPM (either high or low threshold)
+    has_any_ntpm = row.get('has_liver_nTPM_high', False) or row.get('has_liver_nTPM_low', False)
+    criteria_count = sum([has_any_ntpm, row['has_liver_cluster'], row['has_liver_enrichment']])
     if criteria_count == 3:
         score += 30
     elif criteria_count == 2:
@@ -261,6 +263,7 @@ for i, (bar, val) in enumerate(zip(bars4, stringency_data.values())):
 plt.tight_layout()
 plt.savefig('output/classification_strategy_comparison.png', dpi=300, bbox_inches='tight')
 print("Visualization saved to: output/classification_strategy_comparison.png")
+plt.close()  # Free memory
 
 # ============================================================================
 # RECOMMENDATIONS

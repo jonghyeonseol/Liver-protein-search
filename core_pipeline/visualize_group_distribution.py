@@ -1,7 +1,13 @@
+# Third-party imports
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
 import seaborn as sns
+from matplotlib.lines import Line2D
+
+# Local imports
+from config import TRACE_DATA_FILE, OUTPUT_DIR, DPI
+from visualization_config import CLASSIFICATION_COLOR_MAP, CLASSIFICATION_ORDER
 
 # Set style for better aesthetics
 plt.style.use('seaborn-v0_8-darkgrid')
@@ -9,7 +15,7 @@ sns.set_palette("husl")
 
 # Read the trace data
 print("Loading trace data...")
-trace_data = pd.read_csv('Trace/Data tracing.csv')
+trace_data = pd.read_csv(TRACE_DATA_FILE)
 
 # Filter genes with liver nTPM values
 liver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()
@@ -19,46 +25,9 @@ print(f"Total genes with liver nTPM values: {len(liver_genes)}")
 # Group by classification
 groups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()
 
-# Color mapping for new 4-category system
-color_map = {
-    # High nTPM (>=100) categories
-    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',
-    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',
-    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',
-    'liver protein (nTPM≥100 only)': '#FFB6B6',
-
-    # Low nTPM (<100) categories
-    'liver protein (nTPM<100 + cluster + enrichment)': '#4169E1',
-    'liver protein (nTPM<100 + cluster)': '#87CEEB',
-    'liver protein (nTPM<100 + enrichment)': '#ADD8E6',
-    'liver protein (nTPM<100 only)': '#E0F0FF',
-
-    # Both nTPM levels
-    'liver protein (both nTPM levels)': '#9370DB',
-    'liver protein (both nTPM + cluster)': '#8B008B',
-    'liver protein (both nTPM + enrichment)': '#BA55D3',
-    'liver protein (all 4)': '#4B0082',
-
-    # No nTPM categories
-    'liver protein (cluster + enrichment)': '#A8E6CF',
-    'liver protein (cluster only)': '#95E1D3',
-    'liver protein (enrichment only)': '#C7CEEA'
-}
-
-# Order of classifications for display (only those with nTPM values)
-classification_order = [
-    'liver protein (nTPM≥100 + cluster + enrichment)',
-    'liver protein (nTPM≥100 + cluster)',
-    'liver protein (nTPM≥100 + enrichment)',
-    'liver protein (nTPM≥100 only)',
-    'liver protein (nTPM<100 + cluster + enrichment)',
-    'liver protein (nTPM<100 + cluster)',
-    'liver protein (nTPM<100 + enrichment)',
-    'liver protein (nTPM<100 only)'
-]
-
-# Filter groups that have nTPM values
-groups_with_values = {k: v for k, v in groups.items() if k in classification_order}
+# Use shared color map and classification order from visualization_config
+# Filter groups that have nTPM values (only those in CLASSIFICATION_ORDER)
+groups_with_values = {k: v for k, v in groups.items() if k in CLASSIFICATION_ORDER}
 
 # Create figure with multiple subplots - improved layout
 fig = plt.figure(figsize=(22, 16), facecolor='white')
@@ -70,10 +39,10 @@ fig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',
 
 # 1. Box Plot (Top Left)
 ax1 = fig.add_subplot(gs[0, 0])
-data_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]
+data_for_box = [groups_with_values[cat] for cat in CLASSIFICATION_ORDER if cat in groups_with_values]
 # Shorten labels for better display
 labels_for_box = []
-for cat in classification_order:
+for cat in CLASSIFICATION_ORDER:
     if cat in groups_with_values:
         label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')
         label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')
@@ -90,9 +59,9 @@ bp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,
                  capprops=dict(linewidth=1.5),
                  flierprops=dict(marker='o', markersize=4, alpha=0.5))
 
-# Color the boxes
-for patch, cat in zip(bp['boxes'], [c for c in classification_order if c in groups_with_values]):
-    patch.set_facecolor(color_map[cat])
+# Color the boxes using shared color map
+for patch, cat in zip(bp['boxes'], [c for c in CLASSIFICATION_ORDER if c in groups_with_values]):
+    patch.set_facecolor(CLASSIFICATION_COLOR_MAP[cat])
     patch.set_alpha(0.7)
 
 ax1.set_yscale('log')
@@ -103,7 +72,6 @@ ax1.set_facecolor('#F8F9FA')
 plt.setp(ax1.xaxis.get_majorticklabels(), rotation=20, ha='right', fontsize=11)
 
 # Add legend
-from matplotlib.lines import Line2D
 legend_elements = [
     Line2D([0], [0], color='red', linewidth=2.5, label='Median'),
     Line2D([0], [0], color='blue', linewidth=2.5, linestyle='--', label='Mean')
@@ -118,7 +86,7 @@ violin_data = []
 violin_labels = []
 violin_colors = []
 
-for cat in classification_order:
+for cat in CLASSIFICATION_ORDER:
     if cat in groups_with_values:
         violin_data.append(groups_with_values[cat])
         label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')
@@ -126,7 +94,7 @@ for cat in classification_order:
         label = label.replace('cluster', 'C').replace('enrichment', 'E')
         label = label.replace(' + ', '+')
         violin_labels.append(label)
-        violin_colors.append(color_map[cat])
+        violin_colors.append(CLASSIFICATION_COLOR_MAP[cat])
 
 parts = ax2.violinplot(violin_data, positions=range(len(violin_data)),
                        showmeans=True, showmedians=True, widths=0.7)
@@ -159,12 +127,12 @@ positions = []
 all_values = []
 all_colors = []
 
-for i, cat in enumerate(classification_order):
+for i, cat in enumerate(CLASSIFICATION_ORDER):
     if cat in groups_with_values:
         values = groups_with_values[cat]
         positions.extend([i] * len(values))
         all_values.extend(values)
-        all_colors.extend([color_map[cat]] * len(values))
+        all_colors.extend([CLASSIFICATION_COLOR_MAP[cat]] * len(values))
 
 # Add jitter to x positions
 np.random.seed(42)
@@ -192,7 +160,7 @@ ax3.set_facecolor('#F8F9FA')
 # 4. Histogram/Density Plot (Middle Right)
 ax4 = fig.add_subplot(gs[1, 1])
 
-for cat in classification_order:
+for cat in CLASSIFICATION_ORDER:
     if cat in groups_with_values:
         values = np.array(groups_with_values[cat])
         log_values = np.log10(values)
@@ -201,7 +169,7 @@ for cat in classification_order:
         label = label.replace('cluster', 'C').replace('enrichment', 'E')
         label = label.replace(' + ', '+')
         ax4.hist(log_values, bins=20, alpha=0.5, label=label,
-                color=color_map[cat], edgecolor='black', linewidth=1)
+                color=CLASSIFICATION_COLOR_MAP[cat], edgecolor='black', linewidth=1)
 
 ax4.set_xlabel('Log10(Liver nTPM Value)', fontsize=13, fontweight='bold')
 ax4.set_ylabel('Frequency', fontsize=13, fontweight='bold')
@@ -213,7 +181,7 @@ ax4.set_facecolor('#F8F9FA')
 # 5. Cumulative Distribution (Bottom Left)
 ax5 = fig.add_subplot(gs[2, 0])
 
-for cat in classification_order:
+for cat in CLASSIFICATION_ORDER:
     if cat in groups_with_values:
         values = sorted(groups_with_values[cat])
         cumulative = np.arange(1, len(values) + 1) / len(values) * 100
@@ -222,7 +190,7 @@ for cat in classification_order:
         label = label.replace('cluster', 'C').replace('enrichment', 'E')
         label = label.replace(' + ', '+')
         ax5.plot(values, cumulative, linewidth=2.5, label=label,
-                color=color_map[cat], marker='o', markersize=3, markevery=max(1, len(values)//20))
+                color=CLASSIFICATION_COLOR_MAP[cat], marker='o', markersize=3, markevery=max(1, len(values)//20))
 
 ax5.set_xscale('log')
 ax5.set_xlabel('Liver nTPM Value (log scale)', fontsize=13, fontweight='bold')
@@ -239,7 +207,7 @@ ax6.axis('off')
 
 # Calculate statistics
 stats_data = []
-for cat in classification_order:
+for cat in CLASSIFICATION_ORDER:
     if cat in groups_with_values:
         values = np.array(groups_with_values[cat])
         label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')
@@ -275,22 +243,23 @@ for i in range(len(column_labels)):
     cell.set_text_props(weight='bold', color='white', fontsize=11)
 
 # Color rows by group
-for i, cat in enumerate([c for c in classification_order if c in groups_with_values]):
+for i, cat in enumerate([c for c in CLASSIFICATION_ORDER if c in groups_with_values]):
     for j in range(len(column_labels)):
         cell = table[(i+1, j)]
-        cell.set_facecolor(color_map[cat])
+        cell.set_facecolor(CLASSIFICATION_COLOR_MAP[cat])
         cell.set_alpha(0.3)
         cell.set_text_props(fontsize=10)
 
 ax6.set_title('Summary Statistics by Group', fontsize=15, fontweight='bold', pad=25)
 
 # Save the comprehensive figure
-plt.savefig('output/liver_ntpm_group_distribution.png', dpi=300, bbox_inches='tight')
-print(f"\nComprehensive group distribution saved to: output/liver_ntpm_group_distribution.png")
+output_file = OUTPUT_DIR / 'liver_ntpm_group_distribution.png'
+plt.savefig(output_file, dpi=DPI, bbox_inches='tight')
+print(f"\nComprehensive group distribution saved to: {output_file}")
 
 # Print summary
 print("\n=== Summary Statistics ===")
-for cat in classification_order:
+for cat in CLASSIFICATION_ORDER:
     if cat in groups_with_values:
         values = np.array(groups_with_values[cat])
         print(f"\n{cat}:")

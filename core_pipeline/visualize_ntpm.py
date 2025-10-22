@@ -1,10 +1,19 @@
+# Third-party imports
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
+from matplotlib.patches import Patch
+
+# Local imports
+from config import (
+    TRACE_DATA_FILE, OUTPUT_DIR, TRACE_DIR,
+    TOP_N_GENES, DPI
+)
+from visualization_config import CLASSIFICATION_COLOR_MAP
 
 # Read the trace data
 print("Loading trace data...")
-trace_data = pd.read_csv('Trace/Data tracing.csv')
+trace_data = pd.read_csv(TRACE_DATA_FILE)
 
 # Filter genes with liver nTPM values and sort by value
 liver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()
@@ -21,40 +30,13 @@ print(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))
 # 1. Create horizontal bar plot for top genes
 fig, axes = plt.subplots(2, 1, figsize=(14, 16))
 
-# Top 50 genes
-top_n = 50
-top_genes = liver_genes.head(top_n)
+# Top N genes from config
+top_genes = liver_genes.head(TOP_N_GENES)
 
-# Color by classification - improved contrast with new 4-category system
-color_map = {
-    # High nTPM (>=100) categories
-    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',  # Bright red - highest priority
-    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',  # Light red
-    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',  # Orange-red
-    'liver protein (nTPM≥100 only)': '#FFB6B6',  # Very light red
-
-    # Low nTPM (<100) categories
-    'liver protein (nTPM<100 + cluster + enrichment)': '#4169E1',  # Royal blue
-    'liver protein (nTPM<100 + cluster)': '#87CEEB',  # Sky blue
-    'liver protein (nTPM<100 + enrichment)': '#ADD8E6',  # Light blue
-    'liver protein (nTPM<100 only)': '#E0F0FF',  # Very light blue
-
-    # Both nTPM levels
-    'liver protein (both nTPM levels)': '#9370DB',  # Medium purple
-    'liver protein (both nTPM + cluster)': '#8B008B',  # Dark magenta
-    'liver protein (both nTPM + enrichment)': '#BA55D3',  # Medium orchid
-    'liver protein (all 4)': '#4B0082',  # Indigo - ultimate priority
-
-    # No nTPM categories
-    'liver protein (cluster + enrichment)': '#A8E6CF',  # Mint green
-    'liver protein (cluster only)': '#95E1D3',  # Light teal
-    'liver protein (enrichment only)': '#C7CEEA',  # Light periwinkle
-    'non-liver protein': '#E8E8E8'  # Light gray for non-liver
-}
-
+# Use shared color map from visualization_config
 colors = []
 for classification in top_genes['Classification']:
-    colors.append(color_map.get(classification, '#CCCCCC'))
+    colors.append(CLASSIFICATION_COLOR_MAP.get(classification, '#CCCCCC'))
 
 # Plot top 50
 ax1 = axes[0]
@@ -62,7 +44,7 @@ bars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colo
 ax1.set_yticks(range(len(top_genes)))
 ax1.set_yticklabels(top_genes['Gene'], fontsize=9)
 ax1.set_xlabel('Liver nTPM Value', fontsize=12, fontweight='bold')
-ax1.set_title(f'Top {top_n} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)
+ax1.set_title(f'Top {TOP_N_GENES} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)
 ax1.invert_yaxis()
 ax1.grid(axis='x', alpha=0.3, linestyle='--')
 
@@ -73,7 +55,6 @@ for i, (idx, row) in enumerate(top_genes.iterrows()):
              va='center', fontsize=8, fontweight='bold')
 
 # Add legend - show only categories that appear in top genes
-from matplotlib.patches import Patch
 unique_classifications = top_genes['Classification'].unique()
 legend_elements = []
 
@@ -105,10 +86,10 @@ liver_genes_sorted = liver_genes.sort_values('liver_nTPM_value', ascending=True)
 x_positions = range(len(liver_genes_sorted))
 values = liver_genes_sorted['liver_nTPM_value'].values
 
-# Color by classification
+# Color by classification using shared color map
 scatter_colors = []
 for classification in liver_genes_sorted['Classification']:
-    scatter_colors.append(color_map.get(classification, '#CCCCCC'))
+    scatter_colors.append(CLASSIFICATION_COLOR_MAP.get(classification, '#CCCCCC'))
 
 ax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)
 ax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')
@@ -185,8 +166,9 @@ ax2.text(0.98, 0.05, stats_text, transform=ax2.transAxes,
          bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
 
 plt.tight_layout()
-plt.savefig('output/liver_ntpm_distribution.png', dpi=300, bbox_inches='tight')
-print(f"\nDistribution plot saved to: output/liver_ntpm_distribution.png")
+output_file = OUTPUT_DIR / 'liver_ntpm_distribution.png'
+plt.savefig(output_file, dpi=DPI, bbox_inches='tight')
+print(f"\nDistribution plot saved to: {output_file}")
 plt.close()
 
 # 3. Create a detailed table with all genes sorted by nTPM value
@@ -194,10 +176,11 @@ print("\nCreating detailed CSV file sorted by nTPM value...")
 liver_genes_detailed = liver_genes[['Gene', 'liver_nTPM_value', 'Classification',
                                      'RNA tissue specific nTPM', 'Tissue expression cluster']].copy()
 liver_genes_detailed = liver_genes_detailed.sort_values('liver_nTPM_value', ascending=False)
-liver_genes_detailed.to_csv('Trace/liver_genes_sorted_by_ntpm.csv', index=False)
-print(f"Detailed sorted gene list saved to: Trace/liver_genes_sorted_by_ntpm.csv")
+sorted_genes_file = TRACE_DIR / 'liver_genes_sorted_by_ntpm.csv'
+liver_genes_detailed.to_csv(sorted_genes_file, index=False)
+print(f"Detailed sorted gene list saved to: {sorted_genes_file}")
 
 print("\nAll visualizations completed successfully!")
 print(f"\nGenerated files:")
-print(f"1. output/liver_ntpm_distribution.png - Top 50 bar chart and distribution")
-print(f"2. Trace/liver_genes_sorted_by_ntpm.csv - Complete sorted gene list")
+print(f"1. {output_file} - Top {TOP_N_GENES} bar chart and distribution")
+print(f"2. {sorted_genes_file} - Complete sorted gene list")
