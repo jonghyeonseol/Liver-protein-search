@@ -1,0 +1,494 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "venn3",
+        "importPath": "matplotlib_venn",
+        "description": "matplotlib_venn",
+        "isExtraImport": true,
+        "detail": "matplotlib_venn",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "Patch",
+        "importPath": "matplotlib.patches",
+        "description": "matplotlib.patches",
+        "isExtraImport": true,
+        "detail": "matplotlib.patches",
+        "documentation": {}
+    },
+    {
+        "label": "Patch",
+        "importPath": "matplotlib.patches",
+        "description": "matplotlib.patches",
+        "isExtraImport": true,
+        "detail": "matplotlib.patches",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "extract_liver_ntpm",
+        "kind": 2,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "def extract_liver_ntpm(text):\n    if pd.isna(text) or text == '':\n        return None\n    # Search for pattern \"liver: number\" or \"liver:number\"\n    pattern = r'liver:\\s*(\\d+\\.?\\d*)'\n    match = re.search(pattern, str(text).lower())\n    if match:\n        return float(match.group(1))\n    return None\n# Classification based on the criteria",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "classify_liver_protein",
+        "kind": 2,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "def classify_liver_protein(row):\n    if row['has_liver_nTPM'] and row['has_liver_cluster']:\n        return 'liver protein'\n    elif row['has_liver_nTPM']:\n        return 'liver protein_1'\n    elif row['has_liver_cluster']:\n        return 'liver protein_2'\n    else:\n        return 'non-liver protein'\nmerged_data['Classification'] = merged_data.apply(classify_liver_protein, axis=1)",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "gene_data",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "gene_data = pd.read_csv('input/log2_center_normalization_t_test_Human.csv')\nprotein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\\t')\n# Extract Gene column from gene_data (it's in the \"Gene\" column)\nprint(f\"Total genes in input file: {len(gene_data)}\")\nprint(f\"Total genes in protein atlas: {len(protein_atlas)}\")\n# Merge the two dataframes on Gene column\nmerged_data = gene_data.merge(\n    protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster']],\n    on='Gene',\n    how='left'",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "protein_atlas",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "protein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\\t')\n# Extract Gene column from gene_data (it's in the \"Gene\" column)\nprint(f\"Total genes in input file: {len(gene_data)}\")\nprint(f\"Total genes in protein atlas: {len(protein_atlas)}\")\n# Merge the two dataframes on Gene column\nmerged_data = gene_data.merge(\n    protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster']],\n    on='Gene',\n    how='left'\n)",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "merged_data",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "merged_data = gene_data.merge(\n    protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster']],\n    on='Gene',\n    how='left'\n)\nprint(f\"Total merged records: {len(merged_data)}\")\n# Function to extract liver nTPM value\ndef extract_liver_ntpm(text):\n    if pd.isna(text) or text == '':\n        return None",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "merged_data['liver_nTPM_value']",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "merged_data['liver_nTPM_value'] = merged_data['RNA tissue specific nTPM'].apply(extract_liver_ntpm)\nmerged_data['has_liver_nTPM'] = merged_data['RNA tissue specific nTPM'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')\n# Create classification column\ndef classify_liver_protein(row):\n    if row['has_liver_nTPM'] and row['has_liver_cluster']:\n        return 'liver protein'\n    elif row['has_liver_nTPM']:\n        return 'liver protein_1'\n    elif row['has_liver_cluster']:",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "merged_data['has_liver_nTPM']",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "merged_data['has_liver_nTPM'] = merged_data['RNA tissue specific nTPM'].fillna('').str.lower().str.contains('liver')\nmerged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')\n# Create classification column\ndef classify_liver_protein(row):\n    if row['has_liver_nTPM'] and row['has_liver_cluster']:\n        return 'liver protein'\n    elif row['has_liver_nTPM']:\n        return 'liver protein_1'\n    elif row['has_liver_cluster']:\n        return 'liver protein_2'",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "merged_data['has_liver_cluster']",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "merged_data['has_liver_cluster'] = merged_data['Tissue expression cluster'].fillna('').str.lower().str.contains('liver')\n# Create classification column\ndef classify_liver_protein(row):\n    if row['has_liver_nTPM'] and row['has_liver_cluster']:\n        return 'liver protein'\n    elif row['has_liver_nTPM']:\n        return 'liver protein_1'\n    elif row['has_liver_cluster']:\n        return 'liver protein_2'\n    else:",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "merged_data['Classification']",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "merged_data['Classification'] = merged_data.apply(classify_liver_protein, axis=1)\n# Count each category\nclassification_counts = merged_data['Classification'].value_counts()\nprint(\"\\nClassification Results:\")\nprint(classification_counts)\n# Print statistics about extracted liver nTPM values\nliver_ntpm_stats = merged_data[merged_data['liver_nTPM_value'].notna()]['liver_nTPM_value']\nif len(liver_ntpm_stats) > 0:\n    print(f\"\\nLiver nTPM Value Statistics:\")\n    print(f\"Total genes with liver nTPM values: {len(liver_ntpm_stats)}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "classification_counts",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "classification_counts = merged_data['Classification'].value_counts()\nprint(\"\\nClassification Results:\")\nprint(classification_counts)\n# Print statistics about extracted liver nTPM values\nliver_ntpm_stats = merged_data[merged_data['liver_nTPM_value'].notna()]['liver_nTPM_value']\nif len(liver_ntpm_stats) > 0:\n    print(f\"\\nLiver nTPM Value Statistics:\")\n    print(f\"Total genes with liver nTPM values: {len(liver_ntpm_stats)}\")\n    print(f\"Mean: {liver_ntpm_stats.mean():.2f}\")\n    print(f\"Median: {liver_ntpm_stats.median():.2f}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "liver_ntpm_stats",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "liver_ntpm_stats = merged_data[merged_data['liver_nTPM_value'].notna()]['liver_nTPM_value']\nif len(liver_ntpm_stats) > 0:\n    print(f\"\\nLiver nTPM Value Statistics:\")\n    print(f\"Total genes with liver nTPM values: {len(liver_ntpm_stats)}\")\n    print(f\"Mean: {liver_ntpm_stats.mean():.2f}\")\n    print(f\"Median: {liver_ntpm_stats.median():.2f}\")\n    print(f\"Min: {liver_ntpm_stats.min():.2f}\")\n    print(f\"Max: {liver_ntpm_stats.max():.2f}\")\n# Get gene lists for Venn diagram\nall_genes = set(merged_data['Gene'].tolist())",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "all_genes",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "all_genes = set(merged_data['Gene'].tolist())\nliver_protein_1_genes = set(merged_data[merged_data['has_liver_nTPM']]['Gene'].tolist())\nliver_protein_2_genes = set(merged_data[merged_data['has_liver_cluster']]['Gene'].tolist())\nnon_liver_genes = all_genes - liver_protein_1_genes - liver_protein_2_genes\nliver_protein_both = liver_protein_1_genes & liver_protein_2_genes\ntotal_genes = len(all_genes)\nliver_candidates = len(liver_protein_1_genes | liver_protein_2_genes)\nprint(f\"\\nVenn Diagram Statistics:\")\nprint(f\"Total genes: {total_genes}\")\nprint(f\"Liver protein candidates (union): {liver_candidates}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "liver_protein_1_genes",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "liver_protein_1_genes = set(merged_data[merged_data['has_liver_nTPM']]['Gene'].tolist())\nliver_protein_2_genes = set(merged_data[merged_data['has_liver_cluster']]['Gene'].tolist())\nnon_liver_genes = all_genes - liver_protein_1_genes - liver_protein_2_genes\nliver_protein_both = liver_protein_1_genes & liver_protein_2_genes\ntotal_genes = len(all_genes)\nliver_candidates = len(liver_protein_1_genes | liver_protein_2_genes)\nprint(f\"\\nVenn Diagram Statistics:\")\nprint(f\"Total genes: {total_genes}\")\nprint(f\"Liver protein candidates (union): {liver_candidates}\")\nprint(f\"Non-liver proteins: {len(non_liver_genes)}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "liver_protein_2_genes",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "liver_protein_2_genes = set(merged_data[merged_data['has_liver_cluster']]['Gene'].tolist())\nnon_liver_genes = all_genes - liver_protein_1_genes - liver_protein_2_genes\nliver_protein_both = liver_protein_1_genes & liver_protein_2_genes\ntotal_genes = len(all_genes)\nliver_candidates = len(liver_protein_1_genes | liver_protein_2_genes)\nprint(f\"\\nVenn Diagram Statistics:\")\nprint(f\"Total genes: {total_genes}\")\nprint(f\"Liver protein candidates (union): {liver_candidates}\")\nprint(f\"Non-liver proteins: {len(non_liver_genes)}\")\nprint(f\"Genes with liver in RNA tissue specific nTPM (liver protein_1 total): {len(liver_protein_1_genes)}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "non_liver_genes",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "non_liver_genes = all_genes - liver_protein_1_genes - liver_protein_2_genes\nliver_protein_both = liver_protein_1_genes & liver_protein_2_genes\ntotal_genes = len(all_genes)\nliver_candidates = len(liver_protein_1_genes | liver_protein_2_genes)\nprint(f\"\\nVenn Diagram Statistics:\")\nprint(f\"Total genes: {total_genes}\")\nprint(f\"Liver protein candidates (union): {liver_candidates}\")\nprint(f\"Non-liver proteins: {len(non_liver_genes)}\")\nprint(f\"Genes with liver in RNA tissue specific nTPM (liver protein_1 total): {len(liver_protein_1_genes)}\")\nprint(f\"Genes with liver in Tissue expression cluster (liver protein_2 total): {len(liver_protein_2_genes)}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "liver_protein_both",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "liver_protein_both = liver_protein_1_genes & liver_protein_2_genes\ntotal_genes = len(all_genes)\nliver_candidates = len(liver_protein_1_genes | liver_protein_2_genes)\nprint(f\"\\nVenn Diagram Statistics:\")\nprint(f\"Total genes: {total_genes}\")\nprint(f\"Liver protein candidates (union): {liver_candidates}\")\nprint(f\"Non-liver proteins: {len(non_liver_genes)}\")\nprint(f\"Genes with liver in RNA tissue specific nTPM (liver protein_1 total): {len(liver_protein_1_genes)}\")\nprint(f\"Genes with liver in Tissue expression cluster (liver protein_2 total): {len(liver_protein_2_genes)}\")\nprint(f\"Genes with liver in both (liver protein): {len(liver_protein_both)}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "total_genes",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "total_genes = len(all_genes)\nliver_candidates = len(liver_protein_1_genes | liver_protein_2_genes)\nprint(f\"\\nVenn Diagram Statistics:\")\nprint(f\"Total genes: {total_genes}\")\nprint(f\"Liver protein candidates (union): {liver_candidates}\")\nprint(f\"Non-liver proteins: {len(non_liver_genes)}\")\nprint(f\"Genes with liver in RNA tissue specific nTPM (liver protein_1 total): {len(liver_protein_1_genes)}\")\nprint(f\"Genes with liver in Tissue expression cluster (liver protein_2 total): {len(liver_protein_2_genes)}\")\nprint(f\"Genes with liver in both (liver protein): {len(liver_protein_both)}\")\nprint(f\"Genes only in RNA tissue specific nTPM: {len(liver_protein_1_genes - liver_protein_2_genes)}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "liver_candidates",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "liver_candidates = len(liver_protein_1_genes | liver_protein_2_genes)\nprint(f\"\\nVenn Diagram Statistics:\")\nprint(f\"Total genes: {total_genes}\")\nprint(f\"Liver protein candidates (union): {liver_candidates}\")\nprint(f\"Non-liver proteins: {len(non_liver_genes)}\")\nprint(f\"Genes with liver in RNA tissue specific nTPM (liver protein_1 total): {len(liver_protein_1_genes)}\")\nprint(f\"Genes with liver in Tissue expression cluster (liver protein_2 total): {len(liver_protein_2_genes)}\")\nprint(f\"Genes with liver in both (liver protein): {len(liver_protein_both)}\")\nprint(f\"Genes only in RNA tissue specific nTPM: {len(liver_protein_1_genes - liver_protein_2_genes)}\")\nprint(f\"Genes only in Tissue expression cluster: {len(liver_protein_2_genes - liver_protein_1_genes)}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "fig = plt.figure(figsize=(14, 12))\nax = fig.add_subplot(111)\nvenn = venn3(\n    [liver_protein_1_genes, liver_protein_2_genes, non_liver_genes],\n    set_labels=('', '', ''),  # We'll add custom labels\n    set_colors=('#FFB6C1', '#87CEEB', '#E8E8E8'),\n    alpha=0.65,\n    ax=ax\n)\n# Add title with statistics",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "ax = fig.add_subplot(111)\nvenn = venn3(\n    [liver_protein_1_genes, liver_protein_2_genes, non_liver_genes],\n    set_labels=('', '', ''),  # We'll add custom labels\n    set_colors=('#FFB6C1', '#87CEEB', '#E8E8E8'),\n    alpha=0.65,\n    ax=ax\n)\n# Add title with statistics\ntitle_text = f'Liver Protein Classification'",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "venn",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "venn = venn3(\n    [liver_protein_1_genes, liver_protein_2_genes, non_liver_genes],\n    set_labels=('', '', ''),  # We'll add custom labels\n    set_colors=('#FFB6C1', '#87CEEB', '#E8E8E8'),\n    alpha=0.65,\n    ax=ax\n)\n# Add title with statistics\ntitle_text = f'Liver Protein Classification'\nsubtitle_text = f'Total: {total_genes} proteins | Liver candidates: {liver_candidates} ({liver_candidates/total_genes*100:.1f}%)'",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "title_text",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "title_text = f'Liver Protein Classification'\nsubtitle_text = f'Total: {total_genes} proteins | Liver candidates: {liver_candidates} ({liver_candidates/total_genes*100:.1f}%)'\nplt.title(title_text, fontsize=18, fontweight='bold', pad=25, y=0.98)\nplt.text(0.5, 0.93, subtitle_text, ha='center', fontsize=13, transform=fig.transFigure)\n# Customize the subset labels with better positioning\nif venn.get_label_by_id('100'):\n    venn.get_label_by_id('100').set_text(f\"{len(liver_protein_1_genes - liver_protein_2_genes)}\")\n    venn.get_label_by_id('100').set_fontsize(14)\n    venn.get_label_by_id('100').set_fontweight('bold')\n    venn.get_label_by_id('100').set_color('#8B0000')",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "subtitle_text",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "subtitle_text = f'Total: {total_genes} proteins | Liver candidates: {liver_candidates} ({liver_candidates/total_genes*100:.1f}%)'\nplt.title(title_text, fontsize=18, fontweight='bold', pad=25, y=0.98)\nplt.text(0.5, 0.93, subtitle_text, ha='center', fontsize=13, transform=fig.transFigure)\n# Customize the subset labels with better positioning\nif venn.get_label_by_id('100'):\n    venn.get_label_by_id('100').set_text(f\"{len(liver_protein_1_genes - liver_protein_2_genes)}\")\n    venn.get_label_by_id('100').set_fontsize(14)\n    venn.get_label_by_id('100').set_fontweight('bold')\n    venn.get_label_by_id('100').set_color('#8B0000')\nif venn.get_label_by_id('010'):",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "legend_elements",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "legend_elements = [\n    Patch(facecolor='#FFB6C1', edgecolor='#8B0000', linewidth=2,\n          label=f'RNA tissue specific nTPM only: {len(liver_protein_1_genes - liver_protein_2_genes)}', alpha=0.65),\n    Patch(facecolor='#87CEEB', edgecolor='#00008B', linewidth=2,\n          label=f'Tissue expression cluster only: {len(liver_protein_2_genes - liver_protein_1_genes)}', alpha=0.65),\n    Patch(facecolor='#98FB98', edgecolor='#006400', linewidth=2,\n          label=f'Both conditions met: {len(liver_protein_both)}', alpha=0.65),\n    Patch(facecolor='#E8E8E8', edgecolor='#404040', linewidth=2,\n          label=f'Non-liver protein: {len(non_liver_genes)}', alpha=0.65)\n]",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "output_dir",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "output_dir = 'output'\nos.makedirs(output_dir, exist_ok=True)\nplt.savefig(f'{output_dir}/liver_protein_venn_diagram.png', dpi=300, bbox_inches='tight')\nprint(f\"\\nVenn diagram saved to: {output_dir}/liver_protein_venn_diagram.png\")\n# Create Trace folder and save tracing data\ntrace_dir = 'Trace'\nos.makedirs(trace_dir, exist_ok=True)\n# Prepare tracing data with all relevant columns\ntrace_data = merged_data[[\n    'Gene',",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "trace_dir",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "trace_dir = 'Trace'\nos.makedirs(trace_dir, exist_ok=True)\n# Prepare tracing data with all relevant columns\ntrace_data = merged_data[[\n    'Gene',\n    'RNA tissue specific nTPM',\n    'liver_nTPM_value',\n    'Tissue expression cluster',\n    'has_liver_nTPM',\n    'has_liver_cluster',",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "trace_data = merged_data[[\n    'Gene',\n    'RNA tissue specific nTPM',\n    'liver_nTPM_value',\n    'Tissue expression cluster',\n    'has_liver_nTPM',\n    'has_liver_cluster',\n    'Classification'\n]].copy()\n# Save tracing data",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "trace_file",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "trace_file = f'{trace_dir}/Data tracing.csv'\ntrace_data.to_csv(trace_file, index=False)\nprint(f\"Tracing data saved to: {trace_file}\")\n# Save summary statistics to Trace folder\nsummary_file = f'{trace_dir}/classification_summary.csv'\nclassification_counts.to_csv(summary_file, header=['Count'])\nprint(f\"Summary statistics saved to: {summary_file}\")\n# Save classified gene lists with liver nTPM values to Trace folder\nfor classification in ['liver protein', 'liver protein_1', 'liver protein_2']:\n    subset = merged_data[merged_data['Classification'] == classification]",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "summary_file",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "summary_file = f'{trace_dir}/classification_summary.csv'\nclassification_counts.to_csv(summary_file, header=['Count'])\nprint(f\"Summary statistics saved to: {summary_file}\")\n# Save classified gene lists with liver nTPM values to Trace folder\nfor classification in ['liver protein', 'liver protein_1', 'liver protein_2']:\n    subset = merged_data[merged_data['Classification'] == classification]\n    if len(subset) > 0:\n        genes_file = f'{trace_dir}/{classification.replace(\" \", \"_\")}_genes.csv'\n        subset[['Gene', 'liver_nTPM_value']].to_csv(genes_file, index=False)\n        print(f\"{classification} genes saved to: {genes_file}\")",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "trace_data = pd.read_csv('Trace/Data tracing.csv')\n# Filter genes with liver nTPM values and sort by value\nliver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nliver_genes = liver_genes.sort_values('liver_nTPM_value', ascending=False)\n# Check liver protein_2 group (no nTPM values expected)\nliver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "liver_genes",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "liver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nliver_genes = liver_genes.sort_values('liver_nTPM_value', ascending=False)\n# Check liver protein_2 group (no nTPM values expected)\nliver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))\n# 1. Create horizontal bar plot for top genes\nfig, axes = plt.subplots(2, 1, figsize=(14, 16))",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "liver_genes",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "liver_genes = liver_genes.sort_values('liver_nTPM_value', ascending=False)\n# Check liver protein_2 group (no nTPM values expected)\nliver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))\n# 1. Create horizontal bar plot for top genes\nfig, axes = plt.subplots(2, 1, figsize=(14, 16))\n# Top 50 genes",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "liver_protein_2_count",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "liver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))\n# 1. Create horizontal bar plot for top genes\nfig, axes = plt.subplots(2, 1, figsize=(14, 16))\n# Top 50 genes\ntop_n = 50\ntop_genes = liver_genes.head(top_n)",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "top_n",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "top_n = 50\ntop_genes = liver_genes.head(top_n)\n# Color by classification\ncolors = []\nfor classification in top_genes['Classification']:\n    if classification == 'liver protein':\n        colors.append('#4CAF50')  # Green for both\n    elif classification == 'liver protein_1':\n        colors.append('#FF9999')  # Pink for nTPM only\n    elif classification == 'liver protein_2':",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "top_genes",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "top_genes = liver_genes.head(top_n)\n# Color by classification\ncolors = []\nfor classification in top_genes['Classification']:\n    if classification == 'liver protein':\n        colors.append('#4CAF50')  # Green for both\n    elif classification == 'liver protein_1':\n        colors.append('#FF9999')  # Pink for nTPM only\n    elif classification == 'liver protein_2':\n        colors.append('#99CCFF')  # Blue for cluster only",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "colors = []\nfor classification in top_genes['Classification']:\n    if classification == 'liver protein':\n        colors.append('#4CAF50')  # Green for both\n    elif classification == 'liver protein_1':\n        colors.append('#FF9999')  # Pink for nTPM only\n    elif classification == 'liver protein_2':\n        colors.append('#99CCFF')  # Blue for cluster only\n    else:\n        colors.append('#CCCCCC')  # Gray for non-liver",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "ax1",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "ax1 = axes[0]\nbars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colors, edgecolor='black', linewidth=0.5)\nax1.set_yticks(range(len(top_genes)))\nax1.set_yticklabels(top_genes['Gene'], fontsize=9)\nax1.set_xlabel('Liver nTPM Value', fontsize=12, fontweight='bold')\nax1.set_title(f'Top {top_n} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)\nax1.invert_yaxis()\nax1.grid(axis='x', alpha=0.3, linestyle='--')\n# Add value labels on bars\nfor i, (idx, row) in enumerate(top_genes.iterrows()):",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "bars",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "bars = ax1.barh(range(len(top_genes)), top_genes['liver_nTPM_value'], color=colors, edgecolor='black', linewidth=0.5)\nax1.set_yticks(range(len(top_genes)))\nax1.set_yticklabels(top_genes['Gene'], fontsize=9)\nax1.set_xlabel('Liver nTPM Value', fontsize=12, fontweight='bold')\nax1.set_title(f'Top {top_n} Genes by Liver nTPM Value', fontsize=14, fontweight='bold', pad=15)\nax1.invert_yaxis()\nax1.grid(axis='x', alpha=0.3, linestyle='--')\n# Add value labels on bars\nfor i, (idx, row) in enumerate(top_genes.iterrows()):\n    value = row['liver_nTPM_value']",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "legend_elements",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "legend_elements = [\n    Patch(facecolor='#4CAF50', edgecolor='black', label='Liver protein (both)'),\n    Patch(facecolor='#FF9999', edgecolor='black', label='Liver protein_1 (nTPM only)'),\n    Patch(facecolor='#99CCFF', edgecolor='black', label='Liver protein_2 (cluster only)')\n]\nax1.legend(handles=legend_elements, loc='lower right', fontsize=10)\n# 2. Distribution plot (log scale)\nax2 = axes[1]\nliver_genes_sorted = liver_genes.sort_values('liver_nTPM_value', ascending=True)\nx_positions = range(len(liver_genes_sorted))",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "ax2",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "ax2 = axes[1]\nliver_genes_sorted = liver_genes.sort_values('liver_nTPM_value', ascending=True)\nx_positions = range(len(liver_genes_sorted))\nvalues = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    if classification == 'liver protein':\n        scatter_colors.append('#4CAF50')\n    elif classification == 'liver protein_1':",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "liver_genes_sorted",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "liver_genes_sorted = liver_genes.sort_values('liver_nTPM_value', ascending=True)\nx_positions = range(len(liver_genes_sorted))\nvalues = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    if classification == 'liver protein':\n        scatter_colors.append('#4CAF50')\n    elif classification == 'liver protein_1':\n        scatter_colors.append('#FF9999')",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "x_positions",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "x_positions = range(len(liver_genes_sorted))\nvalues = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    if classification == 'liver protein':\n        scatter_colors.append('#4CAF50')\n    elif classification == 'liver protein_1':\n        scatter_colors.append('#FF9999')\n    elif classification == 'liver protein_2':",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "values = liver_genes_sorted['liver_nTPM_value'].values\n# Color by classification\nscatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    if classification == 'liver protein':\n        scatter_colors.append('#4CAF50')\n    elif classification == 'liver protein_1':\n        scatter_colors.append('#FF9999')\n    elif classification == 'liver protein_2':\n        scatter_colors.append('#99CCFF')",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "scatter_colors",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "scatter_colors = []\nfor classification in liver_genes_sorted['Classification']:\n    if classification == 'liver protein':\n        scatter_colors.append('#4CAF50')\n    elif classification == 'liver protein_1':\n        scatter_colors.append('#FF9999')\n    elif classification == 'liver protein_2':\n        scatter_colors.append('#99CCFF')\n    else:\n        scatter_colors.append('#CCCCCC')",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "stats_text",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "stats_text = f'Genes with nTPM values: {len(liver_genes)}\\n'\nstats_text += f'liver protein (both): {len(liver_genes[liver_genes[\"Classification\"] == \"liver protein\"])}\\n'\nstats_text += f'liver protein_1 (nTPM only): {len(liver_genes[liver_genes[\"Classification\"] == \"liver protein_1\"])}\\n'\nstats_text += f'liver protein_2 (cluster only): {liver_protein_2_count} (no nTPM)\\n'\nstats_text += f'\\nMean: {liver_genes[\"liver_nTPM_value\"].mean():.2f}\\n'\nstats_text += f'Median: {liver_genes[\"liver_nTPM_value\"].median():.2f}\\n'\nstats_text += f'Max: {liver_genes[\"liver_nTPM_value\"].max():.2f}\\n'\nstats_text += f'Min: {liver_genes[\"liver_nTPM_value\"].min():.2f}'\nax2.text(0.98, 0.05, stats_text, transform=ax2.transAxes,\n         fontsize=9, verticalalignment='bottom', horizontalalignment='right',",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "liver_genes_detailed",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "liver_genes_detailed = liver_genes[['Gene', 'liver_nTPM_value', 'Classification',\n                                     'RNA tissue specific nTPM', 'Tissue expression cluster']].copy()\nliver_genes_detailed = liver_genes_detailed.sort_values('liver_nTPM_value', ascending=False)\nliver_genes_detailed.to_csv('Trace/liver_genes_sorted_by_ntpm.csv', index=False)\nprint(f\"Detailed sorted gene list saved to: Trace/liver_genes_sorted_by_ntpm.csv\")\nprint(\"\\nAll visualizations completed successfully!\")\nprint(f\"\\nGenerated files:\")\nprint(f\"1. output/liver_ntpm_distribution.png - Top 50 bar chart and distribution\")\nprint(f\"2. Trace/liver_genes_sorted_by_ntpm.csv - Complete sorted gene list\")",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    },
+    {
+        "label": "liver_genes_detailed",
+        "kind": 5,
+        "importPath": "visualize_ntpm",
+        "description": "visualize_ntpm",
+        "peekOfCode": "liver_genes_detailed = liver_genes_detailed.sort_values('liver_nTPM_value', ascending=False)\nliver_genes_detailed.to_csv('Trace/liver_genes_sorted_by_ntpm.csv', index=False)\nprint(f\"Detailed sorted gene list saved to: Trace/liver_genes_sorted_by_ntpm.csv\")\nprint(\"\\nAll visualizations completed successfully!\")\nprint(f\"\\nGenerated files:\")\nprint(f\"1. output/liver_ntpm_distribution.png - Top 50 bar chart and distribution\")\nprint(f\"2. Trace/liver_genes_sorted_by_ntpm.csv - Complete sorted gene list\")",
+        "detail": "visualize_ntpm",
+        "documentation": {}
+    }
+]
