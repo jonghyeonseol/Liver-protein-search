@@ -26,16 +26,20 @@ top_n = 50
 top_genes = liver_genes.head(top_n)
 
 # Color by classification
+color_map = {
+    'liver protein (all 3)': '#FFD700',  # Gold for all 3
+    'liver protein (nTPM + cluster)': '#DDA0DD',  # Plum for nTPM + cluster
+    'liver protein (nTPM + enrichment)': '#F0E68C',  # Khaki for nTPM + enrichment
+    'liver protein (cluster + enrichment)': '#87CEFA',  # Light sky blue for cluster + enrichment
+    'liver protein_1': '#FFB6C1',  # Light pink for nTPM only
+    'liver protein_2': '#87CEEB',  # Sky blue for cluster only
+    'liver protein_3': '#98FB98',  # Pale green for enrichment only
+    'non-liver protein': '#CCCCCC'  # Gray for non-liver
+}
+
 colors = []
 for classification in top_genes['Classification']:
-    if classification == 'liver protein':
-        colors.append('#4CAF50')  # Green for both
-    elif classification == 'liver protein_1':
-        colors.append('#FF9999')  # Pink for nTPM only
-    elif classification == 'liver protein_2':
-        colors.append('#99CCFF')  # Blue for cluster only
-    else:
-        colors.append('#CCCCCC')  # Gray for non-liver
+    colors.append(color_map.get(classification, '#CCCCCC'))
 
 # Plot top 50
 ax1 = axes[0]
@@ -56,11 +60,15 @@ for i, (idx, row) in enumerate(top_genes.iterrows()):
 # Add legend
 from matplotlib.patches import Patch
 legend_elements = [
-    Patch(facecolor='#4CAF50', edgecolor='black', label='Liver protein (both)'),
-    Patch(facecolor='#FF9999', edgecolor='black', label='Liver protein_1 (nTPM only)'),
-    Patch(facecolor='#99CCFF', edgecolor='black', label='Liver protein_2 (cluster only)')
+    Patch(facecolor='#FFD700', edgecolor='black', label='All 3 criteria'),
+    Patch(facecolor='#DDA0DD', edgecolor='black', label='nTPM + cluster'),
+    Patch(facecolor='#F0E68C', edgecolor='black', label='nTPM + enrichment'),
+    Patch(facecolor='#87CEFA', edgecolor='black', label='cluster + enrichment'),
+    Patch(facecolor='#FFB6C1', edgecolor='black', label='nTPM only'),
+    Patch(facecolor='#87CEEB', edgecolor='black', label='cluster only'),
+    Patch(facecolor='#98FB98', edgecolor='black', label='enrichment only')
 ]
-ax1.legend(handles=legend_elements, loc='lower right', fontsize=10)
+ax1.legend(handles=legend_elements, loc='lower right', fontsize=9, ncol=2)
 
 # 2. Distribution plot (log scale)
 ax2 = axes[1]
@@ -71,14 +79,7 @@ values = liver_genes_sorted['liver_nTPM_value'].values
 # Color by classification
 scatter_colors = []
 for classification in liver_genes_sorted['Classification']:
-    if classification == 'liver protein':
-        scatter_colors.append('#4CAF50')
-    elif classification == 'liver protein_1':
-        scatter_colors.append('#FF9999')
-    elif classification == 'liver protein_2':
-        scatter_colors.append('#99CCFF')
-    else:
-        scatter_colors.append('#CCCCCC')
+    scatter_colors.append(color_map.get(classification, '#CCCCCC'))
 
 ax2.scatter(x_positions, values, c=scatter_colors, alpha=0.6, s=30, edgecolors='black', linewidth=0.5)
 ax2.set_xlabel('Gene Index (sorted by nTPM value)', fontsize=12, fontweight='bold')
@@ -86,19 +87,44 @@ ax2.set_ylabel('Liver nTPM Value (log scale)', fontsize=12, fontweight='bold')
 ax2.set_yscale('log')
 ax2.set_title('Distribution of Liver nTPM Values Across All Genes', fontsize=14, fontweight='bold', pad=15)
 ax2.grid(True, alpha=0.3, linestyle='--')
-ax2.legend(handles=legend_elements, loc='upper left', fontsize=10)
+
+# Create legend with updated classifications
+legend_elements_scatter = [
+    Patch(facecolor='#FFD700', edgecolor='black', label='All 3 criteria', alpha=0.6),
+    Patch(facecolor='#DDA0DD', edgecolor='black', label='nTPM + cluster', alpha=0.6),
+    Patch(facecolor='#F0E68C', edgecolor='black', label='nTPM + enrichment', alpha=0.6),
+    Patch(facecolor='#FFB6C1', edgecolor='black', label='nTPM only', alpha=0.6)
+]
+ax2.legend(handles=legend_elements_scatter, loc='upper left', fontsize=10)
 
 # Add statistics text
+# Count each classification
+all_3 = len(liver_genes[liver_genes["Classification"] == "liver protein (all 3)"])
+ntpm_cluster = len(liver_genes[liver_genes["Classification"] == "liver protein (nTPM + cluster)"])
+ntpm_enrichment = len(liver_genes[liver_genes["Classification"] == "liver protein (nTPM + enrichment)"])
+ntpm_only = len(liver_genes[liver_genes["Classification"] == "liver protein_1"])
+
+# Count those without nTPM values
+liver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])
+liver_protein_3_count = len(trace_data[trace_data['Classification'] == 'liver protein_3'])
+cluster_enrichment = len(trace_data[trace_data['Classification'] == 'liver protein (cluster + enrichment)'])
+
 stats_text = f'Genes with nTPM values: {len(liver_genes)}\n'
-stats_text += f'liver protein (both): {len(liver_genes[liver_genes["Classification"] == "liver protein"])}\n'
-stats_text += f'liver protein_1 (nTPM only): {len(liver_genes[liver_genes["Classification"] == "liver protein_1"])}\n'
-stats_text += f'liver protein_2 (cluster only): {liver_protein_2_count} (no nTPM)\n'
-stats_text += f'\nMean: {liver_genes["liver_nTPM_value"].mean():.2f}\n'
-stats_text += f'Median: {liver_genes["liver_nTPM_value"].median():.2f}\n'
-stats_text += f'Max: {liver_genes["liver_nTPM_value"].max():.2f}\n'
-stats_text += f'Min: {liver_genes["liver_nTPM_value"].min():.2f}'
+stats_text += f'  All 3 criteria: {all_3}\n'
+stats_text += f'  nTPM + cluster: {ntpm_cluster}\n'
+stats_text += f'  nTPM + enrichment: {ntpm_enrichment}\n'
+stats_text += f'  nTPM only: {ntpm_only}\n'
+stats_text += f'\nGenes without nTPM:\n'
+stats_text += f'  cluster only: {liver_protein_2_count}\n'
+stats_text += f'  enrichment only: {liver_protein_3_count}\n'
+stats_text += f'  cluster + enrichment: {cluster_enrichment}\n'
+stats_text += f'\nStats:\n'
+stats_text += f'  Mean: {liver_genes["liver_nTPM_value"].mean():.2f}\n'
+stats_text += f'  Median: {liver_genes["liver_nTPM_value"].median():.2f}\n'
+stats_text += f'  Max: {liver_genes["liver_nTPM_value"].max():.2f}\n'
+stats_text += f'  Min: {liver_genes["liver_nTPM_value"].min():.2f}'
 ax2.text(0.98, 0.05, stats_text, transform=ax2.transAxes,
-         fontsize=9, verticalalignment='bottom', horizontalalignment='right',
+         fontsize=8, verticalalignment='bottom', horizontalalignment='right',
          bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
 
 plt.tight_layout()
