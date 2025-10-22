@@ -19,23 +19,42 @@ print(f"Total genes with liver nTPM values: {len(liver_genes)}")
 # Group by classification
 groups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()
 
-# Color mapping
+# Color mapping for new 4-category system
 color_map = {
-    'liver protein (all 3)': '#FF6B6B',
-    'liver protein (nTPM + cluster)': '#4ECDC4',
-    'liver protein (nTPM + enrichment)': '#FFE66D',
+    # High nTPM (>=100) categories
+    'liver protein (nTPM≥100 + cluster + enrichment)': '#FF0000',
+    'liver protein (nTPM≥100 + cluster)': '#FF6B6B',
+    'liver protein (nTPM≥100 + enrichment)': '#FF8C42',
+    'liver protein (nTPM≥100 only)': '#FFB6B6',
+
+    # Low nTPM (<100) categories
+    'liver protein (nTPM<100 + cluster + enrichment)': '#4169E1',
+    'liver protein (nTPM<100 + cluster)': '#87CEEB',
+    'liver protein (nTPM<100 + enrichment)': '#ADD8E6',
+    'liver protein (nTPM<100 only)': '#E0F0FF',
+
+    # Both nTPM levels
+    'liver protein (both nTPM levels)': '#9370DB',
+    'liver protein (both nTPM + cluster)': '#8B008B',
+    'liver protein (both nTPM + enrichment)': '#BA55D3',
+    'liver protein (all 4)': '#4B0082',
+
+    # No nTPM categories
     'liver protein (cluster + enrichment)': '#A8E6CF',
-    'liver protein_1': '#FF8C42',
-    'liver protein_2': '#95E1D3',
-    'liver protein_3': '#C7CEEA'
+    'liver protein (cluster only)': '#95E1D3',
+    'liver protein (enrichment only)': '#C7CEEA'
 }
 
-# Order of classifications for display
+# Order of classifications for display (only those with nTPM values)
 classification_order = [
-    'liver protein (all 3)',
-    'liver protein (nTPM + cluster)',
-    'liver protein (nTPM + enrichment)',
-    'liver protein_1'
+    'liver protein (nTPM≥100 + cluster + enrichment)',
+    'liver protein (nTPM≥100 + cluster)',
+    'liver protein (nTPM≥100 + enrichment)',
+    'liver protein (nTPM≥100 only)',
+    'liver protein (nTPM<100 + cluster + enrichment)',
+    'liver protein (nTPM<100 + cluster)',
+    'liver protein (nTPM<100 + enrichment)',
+    'liver protein (nTPM<100 only)'
 ]
 
 # Filter groups that have nTPM values
@@ -52,8 +71,15 @@ fig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',
 # 1. Box Plot (Top Left)
 ax1 = fig.add_subplot(gs[0, 0])
 data_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]
-labels_for_box = [cat.replace('liver protein ', '').replace('(', '').replace(')', '')
-                  for cat in classification_order if cat in groups_with_values]
+# Shorten labels for better display
+labels_for_box = []
+for cat in classification_order:
+    if cat in groups_with_values:
+        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')
+        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')
+        label = label.replace('cluster', 'C').replace('enrichment', 'E')
+        label = label.replace(' + ', '+')
+        labels_for_box.append(label)
 
 bp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,
                  showmeans=True, meanline=True,
@@ -95,7 +121,11 @@ violin_colors = []
 for cat in classification_order:
     if cat in groups_with_values:
         violin_data.append(groups_with_values[cat])
-        violin_labels.append(cat.replace('liver protein ', '').replace('(', '').replace(')', ''))
+        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')
+        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')
+        label = label.replace('cluster', 'C').replace('enrichment', 'E')
+        label = label.replace(' + ', '+')
+        violin_labels.append(label)
         violin_colors.append(color_map[cat])
 
 parts = ax2.violinplot(violin_data, positions=range(len(violin_data)),
@@ -166,7 +196,11 @@ for cat in classification_order:
     if cat in groups_with_values:
         values = np.array(groups_with_values[cat])
         log_values = np.log10(values)
-        ax4.hist(log_values, bins=20, alpha=0.5, label=cat.replace('liver protein ', '').replace('(', '').replace(')', ''),
+        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')
+        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')
+        label = label.replace('cluster', 'C').replace('enrichment', 'E')
+        label = label.replace(' + ', '+')
+        ax4.hist(log_values, bins=20, alpha=0.5, label=label,
                 color=color_map[cat], edgecolor='black', linewidth=1)
 
 ax4.set_xlabel('Log10(Liver nTPM Value)', fontsize=13, fontweight='bold')
@@ -183,7 +217,11 @@ for cat in classification_order:
     if cat in groups_with_values:
         values = sorted(groups_with_values[cat])
         cumulative = np.arange(1, len(values) + 1) / len(values) * 100
-        ax5.plot(values, cumulative, linewidth=2.5, label=cat.replace('liver protein ', '').replace('(', '').replace(')', ''),
+        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')
+        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')
+        label = label.replace('cluster', 'C').replace('enrichment', 'E')
+        label = label.replace(' + ', '+')
+        ax5.plot(values, cumulative, linewidth=2.5, label=label,
                 color=color_map[cat], marker='o', markersize=3, markevery=max(1, len(values)//20))
 
 ax5.set_xscale('log')
@@ -204,8 +242,12 @@ stats_data = []
 for cat in classification_order:
     if cat in groups_with_values:
         values = np.array(groups_with_values[cat])
+        label = cat.replace('liver protein ', '').replace('(', '').replace(')', '')
+        label = label.replace('nTPM≥100', '≥100').replace('nTPM<100', '<100')
+        label = label.replace('cluster', 'C').replace('enrichment', 'E')
+        label = label.replace(' + ', '+')
         stats_data.append([
-            cat.replace('liver protein ', '').replace('(', '').replace(')', ''),
+            label,
             len(values),
             f"{np.mean(values):.2f}",
             f"{np.median(values):.2f}",
