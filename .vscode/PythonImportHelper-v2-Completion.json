@@ -18,6 +18,87 @@
         "documentation": {}
     },
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "Patch",
+        "importPath": "matplotlib.patches",
+        "description": "matplotlib.patches",
+        "isExtraImport": true,
+        "detail": "matplotlib.patches",
+        "documentation": {}
+    },
+    {
+        "label": "Patch",
+        "importPath": "matplotlib.patches",
+        "description": "matplotlib.patches",
+        "isExtraImport": true,
+        "detail": "matplotlib.patches",
+        "documentation": {}
+    },
+    {
+        "label": "Patch",
+        "importPath": "matplotlib.patches",
+        "description": "matplotlib.patches",
+        "isExtraImport": true,
+        "detail": "matplotlib.patches",
+        "documentation": {}
+    },
+    {
+        "label": "roc_curve",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "auc",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "precision_recall_curve",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "average_precision_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
         "label": "venn3",
         "importPath": "matplotlib_venn",
         "description": "matplotlib_venn",
@@ -44,28 +125,749 @@
         "documentation": {}
     },
     {
-        "label": "Patch",
-        "importPath": "matplotlib.patches",
-        "description": "matplotlib.patches",
-        "isExtraImport": true,
-        "detail": "matplotlib.patches",
-        "documentation": {}
-    },
-    {
-        "label": "Patch",
-        "importPath": "matplotlib.patches",
-        "description": "matplotlib.patches",
-        "isExtraImport": true,
-        "detail": "matplotlib.patches",
-        "documentation": {}
-    },
-    {
-        "label": "numpy",
+        "label": "glob",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "Line2D",
+        "importPath": "matplotlib.lines",
+        "description": "matplotlib.lines",
+        "isExtraImport": true,
+        "detail": "matplotlib.lines",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_confidence_score",
+        "kind": 2,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "def calculate_confidence_score(row):\n    \"\"\"\n    Calculate confidence score based on:\n    - nTPM value (0-40 points)\n    - Number of criteria met (0-30 points)\n    - Presence in cluster (0-15 points)\n    - Presence in enrichment (0-15 points)\n    \"\"\"\n    score = 0\n    # nTPM-based scoring (0-40 points)",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "classify_by_confidence",
+        "kind": 2,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "def classify_by_confidence(score):\n    if score >= 80:\n        return 'High Confidence'\n    elif score >= 60:\n        return 'Medium-High Confidence'\n    elif score >= 40:\n        return 'Medium Confidence'\n    elif score >= 20:\n        return 'Low-Medium Confidence'\n    else:",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "trace_data = pd.read_csv('Trace/Data tracing.csv')\nprint(\"\\n\" + \"=\"*80)\nprint(\"LIVER PROTEIN CLASSIFICATION STRATEGY ANALYSIS\")\nprint(\"=\"*80)\n# ============================================================================\n# STRATEGY 1: Current Multi-Criteria Approach\n# ============================================================================\nprint(\"\\n### STRATEGY 1: Multi-Criteria Overlap ###\")\nprint(\"-\" * 80)\ncurrent_stats = trace_data['Classification'].value_counts()",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "current_stats",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "current_stats = trace_data['Classification'].value_counts()\nprint(\"\\nCurrent Classification:\")\nprint(current_stats)\nliver_candidates = len(trace_data[trace_data['Classification'].str.startswith('liver protein')])\nprint(f\"\\nTotal Liver Candidates: {liver_candidates}\")\nprint(f\"Non-liver: {len(trace_data[trace_data['Classification'] == 'non-liver protein'])}\")\n# ============================================================================\n# STRATEGY 2: nTPM Threshold-Based Approach\n# ============================================================================\nprint(\"\\n\\n### STRATEGY 2: nTPM Threshold-Based Classification ###\")",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "liver_candidates",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "liver_candidates = len(trace_data[trace_data['Classification'].str.startswith('liver protein')])\nprint(f\"\\nTotal Liver Candidates: {liver_candidates}\")\nprint(f\"Non-liver: {len(trace_data[trace_data['Classification'] == 'non-liver protein'])}\")\n# ============================================================================\n# STRATEGY 2: nTPM Threshold-Based Approach\n# ============================================================================\nprint(\"\\n\\n### STRATEGY 2: nTPM Threshold-Based Classification ###\")\nprint(\"-\" * 80)\nliver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nprint(f\"\\nTotal genes with nTPM values: {len(liver_genes)}\")",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "liver_genes",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "liver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nprint(f\"\\nTotal genes with nTPM values: {len(liver_genes)}\")\n# Analyze nTPM value distribution\nntpm_values = liver_genes['liver_nTPM_value'].values\npercentiles = [25, 50, 75, 90, 95, 99]\nprint(\"\\nnTPM Value Percentiles:\")\nfor p in percentiles:\n    print(f\"  {p}th percentile: {np.percentile(ntpm_values, p):.2f}\")\n# Test different thresholds\nthresholds = [10, 50, 100, 200, 500, 1000]",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "ntpm_values",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "ntpm_values = liver_genes['liver_nTPM_value'].values\npercentiles = [25, 50, 75, 90, 95, 99]\nprint(\"\\nnTPM Value Percentiles:\")\nfor p in percentiles:\n    print(f\"  {p}th percentile: {np.percentile(ntpm_values, p):.2f}\")\n# Test different thresholds\nthresholds = [10, 50, 100, 200, 500, 1000]\nprint(\"\\nGenes above different nTPM thresholds:\")\nfor threshold in thresholds:\n    count = len(liver_genes[liver_genes['liver_nTPM_value'] >= threshold])",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "percentiles",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "percentiles = [25, 50, 75, 90, 95, 99]\nprint(\"\\nnTPM Value Percentiles:\")\nfor p in percentiles:\n    print(f\"  {p}th percentile: {np.percentile(ntpm_values, p):.2f}\")\n# Test different thresholds\nthresholds = [10, 50, 100, 200, 500, 1000]\nprint(\"\\nGenes above different nTPM thresholds:\")\nfor threshold in thresholds:\n    count = len(liver_genes[liver_genes['liver_nTPM_value'] >= threshold])\n    percentage = (count / len(liver_genes)) * 100",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "thresholds",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "thresholds = [10, 50, 100, 200, 500, 1000]\nprint(\"\\nGenes above different nTPM thresholds:\")\nfor threshold in thresholds:\n    count = len(liver_genes[liver_genes['liver_nTPM_value'] >= threshold])\n    percentage = (count / len(liver_genes)) * 100\n    print(f\"  nTPM >= {threshold}: {count} genes ({percentage:.1f}%)\")\n# ============================================================================\n# STRATEGY 3: Weighted Scoring System\n# ============================================================================\nprint(\"\\n\\n### STRATEGY 3: Weighted Scoring System ###\")",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['confidence_score']",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "trace_data['confidence_score'] = trace_data.apply(calculate_confidence_score, axis=1)\n# Classify based on confidence scores\ndef classify_by_confidence(score):\n    if score >= 80:\n        return 'High Confidence'\n    elif score >= 60:\n        return 'Medium-High Confidence'\n    elif score >= 40:\n        return 'Medium Confidence'\n    elif score >= 20:",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['confidence_class']",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "trace_data['confidence_class'] = trace_data['confidence_score'].apply(classify_by_confidence)\nprint(\"\\nConfidence-based Classification:\")\nprint(trace_data['confidence_class'].value_counts().sort_index(ascending=False))\nprint(\"\\nTop 10 genes by confidence score:\")\ntop_confidence = trace_data.nlargest(10, 'confidence_score')[['Gene', 'liver_nTPM_value', 'Classification', 'confidence_score']]\nprint(top_confidence.to_string(index=False))\n# ============================================================================\n# STRATEGY 4: Restrictive High-Stringency Approach\n# ============================================================================\nprint(\"\\n\\n### STRATEGY 4: High-Stringency Filtering ###\")",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "top_confidence",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "top_confidence = trace_data.nlargest(10, 'confidence_score')[['Gene', 'liver_nTPM_value', 'Classification', 'confidence_score']]\nprint(top_confidence.to_string(index=False))\n# ============================================================================\n# STRATEGY 4: Restrictive High-Stringency Approach\n# ============================================================================\nprint(\"\\n\\n### STRATEGY 4: High-Stringency Filtering ###\")\nprint(\"-\" * 80)\n# Define high-stringency criteria\nhigh_stringency = trace_data[\n    (trace_data['has_liver_nTPM'] == True) &",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "high_stringency",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "high_stringency = trace_data[\n    (trace_data['has_liver_nTPM'] == True) &\n    (trace_data['has_liver_cluster'] == True) &\n    (trace_data['liver_nTPM_value'] >= 100)\n]\nprint(f\"\\nHigh-Stringency Criteria:\")\nprint(f\"  - Must have liver in nTPM\")\nprint(f\"  - Must have liver in tissue cluster\")\nprint(f\"  - nTPM value >= 100\")\nprint(f\"\\nResult: {len(high_stringency)} genes\")",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "very_high_stringency",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "very_high_stringency = trace_data[\n    (trace_data['has_liver_nTPM'] == True) &\n    (trace_data['has_liver_cluster'] == True) &\n    (trace_data['has_liver_enrichment'] == True) &\n    (trace_data['liver_nTPM_value'] >= 200)\n]\nprint(f\"\\nVery High-Stringency Criteria:\")\nprint(f\"  - All 3 criteria must be met\")\nprint(f\"  - nTPM value >= 200\")\nprint(f\"\\nResult: {len(very_high_stringency)} genes\")",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "known_liver_markers",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "known_liver_markers = [\n    'ALB', 'HP', 'APOA1', 'APOA2', 'APOC3', 'SERPINA1', 'FGA', 'FGB', 'FGG',\n    'CYP3A4', 'CYP2E1', 'FABP1', 'ALDOB', 'ORM1', 'ORM2', 'GC', 'TF',\n    'APOH', 'APOE', 'CRP', 'SAA1', 'SAA2', 'RBP4', 'AMBP', 'SELENOP'\n]\nprint(f\"\\nValidation against {len(known_liver_markers)} known liver markers:\")\nfound_markers = trace_data[trace_data['Gene'].isin(known_liver_markers)]\nprint(f\"  Found in dataset: {len(found_markers)}/{len(known_liver_markers)}\")\nclassified_as_liver = found_markers[found_markers['Classification'].str.startswith('liver protein')]\nprint(f\"  Classified as liver protein: {len(classified_as_liver)}/{len(found_markers)}\")",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "found_markers",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "found_markers = trace_data[trace_data['Gene'].isin(known_liver_markers)]\nprint(f\"  Found in dataset: {len(found_markers)}/{len(known_liver_markers)}\")\nclassified_as_liver = found_markers[found_markers['Classification'].str.startswith('liver protein')]\nprint(f\"  Classified as liver protein: {len(classified_as_liver)}/{len(found_markers)}\")\nif len(found_markers) > 0:\n    print(f\"  Capture rate: {(len(classified_as_liver)/len(found_markers))*100:.1f}%\")\n    print(\"\\nClassification of known markers:\")\n    marker_class = found_markers.groupby('Classification').size()\n    print(marker_class)\n    # Show markers NOT classified as liver",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "classified_as_liver",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "classified_as_liver = found_markers[found_markers['Classification'].str.startswith('liver protein')]\nprint(f\"  Classified as liver protein: {len(classified_as_liver)}/{len(found_markers)}\")\nif len(found_markers) > 0:\n    print(f\"  Capture rate: {(len(classified_as_liver)/len(found_markers))*100:.1f}%\")\n    print(\"\\nClassification of known markers:\")\n    marker_class = found_markers.groupby('Classification').size()\n    print(marker_class)\n    # Show markers NOT classified as liver\n    not_classified = found_markers[~found_markers['Classification'].str.startswith('liver protein')]\n    if len(not_classified) > 0:",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "ax1",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "ax1 = axes[0, 0]\ncurrent_liver = trace_data[trace_data['Classification'].str.startswith('liver protein')]['Classification'].value_counts()\ncolors1 = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#A8E6CF', '#FF8C42', '#95E1D3', '#C7CEEA']\ncurrent_liver.plot(kind='barh', ax=ax1, color=colors1[:len(current_liver)])\nax1.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax1.set_title('Strategy 1: Multi-Criteria Classification', fontsize=12, fontweight='bold')\nax1.grid(axis='x', alpha=0.3)\n# 2. Confidence Score Distribution\nax2 = axes[0, 1]\nconfidence_dist = trace_data['confidence_class'].value_counts().sort_index(ascending=False)",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "current_liver",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "current_liver = trace_data[trace_data['Classification'].str.startswith('liver protein')]['Classification'].value_counts()\ncolors1 = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#A8E6CF', '#FF8C42', '#95E1D3', '#C7CEEA']\ncurrent_liver.plot(kind='barh', ax=ax1, color=colors1[:len(current_liver)])\nax1.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax1.set_title('Strategy 1: Multi-Criteria Classification', fontsize=12, fontweight='bold')\nax1.grid(axis='x', alpha=0.3)\n# 2. Confidence Score Distribution\nax2 = axes[0, 1]\nconfidence_dist = trace_data['confidence_class'].value_counts().sort_index(ascending=False)\ncolors2 = ['#D32F2F', '#FF6B6B', '#FFA726', '#FFE66D', '#E8E8E8']",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "colors1",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "colors1 = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#A8E6CF', '#FF8C42', '#95E1D3', '#C7CEEA']\ncurrent_liver.plot(kind='barh', ax=ax1, color=colors1[:len(current_liver)])\nax1.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax1.set_title('Strategy 1: Multi-Criteria Classification', fontsize=12, fontweight='bold')\nax1.grid(axis='x', alpha=0.3)\n# 2. Confidence Score Distribution\nax2 = axes[0, 1]\nconfidence_dist = trace_data['confidence_class'].value_counts().sort_index(ascending=False)\ncolors2 = ['#D32F2F', '#FF6B6B', '#FFA726', '#FFE66D', '#E8E8E8']\nconfidence_dist.plot(kind='barh', ax=ax2, color=colors2)",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "ax2",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "ax2 = axes[0, 1]\nconfidence_dist = trace_data['confidence_class'].value_counts().sort_index(ascending=False)\ncolors2 = ['#D32F2F', '#FF6B6B', '#FFA726', '#FFE66D', '#E8E8E8']\nconfidence_dist.plot(kind='barh', ax=ax2, color=colors2)\nax2.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax2.set_title('Strategy 3: Confidence Score Classification', fontsize=12, fontweight='bold')\nax2.grid(axis='x', alpha=0.3)\n# 3. nTPM Threshold Comparison\nax3 = axes[1, 0]\nthreshold_data = []",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "confidence_dist",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "confidence_dist = trace_data['confidence_class'].value_counts().sort_index(ascending=False)\ncolors2 = ['#D32F2F', '#FF6B6B', '#FFA726', '#FFE66D', '#E8E8E8']\nconfidence_dist.plot(kind='barh', ax=ax2, color=colors2)\nax2.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax2.set_title('Strategy 3: Confidence Score Classification', fontsize=12, fontweight='bold')\nax2.grid(axis='x', alpha=0.3)\n# 3. nTPM Threshold Comparison\nax3 = axes[1, 0]\nthreshold_data = []\nthreshold_labels = []",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "colors2",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "colors2 = ['#D32F2F', '#FF6B6B', '#FFA726', '#FFE66D', '#E8E8E8']\nconfidence_dist.plot(kind='barh', ax=ax2, color=colors2)\nax2.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax2.set_title('Strategy 3: Confidence Score Classification', fontsize=12, fontweight='bold')\nax2.grid(axis='x', alpha=0.3)\n# 3. nTPM Threshold Comparison\nax3 = axes[1, 0]\nthreshold_data = []\nthreshold_labels = []\nfor threshold in [0, 10, 50, 100, 200, 500, 1000]:",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "ax3",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "ax3 = axes[1, 0]\nthreshold_data = []\nthreshold_labels = []\nfor threshold in [0, 10, 50, 100, 200, 500, 1000]:\n    count = len(liver_genes[liver_genes['liver_nTPM_value'] >= threshold])\n    threshold_data.append(count)\n    threshold_labels.append(f'≥{threshold}')\nbars = ax3.barh(threshold_labels, threshold_data, color='#4ECDC4', edgecolor='black', linewidth=1.5)\nax3.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax3.set_title('Strategy 2: nTPM Threshold Impact', fontsize=12, fontweight='bold')",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "threshold_data",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "threshold_data = []\nthreshold_labels = []\nfor threshold in [0, 10, 50, 100, 200, 500, 1000]:\n    count = len(liver_genes[liver_genes['liver_nTPM_value'] >= threshold])\n    threshold_data.append(count)\n    threshold_labels.append(f'≥{threshold}')\nbars = ax3.barh(threshold_labels, threshold_data, color='#4ECDC4', edgecolor='black', linewidth=1.5)\nax3.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax3.set_title('Strategy 2: nTPM Threshold Impact', fontsize=12, fontweight='bold')\nax3.grid(axis='x', alpha=0.3)",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "threshold_labels",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "threshold_labels = []\nfor threshold in [0, 10, 50, 100, 200, 500, 1000]:\n    count = len(liver_genes[liver_genes['liver_nTPM_value'] >= threshold])\n    threshold_data.append(count)\n    threshold_labels.append(f'≥{threshold}')\nbars = ax3.barh(threshold_labels, threshold_data, color='#4ECDC4', edgecolor='black', linewidth=1.5)\nax3.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax3.set_title('Strategy 2: nTPM Threshold Impact', fontsize=12, fontweight='bold')\nax3.grid(axis='x', alpha=0.3)\n# Add value labels",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "bars",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "bars = ax3.barh(threshold_labels, threshold_data, color='#4ECDC4', edgecolor='black', linewidth=1.5)\nax3.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax3.set_title('Strategy 2: nTPM Threshold Impact', fontsize=12, fontweight='bold')\nax3.grid(axis='x', alpha=0.3)\n# Add value labels\nfor i, (bar, val) in enumerate(zip(bars, threshold_data)):\n    ax3.text(val + max(threshold_data)*0.01, i, f'{val}', va='center', fontweight='bold')\n# 4. High-Stringency Tiers\nax4 = axes[1, 1]\nstringency_data = {",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "ax4",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "ax4 = axes[1, 1]\nstringency_data = {\n    'All liver\\ncandidates\\n(any criterion)': liver_candidates,\n    'nTPM only\\n(any value)': len(trace_data[trace_data['has_liver_nTPM'] == True]),\n    'nTPM + cluster\\n(any value)': len(trace_data[(trace_data['has_liver_nTPM'] == True) &\n                                                    (trace_data['has_liver_cluster'] == True)]),\n    'nTPM + cluster\\n(≥100)': len(high_stringency),\n    'All 3 criteria\\n(≥200)': len(very_high_stringency)\n}\ny_pos = np.arange(len(stringency_data))",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "stringency_data",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "stringency_data = {\n    'All liver\\ncandidates\\n(any criterion)': liver_candidates,\n    'nTPM only\\n(any value)': len(trace_data[trace_data['has_liver_nTPM'] == True]),\n    'nTPM + cluster\\n(any value)': len(trace_data[(trace_data['has_liver_nTPM'] == True) &\n                                                    (trace_data['has_liver_cluster'] == True)]),\n    'nTPM + cluster\\n(≥100)': len(high_stringency),\n    'All 3 criteria\\n(≥200)': len(very_high_stringency)\n}\ny_pos = np.arange(len(stringency_data))\ncolors4 = ['#E8E8E8', '#C7CEEA', '#95E1D3', '#4ECDC4', '#FF6B6B']",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "y_pos",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "y_pos = np.arange(len(stringency_data))\ncolors4 = ['#E8E8E8', '#C7CEEA', '#95E1D3', '#4ECDC4', '#FF6B6B']\nbars4 = ax4.barh(y_pos, list(stringency_data.values()), color=colors4, edgecolor='black', linewidth=1.5)\nax4.set_yticks(y_pos)\nax4.set_yticklabels(list(stringency_data.keys()), fontsize=9)\nax4.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax4.set_title('Strategy 4: Progressive Stringency Filtering', fontsize=12, fontweight='bold')\nax4.grid(axis='x', alpha=0.3)\n# Add value labels\nfor i, (bar, val) in enumerate(zip(bars4, stringency_data.values())):",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "colors4",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "colors4 = ['#E8E8E8', '#C7CEEA', '#95E1D3', '#4ECDC4', '#FF6B6B']\nbars4 = ax4.barh(y_pos, list(stringency_data.values()), color=colors4, edgecolor='black', linewidth=1.5)\nax4.set_yticks(y_pos)\nax4.set_yticklabels(list(stringency_data.keys()), fontsize=9)\nax4.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax4.set_title('Strategy 4: Progressive Stringency Filtering', fontsize=12, fontweight='bold')\nax4.grid(axis='x', alpha=0.3)\n# Add value labels\nfor i, (bar, val) in enumerate(zip(bars4, stringency_data.values())):\n    ax4.text(val + max(stringency_data.values())*0.01, i, f'{val}', va='center', fontweight='bold')",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "bars4",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "bars4 = ax4.barh(y_pos, list(stringency_data.values()), color=colors4, edgecolor='black', linewidth=1.5)\nax4.set_yticks(y_pos)\nax4.set_yticklabels(list(stringency_data.keys()), fontsize=9)\nax4.set_xlabel('Number of Genes', fontsize=11, fontweight='bold')\nax4.set_title('Strategy 4: Progressive Stringency Filtering', fontsize=12, fontweight='bold')\nax4.grid(axis='x', alpha=0.3)\n# Add value labels\nfor i, (bar, val) in enumerate(zip(bars4, stringency_data.values())):\n    ax4.text(val + max(stringency_data.values())*0.01, i, f'{val}', va='center', fontweight='bold')\nplt.tight_layout()",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "tier1",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "tier1 = trace_data[\n    (trace_data['has_liver_nTPM'] == True) &\n    (trace_data['has_liver_cluster'] == True) &\n    (trace_data['liver_nTPM_value'] >= 200)\n]\nprint(f\"TIER 1 (Highest Confidence): {len(tier1)} genes\")\nprint(f\"  Criteria: nTPM present + Cluster present + nTPM ≥ 200\")\nprint(f\"  Recommended for: Primary liver-specific protein candidates\")\n# Tier 2: High confidence\ntier2 = trace_data[",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "tier2",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "tier2 = trace_data[\n    (trace_data['has_liver_nTPM'] == True) &\n    (trace_data['has_liver_cluster'] == True) &\n    (trace_data['liver_nTPM_value'] >= 50) &\n    (~trace_data.index.isin(tier1.index))\n]\nprint(f\"\\nTIER 2 (High Confidence): {len(tier2)} genes\")\nprint(f\"  Criteria: nTPM present + Cluster present + nTPM ≥ 50\")\nprint(f\"  Recommended for: Secondary liver-specific candidates\")\n# Tier 3: Medium confidence",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "tier3",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "tier3 = trace_data[\n    (trace_data['has_liver_nTPM'] == True) &\n    (trace_data['has_liver_cluster'] == True) &\n    (~trace_data.index.isin(tier1.index)) &\n    (~trace_data.index.isin(tier2.index))\n]\nprint(f\"\\nTIER 3 (Medium Confidence): {len(tier3)} genes\")\nprint(f\"  Criteria: nTPM present + Cluster present (any nTPM value)\")\nprint(f\"  Recommended for: Potential liver-associated proteins\")\n# Tier 4: Exploratory",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "tier4",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "tier4 = trace_data[\n    (trace_data['Classification'] == 'liver protein (all 3)') &\n    (~trace_data.index.isin(tier1.index)) &\n    (~trace_data.index.isin(tier2.index)) &\n    (~trace_data.index.isin(tier3.index))\n]\nprint(f\"\\nTIER 4 (Exploratory): {len(tier4)} genes\")\nprint(f\"  Criteria: All 3 criteria met but low nTPM OR enrichment-based\")\nprint(f\"  Recommended for: Exploratory validation studies\")\n# Save tier assignments",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['recommended_tier']",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "trace_data['recommended_tier'] = 'Not recommended'\ntrace_data.loc[tier1.index, 'recommended_tier'] = 'Tier 1 (Highest)'\ntrace_data.loc[tier2.index, 'recommended_tier'] = 'Tier 2 (High)'\ntrace_data.loc[tier3.index, 'recommended_tier'] = 'Tier 3 (Medium)'\ntrace_data.loc[tier4.index, 'recommended_tier'] = 'Tier 4 (Exploratory)'\n# Save results\noutput_file = 'Trace/classification_strategy_analysis.csv'\ntrace_data.to_csv(output_file, index=False)\nprint(f\"\\n\\nDetailed analysis saved to: {output_file}\")\n# Save tier-specific gene lists",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "output_file",
+        "kind": 5,
+        "importPath": "analyze_classification_strategy",
+        "description": "analyze_classification_strategy",
+        "peekOfCode": "output_file = 'Trace/classification_strategy_analysis.csv'\ntrace_data.to_csv(output_file, index=False)\nprint(f\"\\n\\nDetailed analysis saved to: {output_file}\")\n# Save tier-specific gene lists\nfor tier_name, tier_df in [('tier1', tier1), ('tier2', tier2), ('tier3', tier3), ('tier4', tier4)]:\n    if len(tier_df) > 0:\n        tier_file = f'Trace/{tier_name}_high_confidence_genes.csv'\n        tier_df[['Gene', 'liver_nTPM_value', 'Classification', 'confidence_score']].to_csv(tier_file, index=False)\n        print(f\"  {tier_name} genes saved to: {tier_file}\")\nprint(\"\\n\" + \"=\"*80)",
+        "detail": "analyze_classification_strategy",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "trace_data = pd.read_csv('Trace/classification_strategy_analysis.csv')\n# Define known liver markers as ground truth\nknown_liver_markers = [\n    'ALB', 'HP', 'APOA1', 'APOA2', 'APOC3', 'SERPINA1', 'FGA', 'FGB', 'FGG',\n    'CYP3A4', 'CYP2E1', 'FABP1', 'ALDOB', 'ORM1', 'ORM2', 'GC', 'TF',\n    'APOH', 'APOE', 'CRP', 'SAA1', 'SAA2', 'RBP4', 'AMBP', 'SELENOP',\n    'HRG', 'F2', 'FTL', 'AHSG', 'C3', 'HPX', 'VTN', 'ITIH4', 'ITIH3',\n    'FETUB', 'KNG1', 'SERPINC1', 'SERPIND1', 'F9', 'F10', 'F11',\n    'CYP1A2', 'CYP2A6', 'CYP2C8', 'CYP2C9', 'CYP2D6',\n    'UGT1A1', 'UGT2B7', 'GSTA1', 'GSTA2', 'G6PC', 'PCK1'",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "known_liver_markers",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "known_liver_markers = [\n    'ALB', 'HP', 'APOA1', 'APOA2', 'APOC3', 'SERPINA1', 'FGA', 'FGB', 'FGG',\n    'CYP3A4', 'CYP2E1', 'FABP1', 'ALDOB', 'ORM1', 'ORM2', 'GC', 'TF',\n    'APOH', 'APOE', 'CRP', 'SAA1', 'SAA2', 'RBP4', 'AMBP', 'SELENOP',\n    'HRG', 'F2', 'FTL', 'AHSG', 'C3', 'HPX', 'VTN', 'ITIH4', 'ITIH3',\n    'FETUB', 'KNG1', 'SERPINC1', 'SERPIND1', 'F9', 'F10', 'F11',\n    'CYP1A2', 'CYP2A6', 'CYP2C8', 'CYP2C9', 'CYP2D6',\n    'UGT1A1', 'UGT2B7', 'GSTA1', 'GSTA2', 'G6PC', 'PCK1'\n]\n# Create ground truth labels",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['is_known_liver']",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "trace_data['is_known_liver'] = trace_data['Gene'].isin(known_liver_markers).astype(int)\nknown_count = trace_data['is_known_liver'].sum()\nprint(f\"\\nKnown liver markers in dataset: {known_count}\")\nprint(f\"Total genes: {len(trace_data)}\")\n# Create binary predictions based on different criteria\n# We'll test multiple classification strategies\n# Strategy 1: Confidence score threshold\ntrace_data['pred_confidence'] = (trace_data['confidence_score'] >= 60).astype(int)\n# Strategy 2: nTPM threshold\ntrace_data['pred_ntpm'] = (trace_data['liver_nTPM_value'] >= 100).astype(int)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "known_count",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "known_count = trace_data['is_known_liver'].sum()\nprint(f\"\\nKnown liver markers in dataset: {known_count}\")\nprint(f\"Total genes: {len(trace_data)}\")\n# Create binary predictions based on different criteria\n# We'll test multiple classification strategies\n# Strategy 1: Confidence score threshold\ntrace_data['pred_confidence'] = (trace_data['confidence_score'] >= 60).astype(int)\n# Strategy 2: nTPM threshold\ntrace_data['pred_ntpm'] = (trace_data['liver_nTPM_value'] >= 100).astype(int)\ntrace_data['pred_ntpm'].fillna(0, inplace=True)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['pred_confidence']",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "trace_data['pred_confidence'] = (trace_data['confidence_score'] >= 60).astype(int)\n# Strategy 2: nTPM threshold\ntrace_data['pred_ntpm'] = (trace_data['liver_nTPM_value'] >= 100).astype(int)\ntrace_data['pred_ntpm'].fillna(0, inplace=True)\n# Strategy 3: Multi-criteria (2 or more)\ntrace_data['criteria_count'] = (\n    trace_data['has_liver_nTPM'].fillna(False).astype(int) +\n    trace_data['has_liver_cluster'].fillna(False).astype(int) +\n    trace_data['has_liver_enrichment'].fillna(False).astype(int)\n)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['pred_ntpm']",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "trace_data['pred_ntpm'] = (trace_data['liver_nTPM_value'] >= 100).astype(int)\ntrace_data['pred_ntpm'].fillna(0, inplace=True)\n# Strategy 3: Multi-criteria (2 or more)\ntrace_data['criteria_count'] = (\n    trace_data['has_liver_nTPM'].fillna(False).astype(int) +\n    trace_data['has_liver_cluster'].fillna(False).astype(int) +\n    trace_data['has_liver_enrichment'].fillna(False).astype(int)\n)\ntrace_data['pred_multicriteria'] = (trace_data['criteria_count'] >= 2).astype(int)\n# Strategy 4: Tier 1 classification",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['criteria_count']",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "trace_data['criteria_count'] = (\n    trace_data['has_liver_nTPM'].fillna(False).astype(int) +\n    trace_data['has_liver_cluster'].fillna(False).astype(int) +\n    trace_data['has_liver_enrichment'].fillna(False).astype(int)\n)\ntrace_data['pred_multicriteria'] = (trace_data['criteria_count'] >= 2).astype(int)\n# Strategy 4: Tier 1 classification\ntrace_data['pred_tier1'] = (trace_data['recommended_tier'] == 'Tier 1 (Highest)').astype(int)\n# Strategy 5: nTPM + cluster\ntrace_data['pred_ntpm_cluster'] = (",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['pred_multicriteria']",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "trace_data['pred_multicriteria'] = (trace_data['criteria_count'] >= 2).astype(int)\n# Strategy 4: Tier 1 classification\ntrace_data['pred_tier1'] = (trace_data['recommended_tier'] == 'Tier 1 (Highest)').astype(int)\n# Strategy 5: nTPM + cluster\ntrace_data['pred_ntpm_cluster'] = (\n    (trace_data['has_liver_nTPM'] == True) &\n    (trace_data['has_liver_cluster'] == True)\n).astype(int)\n# Create figure with multiple subplots\nfig = plt.figure(figsize=(20, 13))",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['pred_tier1']",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "trace_data['pred_tier1'] = (trace_data['recommended_tier'] == 'Tier 1 (Highest)').astype(int)\n# Strategy 5: nTPM + cluster\ntrace_data['pred_ntpm_cluster'] = (\n    (trace_data['has_liver_nTPM'] == True) &\n    (trace_data['has_liver_cluster'] == True)\n).astype(int)\n# Create figure with multiple subplots\nfig = plt.figure(figsize=(20, 13))\n# ============================================================================\n# 1. ROC Curves Comparison (Top Left)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data['pred_ntpm_cluster']",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "trace_data['pred_ntpm_cluster'] = (\n    (trace_data['has_liver_nTPM'] == True) &\n    (trace_data['has_liver_cluster'] == True)\n).astype(int)\n# Create figure with multiple subplots\nfig = plt.figure(figsize=(20, 13))\n# ============================================================================\n# 1. ROC Curves Comparison (Top Left)\n# ============================================================================\nax1 = plt.subplot(2, 3, 1)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "fig = plt.figure(figsize=(20, 13))\n# ============================================================================\n# 1. ROC Curves Comparison (Top Left)\n# ============================================================================\nax1 = plt.subplot(2, 3, 1)\nstrategies = {\n    'Confidence Score ≥60': ('confidence_score', trace_data['confidence_score'].fillna(0)),\n    'nTPM Threshold ≥100': ('pred_ntpm', trace_data['liver_nTPM_value'].fillna(0)),\n    'Multi-Criteria (≥2)': ('criteria_count', trace_data['criteria_count']),\n    'nTPM+Cluster (any nTPM)': ('pred_ntpm_cluster', trace_data['pred_ntpm_cluster']),",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "ax1",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "ax1 = plt.subplot(2, 3, 1)\nstrategies = {\n    'Confidence Score ≥60': ('confidence_score', trace_data['confidence_score'].fillna(0)),\n    'nTPM Threshold ≥100': ('pred_ntpm', trace_data['liver_nTPM_value'].fillna(0)),\n    'Multi-Criteria (≥2)': ('criteria_count', trace_data['criteria_count']),\n    'nTPM+Cluster (any nTPM)': ('pred_ntpm_cluster', trace_data['pred_ntpm_cluster']),\n    'nTPM+Cluster (≥200)': ('pred_tier1', trace_data['pred_tier1'])\n}\ncolors = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#95E1D3', '#FF8C42']\ny_true = trace_data['is_known_liver']",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "strategies",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "strategies = {\n    'Confidence Score ≥60': ('confidence_score', trace_data['confidence_score'].fillna(0)),\n    'nTPM Threshold ≥100': ('pred_ntpm', trace_data['liver_nTPM_value'].fillna(0)),\n    'Multi-Criteria (≥2)': ('criteria_count', trace_data['criteria_count']),\n    'nTPM+Cluster (any nTPM)': ('pred_ntpm_cluster', trace_data['pred_ntpm_cluster']),\n    'nTPM+Cluster (≥200)': ('pred_tier1', trace_data['pred_tier1'])\n}\ncolors = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#95E1D3', '#FF8C42']\ny_true = trace_data['is_known_liver']\nroc_results = {}",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "colors = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#95E1D3', '#FF8C42']\ny_true = trace_data['is_known_liver']\nroc_results = {}\nfor (label, (col, scores)), color in zip(strategies.items(), colors):\n    fpr, tpr, thresholds = roc_curve(y_true, scores)\n    roc_auc = auc(fpr, tpr)\n    roc_results[label] = {'fpr': fpr, 'tpr': tpr, 'auc': roc_auc}\n    ax1.plot(fpr, tpr, color=color, linewidth=2.5,\n             label=f'{label} (AUC = {roc_auc:.3f})')\nax1.plot([0, 1], [0, 1], 'k--', linewidth=2, label='Random Classifier')",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "y_true",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "y_true = trace_data['is_known_liver']\nroc_results = {}\nfor (label, (col, scores)), color in zip(strategies.items(), colors):\n    fpr, tpr, thresholds = roc_curve(y_true, scores)\n    roc_auc = auc(fpr, tpr)\n    roc_results[label] = {'fpr': fpr, 'tpr': tpr, 'auc': roc_auc}\n    ax1.plot(fpr, tpr, color=color, linewidth=2.5,\n             label=f'{label} (AUC = {roc_auc:.3f})')\nax1.plot([0, 1], [0, 1], 'k--', linewidth=2, label='Random Classifier')\nax1.set_xlabel('False Positive Rate', fontsize=12, fontweight='bold')",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "roc_results",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "roc_results = {}\nfor (label, (col, scores)), color in zip(strategies.items(), colors):\n    fpr, tpr, thresholds = roc_curve(y_true, scores)\n    roc_auc = auc(fpr, tpr)\n    roc_results[label] = {'fpr': fpr, 'tpr': tpr, 'auc': roc_auc}\n    ax1.plot(fpr, tpr, color=color, linewidth=2.5,\n             label=f'{label} (AUC = {roc_auc:.3f})')\nax1.plot([0, 1], [0, 1], 'k--', linewidth=2, label='Random Classifier')\nax1.set_xlabel('False Positive Rate', fontsize=12, fontweight='bold')\nax1.set_ylabel('True Positive Rate', fontsize=12, fontweight='bold')",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "ax2",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "ax2 = plt.subplot(2, 3, 2)\nfor (label, (col, scores)), color in zip(strategies.items(), colors):\n    precision, recall, thresholds = precision_recall_curve(y_true, scores)\n    avg_precision = average_precision_score(y_true, scores)\n    ax2.plot(recall, precision, color=color, linewidth=2.5,\n             label=f'{label} (AP = {avg_precision:.3f})')\nax2.set_xlabel('Recall', fontsize=12, fontweight='bold')\nax2.set_ylabel('Precision', fontsize=12, fontweight='bold')\nax2.set_title('Precision-Recall Curves', fontsize=14, fontweight='bold', pad=15)\nax2.legend(loc='upper right', fontsize=8.5, framealpha=0.95)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "ax3",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "ax3 = plt.subplot(2, 3, 3)\ny_pred_ntpm = trace_data['pred_ntpm']\ncm = confusion_matrix(y_true, y_pred_ntpm)\nim = ax3.imshow(cm, cmap='Blues', alpha=0.8)\nax3.set_xticks([0, 1])\nax3.set_yticks([0, 1])\nax3.set_xticklabels(['Not Liver', 'Liver'], fontsize=11)\nax3.set_yticklabels(['Not Liver', 'Liver'], fontsize=11)\nax3.set_xlabel('Predicted', fontsize=12, fontweight='bold')\nax3.set_ylabel('True (Known Markers)', fontsize=12, fontweight='bold')",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred_ntpm",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "y_pred_ntpm = trace_data['pred_ntpm']\ncm = confusion_matrix(y_true, y_pred_ntpm)\nim = ax3.imshow(cm, cmap='Blues', alpha=0.8)\nax3.set_xticks([0, 1])\nax3.set_yticks([0, 1])\nax3.set_xticklabels(['Not Liver', 'Liver'], fontsize=11)\nax3.set_yticklabels(['Not Liver', 'Liver'], fontsize=11)\nax3.set_xlabel('Predicted', fontsize=12, fontweight='bold')\nax3.set_ylabel('True (Known Markers)', fontsize=12, fontweight='bold')\nax3.set_title('Confusion Matrix: nTPM Threshold ≥100\\n(Best Overall Performance)', fontsize=13, fontweight='bold', pad=15)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "cm",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "cm = confusion_matrix(y_true, y_pred_ntpm)\nim = ax3.imshow(cm, cmap='Blues', alpha=0.8)\nax3.set_xticks([0, 1])\nax3.set_yticks([0, 1])\nax3.set_xticklabels(['Not Liver', 'Liver'], fontsize=11)\nax3.set_yticklabels(['Not Liver', 'Liver'], fontsize=11)\nax3.set_xlabel('Predicted', fontsize=12, fontweight='bold')\nax3.set_ylabel('True (Known Markers)', fontsize=12, fontweight='bold')\nax3.set_title('Confusion Matrix: nTPM Threshold ≥100\\n(Best Overall Performance)', fontsize=13, fontweight='bold', pad=15)\n# Add text annotations",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "im",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "im = ax3.imshow(cm, cmap='Blues', alpha=0.8)\nax3.set_xticks([0, 1])\nax3.set_yticks([0, 1])\nax3.set_xticklabels(['Not Liver', 'Liver'], fontsize=11)\nax3.set_yticklabels(['Not Liver', 'Liver'], fontsize=11)\nax3.set_xlabel('Predicted', fontsize=12, fontweight='bold')\nax3.set_ylabel('True (Known Markers)', fontsize=12, fontweight='bold')\nax3.set_title('Confusion Matrix: nTPM Threshold ≥100\\n(Best Overall Performance)', fontsize=13, fontweight='bold', pad=15)\n# Add text annotations\nfor i in range(2):",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "cbar",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "cbar = plt.colorbar(im, ax=ax3)\ncbar.set_label('Count', fontsize=10)\n# ============================================================================\n# 4. Performance Metrics Comparison (Bottom Left)\n# ============================================================================\nax4 = plt.subplot(2, 3, 4)\nmetrics_data = []\nfor label, (col, scores) in strategies.items():\n    if label == 'nTPM Threshold ≥100':\n        y_pred = trace_data['pred_ntpm']",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "ax4",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "ax4 = plt.subplot(2, 3, 4)\nmetrics_data = []\nfor label, (col, scores) in strategies.items():\n    if label == 'nTPM Threshold ≥100':\n        y_pred = trace_data['pred_ntpm']\n    elif label == 'Multi-Criteria (≥2)':\n        y_pred = trace_data['pred_multicriteria']\n    elif label == 'nTPM+Cluster (≥200)':\n        y_pred = trace_data['pred_tier1']\n    elif label == 'nTPM+Cluster (any nTPM)':",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "metrics_data",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "metrics_data = []\nfor label, (col, scores) in strategies.items():\n    if label == 'nTPM Threshold ≥100':\n        y_pred = trace_data['pred_ntpm']\n    elif label == 'Multi-Criteria (≥2)':\n        y_pred = trace_data['pred_multicriteria']\n    elif label == 'nTPM+Cluster (≥200)':\n        y_pred = trace_data['pred_tier1']\n    elif label == 'nTPM+Cluster (any nTPM)':\n        y_pred = trace_data['pred_ntpm_cluster']",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "metrics_df",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "metrics_df = pd.DataFrame(metrics_data)\nx = np.arange(len(metrics_df))\nwidth = 0.2\nbars1 = ax4.bar(x - 1.5*width, metrics_df['Sensitivity'], width, label='Sensitivity', color='#FF6B6B', alpha=0.8)\nbars2 = ax4.bar(x - 0.5*width, metrics_df['Specificity'], width, label='Specificity', color='#4ECDC4', alpha=0.8)\nbars3 = ax4.bar(x + 0.5*width, metrics_df['Precision'], width, label='Precision', color='#FFE66D', alpha=0.8)\nbars4 = ax4.bar(x + 1.5*width, metrics_df['F1-Score'], width, label='F1-Score', color='#95E1D3', alpha=0.8)\nax4.set_ylabel('Score', fontsize=12, fontweight='bold')\nax4.set_title('Performance Metrics Comparison', fontsize=14, fontweight='bold', pad=15)\nax4.set_xticks(x)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "x = np.arange(len(metrics_df))\nwidth = 0.2\nbars1 = ax4.bar(x - 1.5*width, metrics_df['Sensitivity'], width, label='Sensitivity', color='#FF6B6B', alpha=0.8)\nbars2 = ax4.bar(x - 0.5*width, metrics_df['Specificity'], width, label='Specificity', color='#4ECDC4', alpha=0.8)\nbars3 = ax4.bar(x + 0.5*width, metrics_df['Precision'], width, label='Precision', color='#FFE66D', alpha=0.8)\nbars4 = ax4.bar(x + 1.5*width, metrics_df['F1-Score'], width, label='F1-Score', color='#95E1D3', alpha=0.8)\nax4.set_ylabel('Score', fontsize=12, fontweight='bold')\nax4.set_title('Performance Metrics Comparison', fontsize=14, fontweight='bold', pad=15)\nax4.set_xticks(x)\nax4.set_xticklabels(metrics_df['Strategy'], fontsize=7.5, rotation=0, ha='center')",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "width",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "width = 0.2\nbars1 = ax4.bar(x - 1.5*width, metrics_df['Sensitivity'], width, label='Sensitivity', color='#FF6B6B', alpha=0.8)\nbars2 = ax4.bar(x - 0.5*width, metrics_df['Specificity'], width, label='Specificity', color='#4ECDC4', alpha=0.8)\nbars3 = ax4.bar(x + 0.5*width, metrics_df['Precision'], width, label='Precision', color='#FFE66D', alpha=0.8)\nbars4 = ax4.bar(x + 1.5*width, metrics_df['F1-Score'], width, label='F1-Score', color='#95E1D3', alpha=0.8)\nax4.set_ylabel('Score', fontsize=12, fontweight='bold')\nax4.set_title('Performance Metrics Comparison', fontsize=14, fontweight='bold', pad=15)\nax4.set_xticks(x)\nax4.set_xticklabels(metrics_df['Strategy'], fontsize=7.5, rotation=0, ha='center')\nax4.legend(loc='upper left', fontsize=9.5, framealpha=0.95)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "bars1",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "bars1 = ax4.bar(x - 1.5*width, metrics_df['Sensitivity'], width, label='Sensitivity', color='#FF6B6B', alpha=0.8)\nbars2 = ax4.bar(x - 0.5*width, metrics_df['Specificity'], width, label='Specificity', color='#4ECDC4', alpha=0.8)\nbars3 = ax4.bar(x + 0.5*width, metrics_df['Precision'], width, label='Precision', color='#FFE66D', alpha=0.8)\nbars4 = ax4.bar(x + 1.5*width, metrics_df['F1-Score'], width, label='F1-Score', color='#95E1D3', alpha=0.8)\nax4.set_ylabel('Score', fontsize=12, fontweight='bold')\nax4.set_title('Performance Metrics Comparison', fontsize=14, fontweight='bold', pad=15)\nax4.set_xticks(x)\nax4.set_xticklabels(metrics_df['Strategy'], fontsize=7.5, rotation=0, ha='center')\nax4.legend(loc='upper left', fontsize=9.5, framealpha=0.95)\nax4.set_ylim(0, 1.1)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "bars2",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "bars2 = ax4.bar(x - 0.5*width, metrics_df['Specificity'], width, label='Specificity', color='#4ECDC4', alpha=0.8)\nbars3 = ax4.bar(x + 0.5*width, metrics_df['Precision'], width, label='Precision', color='#FFE66D', alpha=0.8)\nbars4 = ax4.bar(x + 1.5*width, metrics_df['F1-Score'], width, label='F1-Score', color='#95E1D3', alpha=0.8)\nax4.set_ylabel('Score', fontsize=12, fontweight='bold')\nax4.set_title('Performance Metrics Comparison', fontsize=14, fontweight='bold', pad=15)\nax4.set_xticks(x)\nax4.set_xticklabels(metrics_df['Strategy'], fontsize=7.5, rotation=0, ha='center')\nax4.legend(loc='upper left', fontsize=9.5, framealpha=0.95)\nax4.set_ylim(0, 1.1)\nax4.grid(axis='y', alpha=0.3)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "bars3",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "bars3 = ax4.bar(x + 0.5*width, metrics_df['Precision'], width, label='Precision', color='#FFE66D', alpha=0.8)\nbars4 = ax4.bar(x + 1.5*width, metrics_df['F1-Score'], width, label='F1-Score', color='#95E1D3', alpha=0.8)\nax4.set_ylabel('Score', fontsize=12, fontweight='bold')\nax4.set_title('Performance Metrics Comparison', fontsize=14, fontweight='bold', pad=15)\nax4.set_xticks(x)\nax4.set_xticklabels(metrics_df['Strategy'], fontsize=7.5, rotation=0, ha='center')\nax4.legend(loc='upper left', fontsize=9.5, framealpha=0.95)\nax4.set_ylim(0, 1.1)\nax4.grid(axis='y', alpha=0.3)\n# ============================================================================",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "bars4",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "bars4 = ax4.bar(x + 1.5*width, metrics_df['F1-Score'], width, label='F1-Score', color='#95E1D3', alpha=0.8)\nax4.set_ylabel('Score', fontsize=12, fontweight='bold')\nax4.set_title('Performance Metrics Comparison', fontsize=14, fontweight='bold', pad=15)\nax4.set_xticks(x)\nax4.set_xticklabels(metrics_df['Strategy'], fontsize=7.5, rotation=0, ha='center')\nax4.legend(loc='upper left', fontsize=9.5, framealpha=0.95)\nax4.set_ylim(0, 1.1)\nax4.grid(axis='y', alpha=0.3)\n# ============================================================================\n# 5. Score Distribution (Bottom Middle)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "ax5",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "ax5 = plt.subplot(2, 3, 5)\nknown_liver = trace_data[trace_data['is_known_liver'] == 1]['confidence_score']\nnon_liver = trace_data[trace_data['is_known_liver'] == 0]['confidence_score']\nax5.hist(non_liver, bins=30, alpha=0.6, label='Non-liver proteins', color='#E8E8E8', edgecolor='black')\nax5.hist(known_liver, bins=15, alpha=0.8, label='Known liver markers', color='#FF6B6B', edgecolor='black')\nax5.axvline(60, color='red', linestyle='--', linewidth=2.5, label='Threshold = 60')\nax5.set_xlabel('Confidence Score', fontsize=12, fontweight='bold')\nax5.set_ylabel('Frequency', fontsize=12, fontweight='bold')\nax5.set_title('Confidence Score Distribution', fontsize=14, fontweight='bold', pad=15)\nax5.legend(loc='upper right', fontsize=9.5, framealpha=0.95)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "known_liver",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "known_liver = trace_data[trace_data['is_known_liver'] == 1]['confidence_score']\nnon_liver = trace_data[trace_data['is_known_liver'] == 0]['confidence_score']\nax5.hist(non_liver, bins=30, alpha=0.6, label='Non-liver proteins', color='#E8E8E8', edgecolor='black')\nax5.hist(known_liver, bins=15, alpha=0.8, label='Known liver markers', color='#FF6B6B', edgecolor='black')\nax5.axvline(60, color='red', linestyle='--', linewidth=2.5, label='Threshold = 60')\nax5.set_xlabel('Confidence Score', fontsize=12, fontweight='bold')\nax5.set_ylabel('Frequency', fontsize=12, fontweight='bold')\nax5.set_title('Confidence Score Distribution', fontsize=14, fontweight='bold', pad=15)\nax5.legend(loc='upper right', fontsize=9.5, framealpha=0.95)\nax5.grid(axis='y', alpha=0.3)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "non_liver",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "non_liver = trace_data[trace_data['is_known_liver'] == 0]['confidence_score']\nax5.hist(non_liver, bins=30, alpha=0.6, label='Non-liver proteins', color='#E8E8E8', edgecolor='black')\nax5.hist(known_liver, bins=15, alpha=0.8, label='Known liver markers', color='#FF6B6B', edgecolor='black')\nax5.axvline(60, color='red', linestyle='--', linewidth=2.5, label='Threshold = 60')\nax5.set_xlabel('Confidence Score', fontsize=12, fontweight='bold')\nax5.set_ylabel('Frequency', fontsize=12, fontweight='bold')\nax5.set_title('Confidence Score Distribution', fontsize=14, fontweight='bold', pad=15)\nax5.legend(loc='upper right', fontsize=9.5, framealpha=0.95)\nax5.grid(axis='y', alpha=0.3)\n# ============================================================================",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "ax6",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "ax6 = plt.subplot(2, 3, 6)\nax6.axis('off')\n# Create summary table\nsummary_data = []\nfor label, (col, scores) in strategies.items():\n    roc_auc = roc_results[label]['auc']\n    avg_precision = average_precision_score(y_true, scores)\n    if label == 'nTPM Threshold ≥100':\n        y_pred = trace_data['pred_ntpm']\n    elif label == 'Multi-Criteria (≥2)':",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "summary_data",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "summary_data = []\nfor label, (col, scores) in strategies.items():\n    roc_auc = roc_results[label]['auc']\n    avg_precision = average_precision_score(y_true, scores)\n    if label == 'nTPM Threshold ≥100':\n        y_pred = trace_data['pred_ntpm']\n    elif label == 'Multi-Criteria (≥2)':\n        y_pred = trace_data['pred_multicriteria']\n    elif label == 'nTPM+Cluster (≥200)':\n        y_pred = trace_data['pred_tier1']",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "column_labels",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "column_labels = ['Strategy', 'AUC', 'AP', 'TP/P', 'TN/N']\ntable = ax6.table(cellText=summary_data, colLabels=column_labels,\n                  cellLoc='center', loc='center',\n                  colWidths=[0.38, 0.14, 0.14, 0.16, 0.18])\ntable.auto_set_font_size(False)\ntable.set_fontsize(9)\ntable.scale(1, 2.8)\n# Style header\nfor i in range(len(column_labels)):\n    cell = table[(0, i)]",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "table",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "table = ax6.table(cellText=summary_data, colLabels=column_labels,\n                  cellLoc='center', loc='center',\n                  colWidths=[0.38, 0.14, 0.14, 0.16, 0.18])\ntable.auto_set_font_size(False)\ntable.set_fontsize(9)\ntable.scale(1, 2.8)\n# Style header\nfor i in range(len(column_labels)):\n    cell = table[(0, i)]\n    cell.set_facecolor('#4A90E2')",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "row_colors",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "row_colors = colors\nfor i in range(len(summary_data)):\n    for j in range(len(column_labels)):\n        cell = table[(i+1, j)]\n        cell.set_facecolor(row_colors[i])\n        cell.set_alpha(0.3)\n        cell.set_text_props(fontsize=9)\nax6.set_title('Performance Summary', fontsize=14, fontweight='bold', pad=25)\nplt.tight_layout()\nplt.savefig('output/roc_auc_analysis.png', dpi=300, bbox_inches='tight')",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "ap_scores",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "ap_scores = {}\nfor label, (col, scores) in strategies.items():\n    ap_scores[label] = average_precision_score(y_true, scores)\n# Find best strategies\nbest_auc = max(roc_results.items(), key=lambda x: x[1]['auc'])\nbest_ap = max(ap_scores.items(), key=lambda x: x[1])\nprint(f\"\\nBest by AUC-ROC: {best_auc[0]}\")\nprint(f\"  AUC-ROC: {best_auc[1]['auc']:.3f}\")\nprint(f\"\\nBest by AP (Average Precision): {best_ap[0]}\")\nprint(f\"  AP: {best_ap[1]:.3f}\")",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "best_auc",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "best_auc = max(roc_results.items(), key=lambda x: x[1]['auc'])\nbest_ap = max(ap_scores.items(), key=lambda x: x[1])\nprint(f\"\\nBest by AUC-ROC: {best_auc[0]}\")\nprint(f\"  AUC-ROC: {best_auc[1]['auc']:.3f}\")\nprint(f\"\\nBest by AP (Average Precision): {best_ap[0]}\")\nprint(f\"  AP: {best_ap[1]:.3f}\")\n# Combined recommendation\nprint(\"\\n\" + \"-\"*80)\nprint(\"STRATEGY RECOMMENDATIONS BY USE CASE:\")\nprint(\"-\"*80)",
+        "detail": "generate_roc_curve",
+        "documentation": {}
+    },
+    {
+        "label": "best_ap",
+        "kind": 5,
+        "importPath": "generate_roc_curve",
+        "description": "generate_roc_curve",
+        "peekOfCode": "best_ap = max(ap_scores.items(), key=lambda x: x[1])\nprint(f\"\\nBest by AUC-ROC: {best_auc[0]}\")\nprint(f\"  AUC-ROC: {best_auc[1]['auc']:.3f}\")\nprint(f\"\\nBest by AP (Average Precision): {best_ap[0]}\")\nprint(f\"  AP: {best_ap[1]:.3f}\")\n# Combined recommendation\nprint(\"\\n\" + \"-\"*80)\nprint(\"STRATEGY RECOMMENDATIONS BY USE CASE:\")\nprint(\"-\"*80)\nprint(\"\\nFor liver protein classification, we recommend:\")",
+        "detail": "generate_roc_curve",
         "documentation": {}
     },
     {
@@ -87,11 +889,29 @@
         "documentation": {}
     },
     {
+        "label": "csv_files",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "csv_files = glob.glob('input/*.csv')\nif not csv_files:\n    raise FileNotFoundError(\"No CSV file found in input folder\")\nif len(csv_files) > 1:\n    print(f\"Warning: Multiple CSV files found. Using: {csv_files[0]}\")\n    print(f\"Other files: {csv_files[1:]}\")\ngene_data_file = csv_files[0]\nprint(f\"Loading gene data from: {gene_data_file}\")\ngene_data = pd.read_csv(gene_data_file)\n# Load protein atlas TSV file",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
+        "label": "gene_data_file",
+        "kind": 5,
+        "importPath": "liver_protein_classifier",
+        "description": "liver_protein_classifier",
+        "peekOfCode": "gene_data_file = csv_files[0]\nprint(f\"Loading gene data from: {gene_data_file}\")\ngene_data = pd.read_csv(gene_data_file)\n# Load protein atlas TSV file\nprotein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\\t')\n# Extract Gene column from gene_data (it's in the \"Gene\" column)\nprint(f\"Total genes in input file: {len(gene_data)}\")\nprint(f\"Total genes in protein atlas: {len(protein_atlas)}\")\n# Merge the two dataframes on Gene column\nmerged_data = gene_data.merge(",
+        "detail": "liver_protein_classifier",
+        "documentation": {}
+    },
+    {
         "label": "gene_data",
         "kind": 5,
         "importPath": "liver_protein_classifier",
         "description": "liver_protein_classifier",
-        "peekOfCode": "gene_data = pd.read_csv('input/log2_center_normalization_t_test_Human.csv')\nprotein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\\t')\n# Extract Gene column from gene_data (it's in the \"Gene\" column)\nprint(f\"Total genes in input file: {len(gene_data)}\")\nprint(f\"Total genes in protein atlas: {len(protein_atlas)}\")\n# Merge the two dataframes on Gene column\nmerged_data = gene_data.merge(\n    protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster', 'RNA tissue cell type enrichment']],\n    on='Gene',\n    how='left'",
+        "peekOfCode": "gene_data = pd.read_csv(gene_data_file)\n# Load protein atlas TSV file\nprotein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\\t')\n# Extract Gene column from gene_data (it's in the \"Gene\" column)\nprint(f\"Total genes in input file: {len(gene_data)}\")\nprint(f\"Total genes in protein atlas: {len(protein_atlas)}\")\n# Merge the two dataframes on Gene column\nmerged_data = gene_data.merge(\n    protein_atlas[['Gene', 'RNA tissue specific nTPM', 'Tissue expression cluster', 'RNA tissue cell type enrichment']],\n    on='Gene',",
         "detail": "liver_protein_classifier",
         "documentation": {}
     },
@@ -431,6 +1251,276 @@
     {
         "label": "trace_data",
         "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "trace_data = pd.read_csv('Trace/Data tracing.csv')\n# Filter genes with liver nTPM values\nliver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\n# Group by classification\ngroups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()\n# Color mapping\ncolor_map = {\n    'liver protein (all 3)': '#FF6B6B',\n    'liver protein (nTPM + cluster)': '#4ECDC4',",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "liver_genes",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "liver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\n# Group by classification\ngroups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()\n# Color mapping\ncolor_map = {\n    'liver protein (all 3)': '#FF6B6B',\n    'liver protein (nTPM + cluster)': '#4ECDC4',\n    'liver protein (nTPM + enrichment)': '#FFE66D',\n    'liver protein (cluster + enrichment)': '#A8E6CF',",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "groups",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "groups = liver_genes.groupby('Classification')['liver_nTPM_value'].apply(list).to_dict()\n# Color mapping\ncolor_map = {\n    'liver protein (all 3)': '#FF6B6B',\n    'liver protein (nTPM + cluster)': '#4ECDC4',\n    'liver protein (nTPM + enrichment)': '#FFE66D',\n    'liver protein (cluster + enrichment)': '#A8E6CF',\n    'liver protein_1': '#FF8C42',\n    'liver protein_2': '#95E1D3',\n    'liver protein_3': '#C7CEEA'",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "color_map",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "color_map = {\n    'liver protein (all 3)': '#FF6B6B',\n    'liver protein (nTPM + cluster)': '#4ECDC4',\n    'liver protein (nTPM + enrichment)': '#FFE66D',\n    'liver protein (cluster + enrichment)': '#A8E6CF',\n    'liver protein_1': '#FF8C42',\n    'liver protein_2': '#95E1D3',\n    'liver protein_3': '#C7CEEA'\n}\n# Order of classifications for display",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "classification_order",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "classification_order = [\n    'liver protein (all 3)',\n    'liver protein (nTPM + cluster)',\n    'liver protein (nTPM + enrichment)',\n    'liver protein_1'\n]\n# Filter groups that have nTPM values\ngroups_with_values = {k: v for k, v in groups.items() if k in classification_order}\n# Create figure with multiple subplots - improved layout\nfig = plt.figure(figsize=(22, 16), facecolor='white')",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "groups_with_values",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "groups_with_values = {k: v for k, v in groups.items() if k in classification_order}\n# Create figure with multiple subplots - improved layout\nfig = plt.figure(figsize=(22, 16), facecolor='white')\ngs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)\n# 1. Box Plot (Top Left)\nax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "fig = plt.figure(figsize=(22, 16), facecolor='white')\ngs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)\n# 1. Box Plot (Top Left)\nax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]\nlabels_for_box = [cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n                  for cat in classification_order if cat in groups_with_values]",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "gs",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "gs = fig.add_gridspec(3, 2, hspace=0.40, wspace=0.35, top=0.94, bottom=0.06, left=0.08, right=0.96)\n# Add overall title\nfig.suptitle('Liver Protein nTPM Distribution Analysis by Classification Group',\n             fontsize=20, fontweight='bold', y=0.98)\n# 1. Box Plot (Top Left)\nax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]\nlabels_for_box = [cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n                  for cat in classification_order if cat in groups_with_values]\nbp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "ax1",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "ax1 = fig.add_subplot(gs[0, 0])\ndata_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]\nlabels_for_box = [cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n                  for cat in classification_order if cat in groups_with_values]\nbp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,\n                 showmeans=True, meanline=True,\n                 boxprops=dict(linewidth=2),\n                 medianprops=dict(linewidth=2.5, color='red'),\n                 meanprops=dict(linewidth=2.5, color='blue', linestyle='--'),\n                 whiskerprops=dict(linewidth=1.5),",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "data_for_box",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "data_for_box = [groups_with_values[cat] for cat in classification_order if cat in groups_with_values]\nlabels_for_box = [cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n                  for cat in classification_order if cat in groups_with_values]\nbp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,\n                 showmeans=True, meanline=True,\n                 boxprops=dict(linewidth=2),\n                 medianprops=dict(linewidth=2.5, color='red'),\n                 meanprops=dict(linewidth=2.5, color='blue', linestyle='--'),\n                 whiskerprops=dict(linewidth=1.5),\n                 capprops=dict(linewidth=1.5),",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "labels_for_box",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "labels_for_box = [cat.replace('liver protein ', '').replace('(', '').replace(')', '')\n                  for cat in classification_order if cat in groups_with_values]\nbp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,\n                 showmeans=True, meanline=True,\n                 boxprops=dict(linewidth=2),\n                 medianprops=dict(linewidth=2.5, color='red'),\n                 meanprops=dict(linewidth=2.5, color='blue', linestyle='--'),\n                 whiskerprops=dict(linewidth=1.5),\n                 capprops=dict(linewidth=1.5),\n                 flierprops=dict(marker='o', markersize=4, alpha=0.5))",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "bp",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "bp = ax1.boxplot(data_for_box, labels=labels_for_box, patch_artist=True,\n                 showmeans=True, meanline=True,\n                 boxprops=dict(linewidth=2),\n                 medianprops=dict(linewidth=2.5, color='red'),\n                 meanprops=dict(linewidth=2.5, color='blue', linestyle='--'),\n                 whiskerprops=dict(linewidth=1.5),\n                 capprops=dict(linewidth=1.5),\n                 flierprops=dict(marker='o', markersize=4, alpha=0.5))\n# Color the boxes\nfor patch, cat in zip(bp['boxes'], [c for c in classification_order if c in groups_with_values]):",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "legend_elements",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "legend_elements = [\n    Line2D([0], [0], color='red', linewidth=2.5, label='Median'),\n    Line2D([0], [0], color='blue', linewidth=2.5, linestyle='--', label='Mean')\n]\nax1.legend(handles=legend_elements, loc='upper right', fontsize=9)\n# 2. Violin Plot (Top Right)\nax2 = fig.add_subplot(gs[0, 1])\n# Prepare data for violin plot\nviolin_data = []\nviolin_labels = []",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "ax2",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "ax2 = fig.add_subplot(gs[0, 1])\n# Prepare data for violin plot\nviolin_data = []\nviolin_labels = []\nviolin_colors = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        violin_labels.append(cat.replace('liver protein ', '').replace('(', '').replace(')', ''))\n        violin_colors.append(color_map[cat])",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "violin_data",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "violin_data = []\nviolin_labels = []\nviolin_colors = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        violin_labels.append(cat.replace('liver protein ', '').replace('(', '').replace(')', ''))\n        violin_colors.append(color_map[cat])\nparts = ax2.violinplot(violin_data, positions=range(len(violin_data)),\n                       showmeans=True, showmedians=True, widths=0.7)",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "violin_labels",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "violin_labels = []\nviolin_colors = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        violin_labels.append(cat.replace('liver protein ', '').replace('(', '').replace(')', ''))\n        violin_colors.append(color_map[cat])\nparts = ax2.violinplot(violin_data, positions=range(len(violin_data)),\n                       showmeans=True, showmedians=True, widths=0.7)\n# Color the violins",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "violin_colors",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "violin_colors = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        violin_data.append(groups_with_values[cat])\n        violin_labels.append(cat.replace('liver protein ', '').replace('(', '').replace(')', ''))\n        violin_colors.append(color_map[cat])\nparts = ax2.violinplot(violin_data, positions=range(len(violin_data)),\n                       showmeans=True, showmedians=True, widths=0.7)\n# Color the violins\nfor pc, color in zip(parts['bodies'], violin_colors):",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "parts",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "parts = ax2.violinplot(violin_data, positions=range(len(violin_data)),\n                       showmeans=True, showmedians=True, widths=0.7)\n# Color the violins\nfor pc, color in zip(parts['bodies'], violin_colors):\n    pc.set_facecolor(color)\n    pc.set_alpha(0.7)\n    pc.set_edgecolor('black')\n    pc.set_linewidth(1.5)\n# Style the components\nparts['cmeans'].set_color('blue')",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "ax3",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "ax3 = fig.add_subplot(gs[1, 0])\npositions = []\nall_values = []\nall_colors = []\nfor i, cat in enumerate(classification_order):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([color_map[cat]] * len(values))",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "positions",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "positions = []\nall_values = []\nall_colors = []\nfor i, cat in enumerate(classification_order):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([color_map[cat]] * len(values))\n# Add jitter to x positions",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "all_values",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "all_values = []\nall_colors = []\nfor i, cat in enumerate(classification_order):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([color_map[cat]] * len(values))\n# Add jitter to x positions\nnp.random.seed(42)",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "all_colors",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "all_colors = []\nfor i, cat in enumerate(classification_order):\n    if cat in groups_with_values:\n        values = groups_with_values[cat]\n        positions.extend([i] * len(values))\n        all_values.extend(values)\n        all_colors.extend([color_map[cat]] * len(values))\n# Add jitter to x positions\nnp.random.seed(42)\njittered_positions = np.array(positions) + np.random.normal(0, 0.1, len(positions))",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "jittered_positions",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "jittered_positions = np.array(positions) + np.random.normal(0, 0.1, len(positions))\nax3.scatter(jittered_positions, all_values, c=all_colors, alpha=0.5, s=30, edgecolors='black', linewidth=0.5)\n# Overlay box plot\nbp3 = ax3.boxplot(data_for_box, positions=range(len(data_for_box)),\n                  widths=0.3, patch_artist=False,\n                  boxprops=dict(linewidth=2, color='black'),\n                  medianprops=dict(linewidth=2.5, color='red'),\n                  whiskerprops=dict(linewidth=1.5, color='black'),\n                  capprops=dict(linewidth=1.5, color='black'),\n                  showfliers=False)",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "bp3",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "bp3 = ax3.boxplot(data_for_box, positions=range(len(data_for_box)),\n                  widths=0.3, patch_artist=False,\n                  boxprops=dict(linewidth=2, color='black'),\n                  medianprops=dict(linewidth=2.5, color='red'),\n                  whiskerprops=dict(linewidth=1.5, color='black'),\n                  capprops=dict(linewidth=1.5, color='black'),\n                  showfliers=False)\nax3.set_xticks(range(len(labels_for_box)))\nax3.set_xticklabels(labels_for_box, rotation=20, ha='right', fontsize=11)\nax3.set_yscale('log')",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "ax4",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "ax4 = fig.add_subplot(gs[1, 1])\nfor cat in classification_order:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        log_values = np.log10(values)\n        ax4.hist(log_values, bins=20, alpha=0.5, label=cat.replace('liver protein ', '').replace('(', '').replace(')', ''),\n                color=color_map[cat], edgecolor='black', linewidth=1)\nax4.set_xlabel('Log10(Liver nTPM Value)', fontsize=13, fontweight='bold')\nax4.set_ylabel('Frequency', fontsize=13, fontweight='bold')\nax4.set_title('Histogram: nTPM Distribution Overlap', fontsize=15, fontweight='bold', pad=20)",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "ax5",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "ax5 = fig.add_subplot(gs[2, 0])\nfor cat in classification_order:\n    if cat in groups_with_values:\n        values = sorted(groups_with_values[cat])\n        cumulative = np.arange(1, len(values) + 1) / len(values) * 100\n        ax5.plot(values, cumulative, linewidth=2.5, label=cat.replace('liver protein ', '').replace('(', '').replace(')', ''),\n                color=color_map[cat], marker='o', markersize=3, markevery=max(1, len(values)//20))\nax5.set_xscale('log')\nax5.set_xlabel('Liver nTPM Value (log scale)', fontsize=13, fontweight='bold')\nax5.set_ylabel('Cumulative Percentage (%)', fontsize=13, fontweight='bold')",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "ax6",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "ax6 = fig.add_subplot(gs[2, 1])\nax6.axis('off')\n# Calculate statistics\nstats_data = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        stats_data.append([\n            cat.replace('liver protein ', '').replace('(', '').replace(')', ''),\n            len(values),",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "stats_data",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "stats_data = []\nfor cat in classification_order:\n    if cat in groups_with_values:\n        values = np.array(groups_with_values[cat])\n        stats_data.append([\n            cat.replace('liver protein ', '').replace('(', '').replace(')', ''),\n            len(values),\n            f\"{np.mean(values):.2f}\",\n            f\"{np.median(values):.2f}\",\n            f\"{np.std(values):.2f}\",",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "column_labels",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "column_labels = ['Group', 'N', 'Mean', 'Median', 'Std Dev', 'Min', 'Max', 'Q1', 'Q3']\ntable = ax6.table(cellText=stats_data, colLabels=column_labels,\n                  cellLoc='center', loc='center',\n                  colWidths=[0.19, 0.09, 0.11, 0.11, 0.11, 0.10, 0.10, 0.09, 0.09])\ntable.auto_set_font_size(False)\ntable.set_fontsize(10)\ntable.scale(1, 2.2)\n# Style header\nfor i in range(len(column_labels)):\n    cell = table[(0, i)]",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "table",
+        "kind": 5,
+        "importPath": "visualize_group_distribution",
+        "description": "visualize_group_distribution",
+        "peekOfCode": "table = ax6.table(cellText=stats_data, colLabels=column_labels,\n                  cellLoc='center', loc='center',\n                  colWidths=[0.19, 0.09, 0.11, 0.11, 0.11, 0.10, 0.10, 0.09, 0.09])\ntable.auto_set_font_size(False)\ntable.set_fontsize(10)\ntable.scale(1, 2.2)\n# Style header\nfor i in range(len(column_labels)):\n    cell = table[(0, i)]\n    cell.set_facecolor('#4A90E2')",
+        "detail": "visualize_group_distribution",
+        "documentation": {}
+    },
+    {
+        "label": "trace_data",
+        "kind": 5,
         "importPath": "visualize_ntpm",
         "description": "visualize_ntpm",
         "peekOfCode": "trace_data = pd.read_csv('Trace/Data tracing.csv')\n# Filter genes with liver nTPM values and sort by value\nliver_genes = trace_data[trace_data['liver_nTPM_value'].notna()].copy()\nliver_genes = liver_genes.sort_values('liver_nTPM_value', ascending=False)\n# Check liver protein_2 group (no nTPM values expected)\nliver_protein_2_count = len(trace_data[trace_data['Classification'] == 'liver protein_2'])\nprint(f\"Total genes with liver nTPM values: {len(liver_genes)}\")\nprint(f\"Liver protein_2 genes (cluster only, no nTPM): {liver_protein_2_count}\")\nprint(f\"\\nTop 10 genes with highest liver nTPM:\")\nprint(liver_genes[['Gene', 'liver_nTPM_value', 'Classification']].head(10))",
@@ -469,7 +1559,7 @@
         "kind": 5,
         "importPath": "visualize_ntpm",
         "description": "visualize_ntpm",
-        "peekOfCode": "top_n = 50\ntop_genes = liver_genes.head(top_n)\n# Color by classification\ncolor_map = {\n    'liver protein (all 3)': '#FFD700',  # Gold for all 3\n    'liver protein (nTPM + cluster)': '#DDA0DD',  # Plum for nTPM + cluster\n    'liver protein (nTPM + enrichment)': '#F0E68C',  # Khaki for nTPM + enrichment\n    'liver protein (cluster + enrichment)': '#87CEFA',  # Light sky blue for cluster + enrichment\n    'liver protein_1': '#FFB6C1',  # Light pink for nTPM only\n    'liver protein_2': '#87CEEB',  # Sky blue for cluster only",
+        "peekOfCode": "top_n = 50\ntop_genes = liver_genes.head(top_n)\n# Color by classification - improved contrast\ncolor_map = {\n    'liver protein (all 3)': '#FF6B6B',  # Bright red for all 3 - HIGHEST PRIORITY\n    'liver protein (nTPM + cluster)': '#4ECDC4',  # Teal for nTPM + cluster\n    'liver protein (nTPM + enrichment)': '#FFE66D',  # Bright yellow for nTPM + enrichment\n    'liver protein (cluster + enrichment)': '#A8E6CF',  # Mint green for cluster + enrichment\n    'liver protein_1': '#FF8C42',  # Bright orange for nTPM only\n    'liver protein_2': '#95E1D3',  # Light teal for cluster only",
         "detail": "visualize_ntpm",
         "documentation": {}
     },
@@ -478,7 +1568,7 @@
         "kind": 5,
         "importPath": "visualize_ntpm",
         "description": "visualize_ntpm",
-        "peekOfCode": "top_genes = liver_genes.head(top_n)\n# Color by classification\ncolor_map = {\n    'liver protein (all 3)': '#FFD700',  # Gold for all 3\n    'liver protein (nTPM + cluster)': '#DDA0DD',  # Plum for nTPM + cluster\n    'liver protein (nTPM + enrichment)': '#F0E68C',  # Khaki for nTPM + enrichment\n    'liver protein (cluster + enrichment)': '#87CEFA',  # Light sky blue for cluster + enrichment\n    'liver protein_1': '#FFB6C1',  # Light pink for nTPM only\n    'liver protein_2': '#87CEEB',  # Sky blue for cluster only\n    'liver protein_3': '#98FB98',  # Pale green for enrichment only",
+        "peekOfCode": "top_genes = liver_genes.head(top_n)\n# Color by classification - improved contrast\ncolor_map = {\n    'liver protein (all 3)': '#FF6B6B',  # Bright red for all 3 - HIGHEST PRIORITY\n    'liver protein (nTPM + cluster)': '#4ECDC4',  # Teal for nTPM + cluster\n    'liver protein (nTPM + enrichment)': '#FFE66D',  # Bright yellow for nTPM + enrichment\n    'liver protein (cluster + enrichment)': '#A8E6CF',  # Mint green for cluster + enrichment\n    'liver protein_1': '#FF8C42',  # Bright orange for nTPM only\n    'liver protein_2': '#95E1D3',  # Light teal for cluster only\n    'liver protein_3': '#C7CEEA',  # Light periwinkle for enrichment only",
         "detail": "visualize_ntpm",
         "documentation": {}
     },
@@ -487,7 +1577,7 @@
         "kind": 5,
         "importPath": "visualize_ntpm",
         "description": "visualize_ntpm",
-        "peekOfCode": "color_map = {\n    'liver protein (all 3)': '#FFD700',  # Gold for all 3\n    'liver protein (nTPM + cluster)': '#DDA0DD',  # Plum for nTPM + cluster\n    'liver protein (nTPM + enrichment)': '#F0E68C',  # Khaki for nTPM + enrichment\n    'liver protein (cluster + enrichment)': '#87CEFA',  # Light sky blue for cluster + enrichment\n    'liver protein_1': '#FFB6C1',  # Light pink for nTPM only\n    'liver protein_2': '#87CEEB',  # Sky blue for cluster only\n    'liver protein_3': '#98FB98',  # Pale green for enrichment only\n    'non-liver protein': '#CCCCCC'  # Gray for non-liver\n}",
+        "peekOfCode": "color_map = {\n    'liver protein (all 3)': '#FF6B6B',  # Bright red for all 3 - HIGHEST PRIORITY\n    'liver protein (nTPM + cluster)': '#4ECDC4',  # Teal for nTPM + cluster\n    'liver protein (nTPM + enrichment)': '#FFE66D',  # Bright yellow for nTPM + enrichment\n    'liver protein (cluster + enrichment)': '#A8E6CF',  # Mint green for cluster + enrichment\n    'liver protein_1': '#FF8C42',  # Bright orange for nTPM only\n    'liver protein_2': '#95E1D3',  # Light teal for cluster only\n    'liver protein_3': '#C7CEEA',  # Light periwinkle for enrichment only\n    'non-liver protein': '#E8E8E8'  # Light gray for non-liver\n}",
         "detail": "visualize_ntpm",
         "documentation": {}
     },
@@ -523,7 +1613,7 @@
         "kind": 5,
         "importPath": "visualize_ntpm",
         "description": "visualize_ntpm",
-        "peekOfCode": "legend_elements = [\n    Patch(facecolor='#FFD700', edgecolor='black', label='All 3 criteria'),\n    Patch(facecolor='#DDA0DD', edgecolor='black', label='nTPM + cluster'),\n    Patch(facecolor='#F0E68C', edgecolor='black', label='nTPM + enrichment'),\n    Patch(facecolor='#87CEFA', edgecolor='black', label='cluster + enrichment'),\n    Patch(facecolor='#FFB6C1', edgecolor='black', label='nTPM only'),\n    Patch(facecolor='#87CEEB', edgecolor='black', label='cluster only'),\n    Patch(facecolor='#98FB98', edgecolor='black', label='enrichment only')\n]\nax1.legend(handles=legend_elements, loc='lower right', fontsize=9, ncol=2)",
+        "peekOfCode": "legend_elements = [\n    Patch(facecolor='#FF6B6B', edgecolor='black', label='All 3 criteria', linewidth=1.5),\n    Patch(facecolor='#4ECDC4', edgecolor='black', label='nTPM + cluster', linewidth=1.5),\n    Patch(facecolor='#FFE66D', edgecolor='black', label='nTPM + enrichment', linewidth=1.5),\n    Patch(facecolor='#A8E6CF', edgecolor='black', label='cluster + enrichment', linewidth=1.5),\n    Patch(facecolor='#FF8C42', edgecolor='black', label='nTPM only', linewidth=1.5),\n    Patch(facecolor='#95E1D3', edgecolor='black', label='cluster only', linewidth=1.5),\n    Patch(facecolor='#C7CEEA', edgecolor='black', label='enrichment only', linewidth=1.5)\n]\nax1.legend(handles=legend_elements, loc='lower right', fontsize=9, ncol=2)",
         "detail": "visualize_ntpm",
         "documentation": {}
     },
@@ -577,7 +1667,7 @@
         "kind": 5,
         "importPath": "visualize_ntpm",
         "description": "visualize_ntpm",
-        "peekOfCode": "legend_elements_scatter = [\n    Patch(facecolor='#FFD700', edgecolor='black', label='All 3 criteria', alpha=0.6),\n    Patch(facecolor='#DDA0DD', edgecolor='black', label='nTPM + cluster', alpha=0.6),\n    Patch(facecolor='#F0E68C', edgecolor='black', label='nTPM + enrichment', alpha=0.6),\n    Patch(facecolor='#FFB6C1', edgecolor='black', label='nTPM only', alpha=0.6)\n]\nax2.legend(handles=legend_elements_scatter, loc='upper left', fontsize=10)\n# Add statistics text\n# Count each classification\nall_3 = len(liver_genes[liver_genes[\"Classification\"] == \"liver protein (all 3)\"])",
+        "peekOfCode": "legend_elements_scatter = [\n    Patch(facecolor='#FF6B6B', edgecolor='black', label='All 3 criteria', alpha=0.7, linewidth=1.5),\n    Patch(facecolor='#4ECDC4', edgecolor='black', label='nTPM + cluster', alpha=0.7, linewidth=1.5),\n    Patch(facecolor='#FFE66D', edgecolor='black', label='nTPM + enrichment', alpha=0.7, linewidth=1.5),\n    Patch(facecolor='#FF8C42', edgecolor='black', label='nTPM only', alpha=0.7, linewidth=1.5)\n]\nax2.legend(handles=legend_elements_scatter, loc='upper left', fontsize=10)\n# Add statistics text\n# Count each classification\nall_3 = len(liver_genes[liver_genes[\"Classification\"] == \"liver protein (all 3)\"])",
         "detail": "visualize_ntpm",
         "documentation": {}
     },

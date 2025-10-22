@@ -1,0 +1,64 @@
+Gene,liver_nTPM_value,Classification,confidence_score
+C1orf226,21.4,liver protein (nTPM + cluster),50
+C2orf72,18.2,liver protein (all 3),75
+SOWAHB,18.6,liver protein (all 3),75
+PPP1R3G,6.0,liver protein (nTPM + cluster),45
+CYP26A1,17.4,liver protein (nTPM + cluster),50
+GAS2,38.5,liver protein (all 3),75
+XYLB,32.4,liver protein (all 3),75
+CYP7B1,20.8,liver protein (all 3),75
+ABCC6,45.9,liver protein (all 3),75
+GALT,45.9,liver protein (all 3),75
+MET,41.6,liver protein (nTPM + cluster),50
+ELFN1,14.2,liver protein (all 3),75
+AR,37.1,liver protein (all 3),75
+SRD5A1,28.1,liver protein (all 3),75
+HNF1A,10.9,liver protein (nTPM + cluster),50
+CA5A,23.5,liver protein (nTPM + cluster),50
+GCK,17.8,liver protein (all 3),75
+SLC16A2,39.5,liver protein (all 3),75
+GCLM,47.0,liver protein (nTPM + cluster),50
+SULT1E1,36.0,liver protein (all 3),75
+SULT1A2,48.9,liver protein (all 3),75
+GPLD1,44.7,liver protein (all 3),75
+ITPR2,43.0,liver protein (all 3),75
+EXOC3L4,40.1,liver protein (nTPM + cluster),50
+ENTPD8,14.1,liver protein (all 3),75
+C1orf53,14.7,liver protein (all 3),75
+SLC30A10,33.7,liver protein (all 3),75
+FRRS1,27.7,liver protein (nTPM + cluster),50
+ACOT1,43.2,liver protein (nTPM + cluster),50
+SLC9B2,37.5,liver protein (all 3),75
+RTN4RL2,39.7,liver protein (nTPM + cluster),50
+PROSER2,40.0,liver protein (nTPM + cluster),50
+RAB43,45.8,liver protein (nTPM + cluster),50
+MMAA,23.7,liver protein (all 3),75
+SLC22A9,44.9,liver protein (all 3),75
+THNSL1,20.7,liver protein (all 3),75
+NAGS,47.0,liver protein (nTPM + cluster),50
+TMEM86B,16.3,liver protein (nTPM + cluster),50
+ACOT4,16.2,liver protein (nTPM + cluster),50
+ATP11C,47.0,liver protein (all 3),75
+ANGPTL6,29.4,liver protein (all 3),75
+TNFAIP8L1,33.3,liver protein (all 3),75
+SPRYD4,20.0,liver protein (all 3),75
+DCPS,49.1,liver protein (nTPM + cluster),50
+MOCOS,15.6,liver protein (nTPM + cluster),50
+SEC16B,40.0,liver protein (nTPM + cluster),50
+FAM20A,49.0,liver protein (nTPM + cluster),50
+RUNDC3B,5.8,liver protein (all 3),70
+TTPAL,28.0,liver protein (nTPM + cluster),50
+SELENOO,27.2,liver protein (nTPM + cluster),50
+APOL6,45.1,liver protein (nTPM + cluster),50
+DNAJC25,31.1,liver protein (all 3),75
+SLC26A1,16.4,liver protein (all 3),75
+ACSS3,38.8,liver protein (nTPM + cluster),50
+SUGCT,27.6,liver protein (all 3),75
+CYP4F12,39.2,liver protein (all 3),75
+SEPSECS,25.3,liver protein (nTPM + cluster),50
+NIT2,25.6,liver protein (all 3),75
+SLC2A9,20.7,liver protein (nTPM + cluster),50
+IGSF9,24.2,liver protein (nTPM + cluster),50
+SEC14L4,18.7,liver protein (nTPM + cluster),50
+ST3GAL6,40.8,liver protein (nTPM + cluster),50
+MMACHC,16.8,liver protein (nTPM + cluster),50

@@ -6,7 +6,21 @@ import re
 
 # Read the input files
 print("Loading data files...")
-gene_data = pd.read_csv('input/log2_center_normalization_t_test_Human.csv')
+
+# Find CSV file in input folder
+import glob
+csv_files = glob.glob('input/*.csv')
+if not csv_files:
+    raise FileNotFoundError("No CSV file found in input folder")
+if len(csv_files) > 1:
+    print(f"Warning: Multiple CSV files found. Using: {csv_files[0]}")
+    print(f"Other files: {csv_files[1:]}")
+
+gene_data_file = csv_files[0]
+print(f"Loading gene data from: {gene_data_file}")
+gene_data = pd.read_csv(gene_data_file)
+
+# Load protein atlas TSV file
 protein_atlas = pd.read_csv('input/proteinatlas.tsv', sep='\t')
 
 # Extract Gene column from gene_data (it's in the "Gene" column)
@@ -210,8 +224,9 @@ legend_elements = [
     Patch(facecolor='#FFD700', edgecolor='#FF8C00', linewidth=2,
           label=f'All 3 criteria: {all_three}', alpha=0.8)
 ]
-ax.legend(handles=legend_elements, loc='upper left', fontsize=10, frameon=True,
-          fancybox=True, shadow=True, bbox_to_anchor=(0.02, 0.98))
+ax.legend(handles=legend_elements, loc='center left', fontsize=10, frameon=True,
+          fancybox=True, shadow=True, bbox_to_anchor=(1.02, 0.5),
+          title='Classification Categories', title_fontsize=11)
 
 # Save the Venn diagram
 output_dir = 'output'

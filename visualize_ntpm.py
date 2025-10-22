@@ -25,16 +25,16 @@ fig, axes = plt.subplots(2, 1, figsize=(14, 16))
 top_n = 50
 top_genes = liver_genes.head(top_n)
 
-# Color by classification
+# Color by classification - improved contrast
 color_map = {
-    'liver protein (all 3)': '#FFD700',  # Gold for all 3
-    'liver protein (nTPM + cluster)': '#DDA0DD',  # Plum for nTPM + cluster
-    'liver protein (nTPM + enrichment)': '#F0E68C',  # Khaki for nTPM + enrichment
-    'liver protein (cluster + enrichment)': '#87CEFA',  # Light sky blue for cluster + enrichment
-    'liver protein_1': '#FFB6C1',  # Light pink for nTPM only
-    'liver protein_2': '#87CEEB',  # Sky blue for cluster only
-    'liver protein_3': '#98FB98',  # Pale green for enrichment only
-    'non-liver protein': '#CCCCCC'  # Gray for non-liver
+    'liver protein (all 3)': '#FF6B6B',  # Bright red for all 3 - HIGHEST PRIORITY
+    'liver protein (nTPM + cluster)': '#4ECDC4',  # Teal for nTPM + cluster
+    'liver protein (nTPM + enrichment)': '#FFE66D',  # Bright yellow for nTPM + enrichment
+    'liver protein (cluster + enrichment)': '#A8E6CF',  # Mint green for cluster + enrichment
+    'liver protein_1': '#FF8C42',  # Bright orange for nTPM only
+    'liver protein_2': '#95E1D3',  # Light teal for cluster only
+    'liver protein_3': '#C7CEEA',  # Light periwinkle for enrichment only
+    'non-liver protein': '#E8E8E8'  # Light gray for non-liver
 }
 
 colors = []
@@ -60,13 +60,13 @@ for i, (idx, row) in enumerate(top_genes.iterrows()):
 # Add legend
 from matplotlib.patches import Patch
 legend_elements = [
-    Patch(facecolor='#FFD700', edgecolor='black', label='All 3 criteria'),
-    Patch(facecolor='#DDA0DD', edgecolor='black', label='nTPM + cluster'),
-    Patch(facecolor='#F0E68C', edgecolor='black', label='nTPM + enrichment'),
-    Patch(facecolor='#87CEFA', edgecolor='black', label='cluster + enrichment'),
-    Patch(facecolor='#FFB6C1', edgecolor='black', label='nTPM only'),
-    Patch(facecolor='#87CEEB', edgecolor='black', label='cluster only'),
-    Patch(facecolor='#98FB98', edgecolor='black', label='enrichment only')
+    Patch(facecolor='#FF6B6B', edgecolor='black', label='All 3 criteria', linewidth=1.5),
+    Patch(facecolor='#4ECDC4', edgecolor='black', label='nTPM + cluster', linewidth=1.5),
+    Patch(facecolor='#FFE66D', edgecolor='black', label='nTPM + enrichment', linewidth=1.5),
+    Patch(facecolor='#A8E6CF', edgecolor='black', label='cluster + enrichment', linewidth=1.5),
+    Patch(facecolor='#FF8C42', edgecolor='black', label='nTPM only', linewidth=1.5),
+    Patch(facecolor='#95E1D3', edgecolor='black', label='cluster only', linewidth=1.5),
+    Patch(facecolor='#C7CEEA', edgecolor='black', label='enrichment only', linewidth=1.5)
 ]
 ax1.legend(handles=legend_elements, loc='lower right', fontsize=9, ncol=2)
 
@@ -90,10 +90,10 @@ ax2.grid(True, alpha=0.3, linestyle='--')
 
 # Create legend with updated classifications
 legend_elements_scatter = [
-    Patch(facecolor='#FFD700', edgecolor='black', label='All 3 criteria', alpha=0.6),
-    Patch(facecolor='#DDA0DD', edgecolor='black', label='nTPM + cluster', alpha=0.6),
-    Patch(facecolor='#F0E68C', edgecolor='black', label='nTPM + enrichment', alpha=0.6),
-    Patch(facecolor='#FFB6C1', edgecolor='black', label='nTPM only', alpha=0.6)
+    Patch(facecolor='#FF6B6B', edgecolor='black', label='All 3 criteria', alpha=0.7, linewidth=1.5),
+    Patch(facecolor='#4ECDC4', edgecolor='black', label='nTPM + cluster', alpha=0.7, linewidth=1.5),
+    Patch(facecolor='#FFE66D', edgecolor='black', label='nTPM + enrichment', alpha=0.7, linewidth=1.5),
+    Patch(facecolor='#FF8C42', edgecolor='black', label='nTPM only', alpha=0.7, linewidth=1.5)
 ]
 ax2.legend(handles=legend_elements_scatter, loc='upper left', fontsize=10)
 
