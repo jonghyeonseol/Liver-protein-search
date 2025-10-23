@@ -8,6 +8,13 @@ from sklearn.metrics import confusion_matrix, classification_report
 print("Loading classification data...")
 trace_data = pd.read_csv('Trace/classification_strategy_analysis.csv')
 
+# Use has_liver_in_ntpm column (already exists in file)
+# Fallback: create combined nTPM column if not exists
+if 'has_liver_in_ntpm' in trace_data.columns:
+    trace_data['has_liver_nTPM'] = trace_data['has_liver_in_ntpm']
+else:
+    trace_data['has_liver_nTPM'] = (trace_data.get('has_liver_nTPM_high', pd.Series([False]*len(trace_data))) == True) | (trace_data.get('has_liver_nTPM_low', pd.Series([False]*len(trace_data))) == True)
+
 # Define known liver markers as ground truth
 known_liver_markers = [
     'ALB', 'HP', 'APOA1', 'APOA2', 'APOC3', 'SERPINA1', 'FGA', 'FGB', 'FGG',
@@ -32,9 +39,12 @@ print(f"Total genes: {len(trace_data)}")
 # Strategy 1: Confidence score threshold
 trace_data['pred_confidence'] = (trace_data['confidence_score'] >= 60).astype(int)
 
-# Strategy 2: nTPM threshold
-trace_data['pred_ntpm'] = (trace_data['liver_nTPM_value'] >= 100).astype(int)
-trace_data['pred_ntpm'].fillna(0, inplace=True)
+# Strategy 2: nTPM thresholds (different values)
+trace_data['pred_ntpm_0'] = (trace_data['liver_nTPM_value'] >= 0).astype(int)
+trace_data['pred_ntpm_0'] = trace_data['pred_ntpm_0'].fillna(0)
+
+trace_data['pred_ntpm_10'] = (trace_data['liver_nTPM_value'] >= 10).astype(int)
+trace_data['pred_ntpm_10'] = trace_data['pred_ntpm_10'].fillna(0)
 
 # Strategy 3: Multi-criteria (2 or more)
 trace_data['criteria_count'] = (
@@ -63,13 +73,14 @@ ax1 = plt.subplot(2, 3, 1)
 
 strategies = {
     'Confidence Score ≥60': ('confidence_score', trace_data['confidence_score'].fillna(0)),
-    'nTPM Threshold ≥100': ('pred_ntpm', trace_data['liver_nTPM_value'].fillna(0)),
+    'nTPM Threshold ≥0 (any nTPM)': ('pred_ntpm_0', trace_data['liver_nTPM_value'].fillna(-1).apply(lambda x: max(0, x))),
+    'nTPM Threshold ≥10': ('pred_ntpm_10', trace_data['liver_nTPM_value'].fillna(0)),
     'Multi-Criteria (≥2)': ('criteria_count', trace_data['criteria_count']),
     'nTPM+Cluster (any nTPM)': ('pred_ntpm_cluster', trace_data['pred_ntpm_cluster']),
     'nTPM+Cluster (≥200)': ('pred_tier1', trace_data['pred_tier1'])
 }
 
-colors = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#95E1D3', '#FF8C42']
+colors = ['#FF6B6B', '#4ECDC4', '#A569BD', '#FFE66D', '#95E1D3', '#FF8C42']
 y_true = trace_data['is_known_liver']
 
 roc_results = {}
@@ -108,11 +119,11 @@ ax2.legend(loc='upper right', fontsize=8.5, framealpha=0.95)
 ax2.grid(True, alpha=0.3)
 
 # ============================================================================
-# 3. Confusion Matrices (Top Right - nTPM Threshold ≥100)
+# 3. Confusion Matrices (Top Right - nTPM Threshold ≥10)
 # ============================================================================
 ax3 = plt.subplot(2, 3, 3)
 
-y_pred_ntpm = trace_data['pred_ntpm']
+y_pred_ntpm = trace_data['pred_ntpm_10']
 cm = confusion_matrix(y_true, y_pred_ntpm)
 
 im = ax3.imshow(cm, cmap='Blues', alpha=0.8)
@@ -122,7 +133,7 @@ ax3.set_xticklabels(['Not Liver', 'Liver'], fontsize=11)
 ax3.set_yticklabels(['Not Liver', 'Liver'], fontsize=11)
 ax3.set_xlabel('Predicted', fontsize=12, fontweight='bold')
 ax3.set_ylabel('True (Known Markers)', fontsize=12, fontweight='bold')
-ax3.set_title('Confusion Matrix: nTPM Threshold ≥100\n(Best Overall Performance)', fontsize=13, fontweight='bold', pad=15)
+ax3.set_title('Confusion Matrix: nTPM Threshold ≥10\n(Best Overall Performance)', fontsize=13, fontweight='bold', pad=15)
 
 # Add text annotations
 for i in range(2):
@@ -142,8 +153,10 @@ ax4 = plt.subplot(2, 3, 4)
 
 metrics_data = []
 for label, (col, scores) in strategies.items():
-    if label == 'nTPM Threshold ≥100':
-        y_pred = trace_data['pred_ntpm']
+    if label == 'nTPM Threshold ≥0 (any nTPM)':
+        y_pred = trace_data['pred_ntpm_0']
+    elif label == 'nTPM Threshold ≥10':
+        y_pred = trace_data['pred_ntpm_10']
     elif label == 'Multi-Criteria (≥2)':
         y_pred = trace_data['pred_multicriteria']
     elif label == 'nTPM+Cluster (≥200)':
@@ -216,8 +229,10 @@ for label, (col, scores) in strategies.items():
     roc_auc = roc_results[label]['auc']
     avg_precision = average_precision_score(y_true, scores)
 
-    if label == 'nTPM Threshold ≥100':
-        y_pred = trace_data['pred_ntpm']
+    if label == 'nTPM Threshold ≥0 (any nTPM)':
+        y_pred = trace_data['pred_ntpm_0']
+    elif label == 'nTPM Threshold ≥10':
+        y_pred = trace_data['pred_ntpm_10']
     elif label == 'Multi-Criteria (≥2)':
         y_pred = trace_data['pred_multicriteria']
     elif label == 'nTPM+Cluster (≥200)':
@@ -277,8 +292,10 @@ print("="*80)
 for i, (label, (col, scores)) in enumerate(strategies.items()):
     print(f"\n### {label} ###")
 
-    if label == 'nTPM Threshold ≥100':
-        y_pred = trace_data['pred_ntpm']
+    if label == 'nTPM Threshold ≥0 (any nTPM)':
+        y_pred = trace_data['pred_ntpm_0']
+    elif label == 'nTPM Threshold ≥10':
+        y_pred = trace_data['pred_ntpm_10']
     elif label == 'Multi-Criteria (≥2)':
         y_pred = trace_data['pred_multicriteria']
     elif label == 'nTPM+Cluster (≥200)':
@@ -320,7 +337,7 @@ print("STRATEGY RECOMMENDATIONS BY USE CASE:")
 print("-"*80)
 print("\nFor liver protein classification, we recommend:")
 print("  1. nTPM+Cluster (≥200) - For highest confidence/specificity")
-print("  2. nTPM Threshold ≥100 - For best overall performance (AUC & AP)")
+print("  2. nTPM Threshold ≥10 - For best overall performance (AUC & AP)")
 print("  3. Confidence Score ≥60 - For balanced sensitivity/specificity")
 print("  4. Multi-Criteria (≥2) - For broadest coverage")
 

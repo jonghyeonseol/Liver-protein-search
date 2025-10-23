@@ -1,13 +1,12 @@
 Classification,Count
 non-liver protein,4930
 liver protein (enrichment only),672
-liver protein (nTPM≥100 + cluster + enrichment),309
+liver protein (nTPM≥100 + cluster + enrichment),390
+liver protein (nTPM≥100 + cluster),183
 liver protein (cluster only),157
-liver protein (nTPM≥100 + cluster),127
-liver protein (nTPM<100 + cluster + enrichment),82
-liver protein (nTPM<100 + cluster),57
+liver protein (nTPM≥100 + enrichment),67
+liver protein (nTPM≥100 only),61
 liver protein (cluster + enrichment),57
-liver protein (nTPM≥100 + enrichment),43
-liver protein (nTPM<100 only),31
-liver protein (nTPM≥100 only),30
-liver protein (nTPM<100 + enrichment),28
+liver protein (nTPM<100 + enrichment),4
+liver protein (nTPM<100 + cluster),1
+liver protein (nTPM<100 + cluster + enrichment),1

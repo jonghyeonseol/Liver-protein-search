@@ -7,7 +7,7 @@ from matplotlib.patches import Patch
 # Local imports
 from config import (
     TRACE_DATA_FILE, OUTPUT_DIR, TRACE_DIR,
-    TOP_N_GENES, DPI
+    TOP_N_GENES, DPI, NTPM_HIGH_THRESHOLD
 )
 from visualization_config import CLASSIFICATION_COLOR_MAP
 
@@ -142,12 +142,12 @@ enrichment_only = len(trace_data[trace_data['Classification'] == 'liver protein 
 cluster_enrichment = len(trace_data[trace_data['Classification'] == 'liver protein (cluster + enrichment)'])
 
 stats_text = f'nTPM values: {len(liver_genes)}\n'
-stats_text += f'nTPM≥100:\n'
+stats_text += f'nTPM≥{NTPM_HIGH_THRESHOLD}:\n'
 stats_text += f'  +C+E: {ntpm_high_ce}\n'
 stats_text += f'  +C: {ntpm_high_c}\n'
 stats_text += f'  +E: {ntpm_high_e}\n'
 stats_text += f'  only: {ntpm_high_only}\n'
-stats_text += f'nTPM<100:\n'
+stats_text += f'nTPM<{NTPM_HIGH_THRESHOLD}:\n'
 stats_text += f'  +C+E: {ntpm_low_ce}\n'
 stats_text += f'  +C: {ntpm_low_c}\n'
 stats_text += f'  +E: {ntpm_low_e}\n'

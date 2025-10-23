@@ -7,6 +7,9 @@ from matplotlib.patches import Patch
 print("Loading trace data...")
 trace_data = pd.read_csv('Trace/Data tracing.csv')
 
+# Create combined nTPM column for compatibility
+trace_data['has_liver_in_ntpm'] = (trace_data['has_liver_nTPM_high'] == True) | (trace_data['has_liver_nTPM_low'] == True)
+
 print("\n" + "="*80)
 print("LIVER PROTEIN CLASSIFICATION STRATEGY ANALYSIS")
 print("="*80)
@@ -136,7 +139,7 @@ print("-" * 80)
 
 # Define high-stringency criteria
 high_stringency = trace_data[
-    (trace_data['has_liver_nTPM'] == True) &
+    (trace_data['has_liver_in_ntpm'] == True) &
     (trace_data['has_liver_cluster'] == True) &
     (trace_data['liver_nTPM_value'] >= 100)
 ]
@@ -148,7 +151,7 @@ print(f"  - nTPM value >= 100")
 print(f"\nResult: {len(high_stringency)} genes")
 
 very_high_stringency = trace_data[
-    (trace_data['has_liver_nTPM'] == True) &
+    (trace_data['has_liver_in_ntpm'] == True) &
     (trace_data['has_liver_cluster'] == True) &
     (trace_data['has_liver_enrichment'] == True) &
     (trace_data['liver_nTPM_value'] >= 200)
@@ -240,8 +243,8 @@ for i, (bar, val) in enumerate(zip(bars, threshold_data)):
 ax4 = axes[1, 1]
 stringency_data = {
     'All liver\ncandidates\n(any criterion)': liver_candidates,
-    'nTPM only\n(any value)': len(trace_data[trace_data['has_liver_nTPM'] == True]),
-    'nTPM + cluster\n(any value)': len(trace_data[(trace_data['has_liver_nTPM'] == True) &
+    'nTPM only\n(any value)': len(trace_data[trace_data['has_liver_in_ntpm'] == True]),
+    'nTPM + cluster\n(any value)': len(trace_data[(trace_data['has_liver_in_ntpm'] == True) &
                                                     (trace_data['has_liver_cluster'] == True)]),
     'nTPM + cluster\n(≥100)': len(high_stringency),
     'All 3 criteria\n(≥200)': len(very_high_stringency)
@@ -276,7 +279,7 @@ print("\n### TIER-BASED RECOMMENDATION ###\n")
 
 # Tier 1: Highest confidence
 tier1 = trace_data[
-    (trace_data['has_liver_nTPM'] == True) &
+    (trace_data['has_liver_in_ntpm'] == True) &
     (trace_data['has_liver_cluster'] == True) &
     (trace_data['liver_nTPM_value'] >= 200)
 ]
@@ -286,7 +289,7 @@ print(f"  Recommended for: Primary liver-specific protein candidates")
 
 # Tier 2: High confidence
 tier2 = trace_data[
-    (trace_data['has_liver_nTPM'] == True) &
+    (trace_data['has_liver_in_ntpm'] == True) &
     (trace_data['has_liver_cluster'] == True) &
     (trace_data['liver_nTPM_value'] >= 50) &
     (~trace_data.index.isin(tier1.index))
@@ -297,7 +300,7 @@ print(f"  Recommended for: Secondary liver-specific candidates")
 
 # Tier 3: Medium confidence
 tier3 = trace_data[
-    (trace_data['has_liver_nTPM'] == True) &
+    (trace_data['has_liver_in_ntpm'] == True) &
     (trace_data['has_liver_cluster'] == True) &
     (~trace_data.index.isin(tier1.index)) &
     (~trace_data.index.isin(tier2.index))

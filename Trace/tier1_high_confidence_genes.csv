@@ -1,320 +1,320 @@
 Gene,liver_nTPM_value,Classification,confidence_score
-FUOM,222.7,liver protein (all 3),90
-PGRMC1,656.9,liver protein (all 3),95
-CES2,335.1,liver protein (all 3),90
-HSD17B6,1748.9,liver protein (all 3),100
-SLC27A2,279.4,liver protein (all 3),90
-AGPAT2,434.1,liver protein (nTPM + cluster),65
-SLC22A1,594.8,liver protein (all 3),95
-AQP9,681.6,liver protein (all 3),95
-GSTZ1,254.8,liver protein (all 3),90
-MYO1B,247.8,liver protein (all 3),90
-ENTPD5,255.6,liver protein (all 3),90
-RDH16,768.9,liver protein (all 3),95
-FCN3,270.1,liver protein (all 3),90
-SC5D,381.7,liver protein (all 3),90
-IDH1,520.1,liver protein (all 3),95
-ALDH1L1,358.6,liver protein (all 3),90
-SEC14L2,236.2,liver protein (all 3),90
-SLCO2B1,222.4,liver protein (all 3),90
-APOM,381.2,liver protein (all 3),90
-VNN1,212.1,liver protein (nTPM + cluster),65
-CLDN1,300.6,liver protein (nTPM + cluster),65
-FTCD,917.4,liver protein (all 3),95
-CYB5A,2392.7,liver protein (all 3),100
-ADH1B,5678.8,liver protein (all 3),100
-ADH1C,1997.6,liver protein (all 3),100
-ALDH1A1,1455.3,liver protein (all 3),100
-GLUD1,892.0,liver protein (all 3),95
-PAH,1365.3,liver protein (all 3),100
-SOD1,1594.4,liver protein (all 3),100
-CP,1815.4,liver protein (all 3),100
-OTC,366.1,liver protein (all 3),90
-F2,1180.6,liver protein (all 3),100
-C1R,1390.1,liver protein (all 3),100
-HP,54575.6,liver protein (all 3),100
-HPR,786.9,liver protein (all 3),95
-F9,683.7,liver protein (all 3),95
-PLG,2571.0,liver protein (all 3),100
-F12,589.9,liver protein (all 3),95
-CFB,2453.1,liver protein (all 3),100
-ASS1,1978.3,liver protein (nTPM + cluster),75
-SERPINC1,4902.3,liver protein (all 3),100
-SERPINA1,33156.1,liver protein (all 3),100
-SERPINA3,8942.3,liver protein (nTPM + cluster),75
-AGT,1563.6,liver protein (all 3),100
-A2M,1212.9,liver protein (all 3),100
-C3,5250.9,liver protein (all 3),100
-C5,434.4,liver protein (all 3),90
-KNG1,3097.3,liver protein (all 3),100
-APOA1,18779.1,liver protein (all 3),100
-APOE,6430.8,liver protein (all 3),100
-APOA2,34742.6,liver protein (all 3),100
-APOC1,17322.1,liver protein (all 3),100
-APOC2,9320.5,liver protein (nTPM + cluster),75
-APOC3,26980.2,liver protein (all 3),100
-FGA,17848.7,liver protein (all 3),100
-FGB,17393.5,liver protein (all 3),100
-FGG,16058.1,liver protein (all 3),100
-CRP,9151.6,liver protein (nTPM + cluster),75
-APCS,3515.6,liver protein (all 3),100
-C9,1268.7,liver protein (all 3),100
-APOH,17409.3,liver protein (all 3),100
-LRG1,920.6,liver protein (nTPM + cluster),70
-FN1,1674.5,liver protein (nTPM + cluster),75
-RBP4,10726.7,liver protein (all 3),100
-AMBP,10607.0,liver protein (all 3),100
-ORM1,41892.9,liver protein (all 3),100
-AHSG,5638.7,liver protein (all 3),100
-ALB,205952.1,liver protein (all 3),100
-GC,8007.3,liver protein (all 3),100
-TF,7278.6,liver protein (all 3),100
-HPX,5126.7,liver protein (all 3),100
-FTL,14070.0,liver protein (nTPM + cluster),75
-MT2A,5644.8,liver protein (nTPM + cluster),75
-ANG,2920.4,liver protein (all 3),100
-F11,235.6,liver protein (all 3),90
-KLKB1,318.1,liver protein (all 3),90
-C4BPA,1860.6,liver protein (all 3),100
-VTN,5852.0,liver protein (all 3),100
-CAT,1180.2,liver protein (all 3),100
-APOB,1155.6,liver protein (all 3),100
-LCAT,276.1,liver protein (all 3),90
-HRG,5270.7,liver protein (all 3),100
-A1BG,1194.2,liver protein (nTPM + cluster),75
-ASL,386.7,liver protein (nTPM + cluster),65
-MT1A,420.0,liver protein (nTPM + cluster),65
-MT1E,1743.2,liver protein (nTPM + cluster),75
-MT1F,548.2,liver protein (nTPM + cluster),70
-ALDOB,10855.3,liver protein (all 3),100
-ARG1,1166.8,liver protein (nTPM + cluster),75
-ALDH2,831.4,liver protein (all 3),95
-SERPING1,2545.7,liver protein (all 3),100
-CFI,952.1,liver protein (all 3),95
-CYP1A2,495.9,liver protein (all 3),90
-CYP2E1,10050.5,liver protein (all 3),100
-SERPINA7,273.6,liver protein (all 3),90
-SERPIND1,1214.6,liver protein (all 3),100
-HPN,845.2,liver protein (nTPM + cluster),70
-UGT2B4,1234.7,liver protein (all 3),100
-BCHE,508.2,liver protein (all 3),95
-C2,466.0,liver protein (all 3),90
-EPHX1,1652.5,liver protein (all 3),100
-FABP1,12622.4,liver protein (nTPM + cluster),75
-PROS1,274.9,liver protein (all 3),90
-ASGR1,1065.6,liver protein (nTPM + cluster),75
-ASGR2,819.9,liver protein (all 3),95
-ADH1A,2653.7,liver protein (all 3),100
-C8A,481.7,liver protein (all 3),90
-C8B,630.0,liver protein (all 3),95
-C8G,550.5,liver protein (nTPM + cluster),70
-GJB1,376.0,liver protein (all 3),90
-SERPINA6,752.4,liver protein (all 3),95
-GSTA1,2530.1,liver protein (all 3),100
-ADH4,4994.3,liver protein (all 3),100
-CD14,347.3,liver protein (all 3),90
-CFH,1645.3,liver protein (all 3),100
-CYP3A4,3492.7,liver protein (all 3),100
-SERPINF2,1539.8,liver protein (all 3),100
-ACAA1,638.8,liver protein (all 3),95
-GSTA2,1994.3,liver protein (all 3),100
-FBP1,849.4,liver protein (nTPM + cluster),70
-GSTM1,590.7,liver protein (nTPM + cluster),70
-C1S,2762.6,liver protein (all 3),100
-C4A,328.2,liver protein (all 3),90
-C4B,375.4,liver protein (all 3),90
-SAA2,35358.8,liver protein (nTPM + cluster),75
-MGST1,3006.2,liver protein (nTPM + cluster),75
-CYP2C8,2088.7,liver protein (all 3),100
-CYP2D6,312.1,liver protein (nTPM + cluster),65
-TFPI,263.9,liver protein (nTPM + cluster),65
-GHR,206.8,liver protein (all 3),90
-SLC2A2,810.6,liver protein (all 3),95
-MBL2,272.6,liver protein (all 3),90
-CYP2A6,1564.1,liver protein (all 3),100
-MTHFD1,330.3,liver protein (all 3),90
-CYP2C9,1667.6,liver protein (all 3),100
-ALAS1,532.3,liver protein (nTPM + cluster),70
-MT1G,6693.8,liver protein (nTPM + cluster),75
-C6,610.3,liver protein (all 3),95
-FDPS,344.6,liver protein (nTPM + cluster),65
-ST6GAL1,480.8,liver protein (all 3),90
-ACADS,239.5,liver protein (all 3),90
-POR,303.8,liver protein (nTPM + cluster),65
-UGT2B7,1563.0,liver protein (all 3),100
-FAH,293.4,liver protein (all 3),90
-AKR1C4,695.1,liver protein (all 3),95
-TAT,1233.9,liver protein (nTPM + cluster),75
-GPX2,561.9,liver protein (nTPM + cluster),70
-LBP,1304.6,liver protein (nTPM + cluster),75
-SDC1,472.9,liver protein (nTPM + cluster),65
-ORM2,8652.9,liver protein (all 3),100
-ITIH2,2091.1,liver protein (all 3),100
-ITIH1,1459.7,liver protein (all 3),100
-SDS,999.5,liver protein (nTPM + cluster),70
-CYP2B6,570.5,liver protein (all 3),95
-CYP3A5,269.4,liver protein (all 3),90
-EFNA1,461.3,liver protein (nTPM + cluster),65
-C4BPB,458.6,liver protein (nTPM + cluster),65
-PTMS,551.5,liver protein (all 3),95
-AGXT,2145.9,liver protein (all 3),100
-SCP2,1081.6,liver protein (all 3),100
-UGT1A1,314.0,liver protein (all 3),90
-UGT1A4,381.5,liver protein (all 3),90
-AADAC,917.3,liver protein (nTPM + cluster),70
-CPN2,212.0,liver protein (all 3),90
-CES1,2440.5,liver protein (all 3),100
-ACAT1,939.5,liver protein (all 3),95
-MPST,381.2,liver protein (all 3),90
-MST1,905.4,liver protein (nTPM + cluster),70
-PON1,516.3,liver protein (all 3),95
-MAOB,308.0,liver protein (all 3),90
-ADH6,682.3,liver protein (all 3),95
-HSD11B1,938.4,liver protein (nTPM + cluster),70
-SERPINA4,533.2,liver protein (all 3),95
-ALDH4A1,426.0,liver protein (all 3),90
-DDT,815.7,liver protein (nTPM + cluster),70
-GCHFR,341.6,liver protein (nTPM + cluster),65
-ECHS1,1093.7,liver protein (all 3),100
-CPS1,1031.6,liver protein (nTPM + cluster),75
-SDC4,398.7,liver protein (nTPM + cluster),65
-FMO3,1088.9,liver protein (all 3),100
-HPD,2452.6,liver protein (all 3),100
-RNASE4,463.8,liver protein (all 3),90
-SDC2,445.9,liver protein (all 3),90
-SHMT1,388.8,liver protein (all 3),90
-EPHX2,322.9,liver protein (all 3),90
-SAA4,1879.5,liver protein (all 3),100
-PCK1,664.7,liver protein (nTPM + cluster),70
-HMGCL,314.7,liver protein (all 3),90
-UGT2B10,226.6,liver protein (all 3),90
-CFHR2,1309.3,liver protein (all 3),100
-COL18A1,548.3,liver protein (all 3),95
-NNMT,379.3,liver protein (nTPM + cluster),65
-ACAA2,981.1,liver protein (all 3),95
-AFM,932.0,liver protein (all 3),95
-ACADSB,349.2,liver protein (all 3),90
-HAAO,286.8,liver protein (all 3),90
-TDO2,767.4,liver protein (nTPM + cluster),70
-FMO5,662.6,liver protein (all 3),95
-SELENOP,6077.3,liver protein (all 3),100
-MTHFS,247.1,liver protein (all 3),90
-HNMT,238.2,liver protein (all 3),90
-SULT1A1,221.4,liver protein (all 3),90
-ALDH3A2,279.3,liver protein (all 3),90
-HSD17B4,320.3,liver protein (all 3),90
-AKR1D1,413.9,liver protein (all 3),90
-RIDA,1488.9,liver protein (all 3),100
-AKR1C2,469.5,liver protein (nTPM + cluster),65
-UGT2B15,282.4,liver protein (all 3),90
-HMGCS2,2359.8,liver protein (all 3),100
-APOC4,607.5,liver protein (all 3),95
-TMBIM6,1748.2,liver protein (all 3),100
-MTTP,258.5,liver protein (nTPM + cluster),65
-PCBD1,415.8,liver protein (all 3),90
-GSTO1,636.8,liver protein (nTPM + cluster),70
-MT1H,1109.0,liver protein (nTPM + cluster),75
-ABAT,335.3,liver protein (all 3),90
-RBP5,316.3,liver protein (all 3),90
-MAT1A,1305.8,liver protein (all 3),100
-SORD,262.8,liver protein (all 3),90
-HMGCS1,379.0,liver protein (nTPM + cluster),65
-ALDH6A1,355.6,liver protein (all 3),90
-CYP27A1,576.0,liver protein (all 3),95
-BDH1,313.1,liver protein (all 3),90
-CYP4A11,824.3,liver protein (all 3),95
-CFHR3,381.0,liver protein (nTPM + cluster),65
-CFHR1,2010.5,liver protein (all 3),100
-HGFAC,211.9,liver protein (nTPM + cluster),65
-AKR1C1,603.1,liver protein (nTPM + cluster),70
-ITIH3,828.4,liver protein (nTPM + cluster),70
-AOX1,864.2,liver protein (all 3),95
-SULT2A1,1043.0,liver protein (nTPM + cluster),75
-CRYZ,274.1,liver protein (all 3),90
-EHHADH,334.1,liver protein (all 3),90
-CYP4F3,230.0,liver protein (all 3),90
-FGL1,4058.4,liver protein (nTPM + cluster),75
-ACSM2A,351.8,liver protein (all 3),90
-SPP2,502.9,liver protein (all 3),95
-APOF,404.0,liver protein (all 3),90
-BAAT,699.4,liver protein (all 3),95
-DPYS,463.1,liver protein (all 3),90
-HABP2,424.0,liver protein (all 3),90
-ITIH4,1807.4,liver protein (all 3),100
-PTGR1,576.1,liver protein (nTPM + cluster),70
-SLC10A1,413.9,liver protein (all 3),90
-SLC39A14,537.7,liver protein (nTPM + cluster),70
-EBP,318.4,liver protein (all 3),90
-PON3,598.0,liver protein (all 3),95
-RGN,372.1,liver protein (all 3),90
-MSMO1,558.3,liver protein (nTPM + cluster),70
-TST,547.5,liver protein (all 3),95
-PCK2,365.0,liver protein (all 3),90
-TMEM176B,1609.3,liver protein (all 3),100
-NADK2,318.2,liver protein (all 3),90
-TTC38,227.9,liver protein (nTPM + cluster),65
-CYP4A22,207.4,liver protein (all 3),90
-CREB3L3,405.1,liver protein (nTPM + cluster),65
-ACSM2B,510.9,liver protein (all 3),95
-GLYAT,676.1,liver protein (all 3),95
-ACSM5,268.1,liver protein (all 3),90
-APOA5,567.7,liver protein (nTPM + cluster),70
-DCXR,1806.9,liver protein (all 3),100
-HSD17B13,556.3,liver protein (all 3),95
-SERPINA11,475.6,liver protein (all 3),90
-OAF,387.0,liver protein (nTPM + cluster),65
-SLC13A5,403.8,liver protein (nTPM + cluster),65
-GLYCTK,268.5,liver protein (all 3),90
-ORMDL3,228.8,liver protein (all 3),90
-MT1M,548.4,liver protein (nTPM + cluster),70
-HSD17B11,234.5,liver protein (all 3),90
-TSKU,230.2,liver protein (nTPM + cluster),65
-BHMT,1107.8,liver protein (all 3),100
-HGD,729.7,liver protein (nTPM + cluster),70
-GLYATL1,527.0,liver protein (all 3),95
-SLC38A4,591.5,liver protein (all 3),95
-MTARC2,216.4,liver protein (all 3),90
-ISOC2,277.3,liver protein (nTPM + cluster),65
-CERS2,709.3,liver protein (all 3),95
-TMEM176A,1133.6,liver protein (all 3),100
-SUCLG2,269.6,liver protein (all 3),90
-CPB2,1439.0,liver protein (all 3),100
-PGLYRP2,250.7,liver protein (all 3),90
-DGAT2,321.2,liver protein (all 3),90
-PLIN2,877.8,liver protein (nTPM + cluster),70
-SEPHS2,390.4,liver protein (all 3),90
-SLC38A3,321.4,liver protein (all 3),90
-MGST2,380.5,liver protein (nTPM + cluster),65
-NIPSNAP1,282.9,liver protein (all 3),90
-VKORC1,443.7,liver protein (nTPM + cluster),65
-ADI1,572.8,liver protein (all 3),95
-ACAT2,224.4,liver protein (all 3),90
-ALDH8A1,239.6,liver protein (all 3),90
-BHMT2,416.7,liver protein (all 3),90
-LIME1,237.0,liver protein (all 3),90
-APMAP,306.2,liver protein (all 3),90
-MLXIPL,595.0,liver protein (nTPM + cluster),70
-SLCO1B3,256.8,liver protein (all 3),90
-IL1RAP,218.9,liver protein (nTPM + cluster),65
-PXMP2,304.4,liver protein (all 3),90
-ETNK2,227.8,liver protein (all 3),90
-AIG1,228.2,liver protein (all 3),90
-HAO2,412.4,liver protein (all 3),90
-MSRB1,228.5,liver protein (nTPM + cluster),65
-PIPOX,491.1,liver protein (all 3),90
-GRHPR,632.6,liver protein (all 3),95
-UPB1,210.8,liver protein (all 3),90
-FETUB,227.3,liver protein (all 3),90
-CIDEB,464.9,liver protein (nTPM + cluster),65
-DMGDH,275.3,liver protein (all 3),90
-HAO1,589.2,liver protein (all 3),95
-SERPINA10,338.3,liver protein (all 3),90
-CYP8B1,392.2,liver protein (all 3),90
-TFR2,337.4,liver protein (all 3),90
-MGAT4B,270.4,liver protein (nTPM + cluster),65
-SLC27A5,999.1,liver protein (all 3),95
-RCL1,238.1,liver protein (nTPM + cluster),65
-STARD10,692.6,liver protein (all 3),95
-ANGPTL3,655.3,liver protein (all 3),95
-SLC22A7,417.7,liver protein (all 3),90
-SLCO1B1,521.0,liver protein (all 3),95
+FUOM,222.7,liver protein (nTPM≥100 + cluster + enrichment),90
+PGRMC1,656.9,liver protein (nTPM≥100 + cluster + enrichment),95
+CES2,335.1,liver protein (nTPM≥100 + cluster + enrichment),90
+HSD17B6,1748.9,liver protein (nTPM≥100 + cluster + enrichment),100
+SLC27A2,279.4,liver protein (nTPM≥100 + cluster + enrichment),90
+AGPAT2,434.1,liver protein (nTPM≥100 + cluster),65
+SLC22A1,594.8,liver protein (nTPM≥100 + cluster + enrichment),95
+AQP9,681.6,liver protein (nTPM≥100 + cluster + enrichment),95
+GSTZ1,254.8,liver protein (nTPM≥100 + cluster + enrichment),90
+MYO1B,247.8,liver protein (nTPM≥100 + cluster + enrichment),90
+ENTPD5,255.6,liver protein (nTPM≥100 + cluster + enrichment),90
+RDH16,768.9,liver protein (nTPM≥100 + cluster + enrichment),95
+FCN3,270.1,liver protein (nTPM≥100 + cluster + enrichment),90
+SC5D,381.7,liver protein (nTPM≥100 + cluster + enrichment),90
+IDH1,520.1,liver protein (nTPM≥100 + cluster + enrichment),95
+ALDH1L1,358.6,liver protein (nTPM≥100 + cluster + enrichment),90
+SEC14L2,236.2,liver protein (nTPM≥100 + cluster + enrichment),90
+SLCO2B1,222.4,liver protein (nTPM≥100 + cluster + enrichment),90
+APOM,381.2,liver protein (nTPM≥100 + cluster + enrichment),90
+VNN1,212.1,liver protein (nTPM≥100 + cluster),65
+CLDN1,300.6,liver protein (nTPM≥100 + cluster),65
+FTCD,917.4,liver protein (nTPM≥100 + cluster + enrichment),95
+CYB5A,2392.7,liver protein (nTPM≥100 + cluster + enrichment),100
+ADH1B,5678.8,liver protein (nTPM≥100 + cluster + enrichment),100
+ADH1C,1997.6,liver protein (nTPM≥100 + cluster + enrichment),100
+ALDH1A1,1455.3,liver protein (nTPM≥100 + cluster + enrichment),100
+GLUD1,892.0,liver protein (nTPM≥100 + cluster + enrichment),95
+PAH,1365.3,liver protein (nTPM≥100 + cluster + enrichment),100
+SOD1,1594.4,liver protein (nTPM≥100 + cluster + enrichment),100
+CP,1815.4,liver protein (nTPM≥100 + cluster + enrichment),100
+OTC,366.1,liver protein (nTPM≥100 + cluster + enrichment),90
+F2,1180.6,liver protein (nTPM≥100 + cluster + enrichment),100
+C1R,1390.1,liver protein (nTPM≥100 + cluster + enrichment),100
+HP,54575.6,liver protein (nTPM≥100 + cluster + enrichment),100
+HPR,786.9,liver protein (nTPM≥100 + cluster + enrichment),95
+F9,683.7,liver protein (nTPM≥100 + cluster + enrichment),95
+PLG,2571.0,liver protein (nTPM≥100 + cluster + enrichment),100
+F12,589.9,liver protein (nTPM≥100 + cluster + enrichment),95
+CFB,2453.1,liver protein (nTPM≥100 + cluster + enrichment),100
+ASS1,1978.3,liver protein (nTPM≥100 + cluster),75
+SERPINC1,4902.3,liver protein (nTPM≥100 + cluster + enrichment),100
+SERPINA1,33156.1,liver protein (nTPM≥100 + cluster + enrichment),100
+SERPINA3,8942.3,liver protein (nTPM≥100 + cluster),75
+AGT,1563.6,liver protein (nTPM≥100 + cluster + enrichment),100
+A2M,1212.9,liver protein (nTPM≥100 + cluster + enrichment),100
+C3,5250.9,liver protein (nTPM≥100 + cluster + enrichment),100
+C5,434.4,liver protein (nTPM≥100 + cluster + enrichment),90
+KNG1,3097.3,liver protein (nTPM≥100 + cluster + enrichment),100
+APOA1,18779.1,liver protein (nTPM≥100 + cluster + enrichment),100
+APOE,6430.8,liver protein (nTPM≥100 + cluster + enrichment),100
+APOA2,34742.6,liver protein (nTPM≥100 + cluster + enrichment),100
+APOC1,17322.1,liver protein (nTPM≥100 + cluster + enrichment),100
+APOC2,9320.5,liver protein (nTPM≥100 + cluster),75
+APOC3,26980.2,liver protein (nTPM≥100 + cluster + enrichment),100
+FGA,17848.7,liver protein (nTPM≥100 + cluster + enrichment),100
+FGB,17393.5,liver protein (nTPM≥100 + cluster + enrichment),100
+FGG,16058.1,liver protein (nTPM≥100 + cluster + enrichment),100
+CRP,9151.6,liver protein (nTPM≥100 + cluster),75
+APCS,3515.6,liver protein (nTPM≥100 + cluster + enrichment),100
+C9,1268.7,liver protein (nTPM≥100 + cluster + enrichment),100
+APOH,17409.3,liver protein (nTPM≥100 + cluster + enrichment),100
+LRG1,920.6,liver protein (nTPM≥100 + cluster),70
+FN1,1674.5,liver protein (nTPM≥100 + cluster),75
+RBP4,10726.7,liver protein (nTPM≥100 + cluster + enrichment),100
+AMBP,10607.0,liver protein (nTPM≥100 + cluster + enrichment),100
+ORM1,41892.9,liver protein (nTPM≥100 + cluster + enrichment),100
+AHSG,5638.7,liver protein (nTPM≥100 + cluster + enrichment),100
+ALB,205952.1,liver protein (nTPM≥100 + cluster + enrichment),100
+GC,8007.3,liver protein (nTPM≥100 + cluster + enrichment),100
+TF,7278.6,liver protein (nTPM≥100 + cluster + enrichment),100
+HPX,5126.7,liver protein (nTPM≥100 + cluster + enrichment),100
+FTL,14070.0,liver protein (nTPM≥100 + cluster),75
+MT2A,5644.8,liver protein (nTPM≥100 + cluster),75
+ANG,2920.4,liver protein (nTPM≥100 + cluster + enrichment),100
+F11,235.6,liver protein (nTPM≥100 + cluster + enrichment),90
+KLKB1,318.1,liver protein (nTPM≥100 + cluster + enrichment),90
+C4BPA,1860.6,liver protein (nTPM≥100 + cluster + enrichment),100
+VTN,5852.0,liver protein (nTPM≥100 + cluster + enrichment),100
+CAT,1180.2,liver protein (nTPM≥100 + cluster + enrichment),100
+APOB,1155.6,liver protein (nTPM≥100 + cluster + enrichment),100
+LCAT,276.1,liver protein (nTPM≥100 + cluster + enrichment),90
+HRG,5270.7,liver protein (nTPM≥100 + cluster + enrichment),100
+A1BG,1194.2,liver protein (nTPM≥100 + cluster),75
+ASL,386.7,liver protein (nTPM≥100 + cluster),65
+MT1A,420.0,liver protein (nTPM≥100 + cluster),65
+MT1E,1743.2,liver protein (nTPM≥100 + cluster),75
+MT1F,548.2,liver protein (nTPM≥100 + cluster),70
+ALDOB,10855.3,liver protein (nTPM≥100 + cluster + enrichment),100
+ARG1,1166.8,liver protein (nTPM≥100 + cluster),75
+ALDH2,831.4,liver protein (nTPM≥100 + cluster + enrichment),95
+SERPING1,2545.7,liver protein (nTPM≥100 + cluster + enrichment),100
+CFI,952.1,liver protein (nTPM≥100 + cluster + enrichment),95
+CYP1A2,495.9,liver protein (nTPM≥100 + cluster + enrichment),90
+CYP2E1,10050.5,liver protein (nTPM≥100 + cluster + enrichment),100
+SERPINA7,273.6,liver protein (nTPM≥100 + cluster + enrichment),90
+SERPIND1,1214.6,liver protein (nTPM≥100 + cluster + enrichment),100
+HPN,845.2,liver protein (nTPM≥100 + cluster),70
+UGT2B4,1234.7,liver protein (nTPM≥100 + cluster + enrichment),100
+BCHE,508.2,liver protein (nTPM≥100 + cluster + enrichment),95
+C2,466.0,liver protein (nTPM≥100 + cluster + enrichment),90
+EPHX1,1652.5,liver protein (nTPM≥100 + cluster + enrichment),100
+FABP1,12622.4,liver protein (nTPM≥100 + cluster),75
+PROS1,274.9,liver protein (nTPM≥100 + cluster + enrichment),90
+ASGR1,1065.6,liver protein (nTPM≥100 + cluster),75
+ASGR2,819.9,liver protein (nTPM≥100 + cluster + enrichment),95
+ADH1A,2653.7,liver protein (nTPM≥100 + cluster + enrichment),100
+C8A,481.7,liver protein (nTPM≥100 + cluster + enrichment),90
+C8B,630.0,liver protein (nTPM≥100 + cluster + enrichment),95
+C8G,550.5,liver protein (nTPM≥100 + cluster),70
+GJB1,376.0,liver protein (nTPM≥100 + cluster + enrichment),90
+SERPINA6,752.4,liver protein (nTPM≥100 + cluster + enrichment),95
+GSTA1,2530.1,liver protein (nTPM≥100 + cluster + enrichment),100
+ADH4,4994.3,liver protein (nTPM≥100 + cluster + enrichment),100
+CD14,347.3,liver protein (nTPM≥100 + cluster + enrichment),90
+CFH,1645.3,liver protein (nTPM≥100 + cluster + enrichment),100
+CYP3A4,3492.7,liver protein (nTPM≥100 + cluster + enrichment),100
+SERPINF2,1539.8,liver protein (nTPM≥100 + cluster + enrichment),100
+ACAA1,638.8,liver protein (nTPM≥100 + cluster + enrichment),95
+GSTA2,1994.3,liver protein (nTPM≥100 + cluster + enrichment),100
+FBP1,849.4,liver protein (nTPM≥100 + cluster),70
+GSTM1,590.7,liver protein (nTPM≥100 + cluster),70
+C1S,2762.6,liver protein (nTPM≥100 + cluster + enrichment),100
+C4A,328.2,liver protein (nTPM≥100 + cluster + enrichment),90
+C4B,375.4,liver protein (nTPM≥100 + cluster + enrichment),90
+SAA2,35358.8,liver protein (nTPM≥100 + cluster),75
+MGST1,3006.2,liver protein (nTPM≥100 + cluster),75
+CYP2C8,2088.7,liver protein (nTPM≥100 + cluster + enrichment),100
+CYP2D6,312.1,liver protein (nTPM≥100 + cluster),65
+TFPI,263.9,liver protein (nTPM≥100 + cluster),65
+GHR,206.8,liver protein (nTPM≥100 + cluster + enrichment),90
+SLC2A2,810.6,liver protein (nTPM≥100 + cluster + enrichment),95
+MBL2,272.6,liver protein (nTPM≥100 + cluster + enrichment),90
+CYP2A6,1564.1,liver protein (nTPM≥100 + cluster + enrichment),100
+MTHFD1,330.3,liver protein (nTPM≥100 + cluster + enrichment),90
+CYP2C9,1667.6,liver protein (nTPM≥100 + cluster + enrichment),100
+ALAS1,532.3,liver protein (nTPM≥100 + cluster),70
+MT1G,6693.8,liver protein (nTPM≥100 + cluster),75
+C6,610.3,liver protein (nTPM≥100 + cluster + enrichment),95
+FDPS,344.6,liver protein (nTPM≥100 + cluster),65
+ST6GAL1,480.8,liver protein (nTPM≥100 + cluster + enrichment),90
+ACADS,239.5,liver protein (nTPM≥100 + cluster + enrichment),90
+POR,303.8,liver protein (nTPM≥100 + cluster),65
+UGT2B7,1563.0,liver protein (nTPM≥100 + cluster + enrichment),100
+FAH,293.4,liver protein (nTPM≥100 + cluster + enrichment),90
+AKR1C4,695.1,liver protein (nTPM≥100 + cluster + enrichment),95
+TAT,1233.9,liver protein (nTPM≥100 + cluster),75
+GPX2,561.9,liver protein (nTPM≥100 + cluster),70
+LBP,1304.6,liver protein (nTPM≥100 + cluster),75
+SDC1,472.9,liver protein (nTPM≥100 + cluster),65
+ORM2,8652.9,liver protein (nTPM≥100 + cluster + enrichment),100
+ITIH2,2091.1,liver protein (nTPM≥100 + cluster + enrichment),100
+ITIH1,1459.7,liver protein (nTPM≥100 + cluster + enrichment),100
+SDS,999.5,liver protein (nTPM≥100 + cluster),70
+CYP2B6,570.5,liver protein (nTPM≥100 + cluster + enrichment),95
+CYP3A5,269.4,liver protein (nTPM≥100 + cluster + enrichment),90
+EFNA1,461.3,liver protein (nTPM≥100 + cluster),65
+C4BPB,458.6,liver protein (nTPM≥100 + cluster),65
+PTMS,551.5,liver protein (nTPM≥100 + cluster + enrichment),95
+AGXT,2145.9,liver protein (nTPM≥100 + cluster + enrichment),100
+SCP2,1081.6,liver protein (nTPM≥100 + cluster + enrichment),100
+UGT1A1,314.0,liver protein (nTPM≥100 + cluster + enrichment),90
+UGT1A4,381.5,liver protein (nTPM≥100 + cluster + enrichment),90
+AADAC,917.3,liver protein (nTPM≥100 + cluster),70
+CPN2,212.0,liver protein (nTPM≥100 + cluster + enrichment),90
+CES1,2440.5,liver protein (nTPM≥100 + cluster + enrichment),100
+ACAT1,939.5,liver protein (nTPM≥100 + cluster + enrichment),95
+MPST,381.2,liver protein (nTPM≥100 + cluster + enrichment),90
+MST1,905.4,liver protein (nTPM≥100 + cluster),70
+PON1,516.3,liver protein (nTPM≥100 + cluster + enrichment),95
+MAOB,308.0,liver protein (nTPM≥100 + cluster + enrichment),90
+ADH6,682.3,liver protein (nTPM≥100 + cluster + enrichment),95
+HSD11B1,938.4,liver protein (nTPM≥100 + cluster),70
+SERPINA4,533.2,liver protein (nTPM≥100 + cluster + enrichment),95
+ALDH4A1,426.0,liver protein (nTPM≥100 + cluster + enrichment),90
+DDT,815.7,liver protein (nTPM≥100 + cluster),70
+GCHFR,341.6,liver protein (nTPM≥100 + cluster),65
+ECHS1,1093.7,liver protein (nTPM≥100 + cluster + enrichment),100
+CPS1,1031.6,liver protein (nTPM≥100 + cluster),75
+SDC4,398.7,liver protein (nTPM≥100 + cluster),65
+FMO3,1088.9,liver protein (nTPM≥100 + cluster + enrichment),100
+HPD,2452.6,liver protein (nTPM≥100 + cluster + enrichment),100
+RNASE4,463.8,liver protein (nTPM≥100 + cluster + enrichment),90
+SDC2,445.9,liver protein (nTPM≥100 + cluster + enrichment),90
+SHMT1,388.8,liver protein (nTPM≥100 + cluster + enrichment),90
+EPHX2,322.9,liver protein (nTPM≥100 + cluster + enrichment),90
+SAA4,1879.5,liver protein (nTPM≥100 + cluster + enrichment),100
+PCK1,664.7,liver protein (nTPM≥100 + cluster),70
+HMGCL,314.7,liver protein (nTPM≥100 + cluster + enrichment),90
+UGT2B10,226.6,liver protein (nTPM≥100 + cluster + enrichment),90
+CFHR2,1309.3,liver protein (nTPM≥100 + cluster + enrichment),100
+COL18A1,548.3,liver protein (nTPM≥100 + cluster + enrichment),95
+NNMT,379.3,liver protein (nTPM≥100 + cluster),65
+ACAA2,981.1,liver protein (nTPM≥100 + cluster + enrichment),95
+AFM,932.0,liver protein (nTPM≥100 + cluster + enrichment),95
+ACADSB,349.2,liver protein (nTPM≥100 + cluster + enrichment),90
+HAAO,286.8,liver protein (nTPM≥100 + cluster + enrichment),90
+TDO2,767.4,liver protein (nTPM≥100 + cluster),70
+FMO5,662.6,liver protein (nTPM≥100 + cluster + enrichment),95
+SELENOP,6077.3,liver protein (nTPM≥100 + cluster + enrichment),100
+MTHFS,247.1,liver protein (nTPM≥100 + cluster + enrichment),90
+HNMT,238.2,liver protein (nTPM≥100 + cluster + enrichment),90
+SULT1A1,221.4,liver protein (nTPM≥100 + cluster + enrichment),90
+ALDH3A2,279.3,liver protein (nTPM≥100 + cluster + enrichment),90
+HSD17B4,320.3,liver protein (nTPM≥100 + cluster + enrichment),90
+AKR1D1,413.9,liver protein (nTPM≥100 + cluster + enrichment),90
+RIDA,1488.9,liver protein (nTPM≥100 + cluster + enrichment),100
+AKR1C2,469.5,liver protein (nTPM≥100 + cluster),65
+UGT2B15,282.4,liver protein (nTPM≥100 + cluster + enrichment),90
+HMGCS2,2359.8,liver protein (nTPM≥100 + cluster + enrichment),100
+APOC4,607.5,liver protein (nTPM≥100 + cluster + enrichment),95
+TMBIM6,1748.2,liver protein (nTPM≥100 + cluster + enrichment),100
+MTTP,258.5,liver protein (nTPM≥100 + cluster),65
+PCBD1,415.8,liver protein (nTPM≥100 + cluster + enrichment),90
+GSTO1,636.8,liver protein (nTPM≥100 + cluster),70
+MT1H,1109.0,liver protein (nTPM≥100 + cluster),75
+ABAT,335.3,liver protein (nTPM≥100 + cluster + enrichment),90
+RBP5,316.3,liver protein (nTPM≥100 + cluster + enrichment),90
+MAT1A,1305.8,liver protein (nTPM≥100 + cluster + enrichment),100
+SORD,262.8,liver protein (nTPM≥100 + cluster + enrichment),90
+HMGCS1,379.0,liver protein (nTPM≥100 + cluster),65
+ALDH6A1,355.6,liver protein (nTPM≥100 + cluster + enrichment),90
+CYP27A1,576.0,liver protein (nTPM≥100 + cluster + enrichment),95
+BDH1,313.1,liver protein (nTPM≥100 + cluster + enrichment),90
+CYP4A11,824.3,liver protein (nTPM≥100 + cluster + enrichment),95
+CFHR3,381.0,liver protein (nTPM≥100 + cluster),65
+CFHR1,2010.5,liver protein (nTPM≥100 + cluster + enrichment),100
+HGFAC,211.9,liver protein (nTPM≥100 + cluster),65
+AKR1C1,603.1,liver protein (nTPM≥100 + cluster),70
+ITIH3,828.4,liver protein (nTPM≥100 + cluster),70
+AOX1,864.2,liver protein (nTPM≥100 + cluster + enrichment),95
+SULT2A1,1043.0,liver protein (nTPM≥100 + cluster),75
+CRYZ,274.1,liver protein (nTPM≥100 + cluster + enrichment),90
+EHHADH,334.1,liver protein (nTPM≥100 + cluster + enrichment),90
+CYP4F3,230.0,liver protein (nTPM≥100 + cluster + enrichment),90
+FGL1,4058.4,liver protein (nTPM≥100 + cluster),75
+ACSM2A,351.8,liver protein (nTPM≥100 + cluster + enrichment),90
+SPP2,502.9,liver protein (nTPM≥100 + cluster + enrichment),95
+APOF,404.0,liver protein (nTPM≥100 + cluster + enrichment),90
+BAAT,699.4,liver protein (nTPM≥100 + cluster + enrichment),95
+DPYS,463.1,liver protein (nTPM≥100 + cluster + enrichment),90
+HABP2,424.0,liver protein (nTPM≥100 + cluster + enrichment),90
+ITIH4,1807.4,liver protein (nTPM≥100 + cluster + enrichment),100
+PTGR1,576.1,liver protein (nTPM≥100 + cluster),70
+SLC10A1,413.9,liver protein (nTPM≥100 + cluster + enrichment),90
+SLC39A14,537.7,liver protein (nTPM≥100 + cluster),70
+EBP,318.4,liver protein (nTPM≥100 + cluster + enrichment),90
+PON3,598.0,liver protein (nTPM≥100 + cluster + enrichment),95
+RGN,372.1,liver protein (nTPM≥100 + cluster + enrichment),90
+MSMO1,558.3,liver protein (nTPM≥100 + cluster),70
+TST,547.5,liver protein (nTPM≥100 + cluster + enrichment),95
+PCK2,365.0,liver protein (nTPM≥100 + cluster + enrichment),90
+TMEM176B,1609.3,liver protein (nTPM≥100 + cluster + enrichment),100
+NADK2,318.2,liver protein (nTPM≥100 + cluster + enrichment),90
+TTC38,227.9,liver protein (nTPM≥100 + cluster),65
+CYP4A22,207.4,liver protein (nTPM≥100 + cluster + enrichment),90
+CREB3L3,405.1,liver protein (nTPM≥100 + cluster),65
+ACSM2B,510.9,liver protein (nTPM≥100 + cluster + enrichment),95
+GLYAT,676.1,liver protein (nTPM≥100 + cluster + enrichment),95
+ACSM5,268.1,liver protein (nTPM≥100 + cluster + enrichment),90
+APOA5,567.7,liver protein (nTPM≥100 + cluster),70
+DCXR,1806.9,liver protein (nTPM≥100 + cluster + enrichment),100
+HSD17B13,556.3,liver protein (nTPM≥100 + cluster + enrichment),95
+SERPINA11,475.6,liver protein (nTPM≥100 + cluster + enrichment),90
+OAF,387.0,liver protein (nTPM≥100 + cluster),65
+SLC13A5,403.8,liver protein (nTPM≥100 + cluster),65
+GLYCTK,268.5,liver protein (nTPM≥100 + cluster + enrichment),90
+ORMDL3,228.8,liver protein (nTPM≥100 + cluster + enrichment),90
+MT1M,548.4,liver protein (nTPM≥100 + cluster),70
+HSD17B11,234.5,liver protein (nTPM≥100 + cluster + enrichment),90
+TSKU,230.2,liver protein (nTPM≥100 + cluster),65
+BHMT,1107.8,liver protein (nTPM≥100 + cluster + enrichment),100
+HGD,729.7,liver protein (nTPM≥100 + cluster),70
+GLYATL1,527.0,liver protein (nTPM≥100 + cluster + enrichment),95
+SLC38A4,591.5,liver protein (nTPM≥100 + cluster + enrichment),95
+MTARC2,216.4,liver protein (nTPM≥100 + cluster + enrichment),90
+ISOC2,277.3,liver protein (nTPM≥100 + cluster),65
+CERS2,709.3,liver protein (nTPM≥100 + cluster + enrichment),95
+TMEM176A,1133.6,liver protein (nTPM≥100 + cluster + enrichment),100
+SUCLG2,269.6,liver protein (nTPM≥100 + cluster + enrichment),90
+CPB2,1439.0,liver protein (nTPM≥100 + cluster + enrichment),100
+PGLYRP2,250.7,liver protein (nTPM≥100 + cluster + enrichment),90
+DGAT2,321.2,liver protein (nTPM≥100 + cluster + enrichment),90
+PLIN2,877.8,liver protein (nTPM≥100 + cluster),70
+SEPHS2,390.4,liver protein (nTPM≥100 + cluster + enrichment),90
+SLC38A3,321.4,liver protein (nTPM≥100 + cluster + enrichment),90
+MGST2,380.5,liver protein (nTPM≥100 + cluster),65
+NIPSNAP1,282.9,liver protein (nTPM≥100 + cluster + enrichment),90
+VKORC1,443.7,liver protein (nTPM≥100 + cluster),65
+ADI1,572.8,liver protein (nTPM≥100 + cluster + enrichment),95
+ACAT2,224.4,liver protein (nTPM≥100 + cluster + enrichment),90
+ALDH8A1,239.6,liver protein (nTPM≥100 + cluster + enrichment),90
+BHMT2,416.7,liver protein (nTPM≥100 + cluster + enrichment),90
+LIME1,237.0,liver protein (nTPM≥100 + cluster + enrichment),90
+APMAP,306.2,liver protein (nTPM≥100 + cluster + enrichment),90
+MLXIPL,595.0,liver protein (nTPM≥100 + cluster),70
+SLCO1B3,256.8,liver protein (nTPM≥100 + cluster + enrichment),90
+IL1RAP,218.9,liver protein (nTPM≥100 + cluster),65
+PXMP2,304.4,liver protein (nTPM≥100 + cluster + enrichment),90
+ETNK2,227.8,liver protein (nTPM≥100 + cluster + enrichment),90
+AIG1,228.2,liver protein (nTPM≥100 + cluster + enrichment),90
+HAO2,412.4,liver protein (nTPM≥100 + cluster + enrichment),90
+MSRB1,228.5,liver protein (nTPM≥100 + cluster),65
+PIPOX,491.1,liver protein (nTPM≥100 + cluster + enrichment),90
+GRHPR,632.6,liver protein (nTPM≥100 + cluster + enrichment),95
+UPB1,210.8,liver protein (nTPM≥100 + cluster + enrichment),90
+FETUB,227.3,liver protein (nTPM≥100 + cluster + enrichment),90
+CIDEB,464.9,liver protein (nTPM≥100 + cluster),65
+DMGDH,275.3,liver protein (nTPM≥100 + cluster + enrichment),90
+HAO1,589.2,liver protein (nTPM≥100 + cluster + enrichment),95
+SERPINA10,338.3,liver protein (nTPM≥100 + cluster + enrichment),90
+CYP8B1,392.2,liver protein (nTPM≥100 + cluster + enrichment),90
+TFR2,337.4,liver protein (nTPM≥100 + cluster + enrichment),90
+MGAT4B,270.4,liver protein (nTPM≥100 + cluster),65
+SLC27A5,999.1,liver protein (nTPM≥100 + cluster + enrichment),95
+RCL1,238.1,liver protein (nTPM≥100 + cluster),65
+STARD10,692.6,liver protein (nTPM≥100 + cluster + enrichment),95
+ANGPTL3,655.3,liver protein (nTPM≥100 + cluster + enrichment),95
+SLC22A7,417.7,liver protein (nTPM≥100 + cluster + enrichment),90
+SLCO1B1,521.0,liver protein (nTPM≥100 + cluster + enrichment),95

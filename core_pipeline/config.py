@@ -48,7 +48,7 @@ STRATEGY_ANALYSIS_FILE = TRACE_DIR / 'classification_strategy_analysis.csv'
 # =============================================================================
 
 # nTPM thresholds
-NTPM_HIGH_THRESHOLD = 100
+NTPM_HIGH_THRESHOLD = 10  # Optimized based on threshold analysis
 NTPM_VERY_HIGH_THRESHOLD = 200
 NTPM_LOW_THRESHOLD = 0
 

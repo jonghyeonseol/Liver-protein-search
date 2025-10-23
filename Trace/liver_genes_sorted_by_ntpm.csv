@@ -508,198 +508,198 @@ MMAB,101.1,liver protein (nTPM≥100 + enrichment),liver: 101.1,Cluster 43: Non-
 SLC47A1,100.6,liver protein (nTPM≥100 + cluster + enrichment),adrenal gland: 123.4;kidney: 96.7;liver: 100.6,Cluster 1: Liver & Kidney - Metabolism
 ACAD11,100.5,liver protein (nTPM≥100 + cluster),choroid plexus: 46.2;kidney: 62.1;liver: 100.5,Cluster 1: Liver & Kidney - Metabolism
 TMEM220,100.5,liver protein (nTPM≥100 + cluster + enrichment),liver: 100.5,Cluster 83: Liver - Metabolism
-AK4,99.2,liver protein (nTPM<100 + cluster + enrichment),kidney: 174.9;liver: 99.2,Cluster 1: Liver & Kidney - Metabolism
-ACOT12,97.6,liver protein (nTPM<100 + cluster + enrichment),liver: 97.6,Cluster 31: Liver - Plasma proteins
-UAP1,97.4,liver protein (nTPM<100 + cluster),liver: 97.4,Cluster 83: Liver - Metabolism
-GBP7,97.1,liver protein (nTPM<100 + cluster + enrichment),liver: 97.1,Cluster 31: Liver - Plasma proteins
-BTD,97.0,liver protein (nTPM<100 only),liver: 97.0,Cluster 53: Non-specific - Glycosylation
-SFXN1,96.6,liver protein (nTPM<100 + cluster + enrichment),liver: 96.6,Cluster 83: Liver - Metabolism
-FCN2,96.6,liver protein (nTPM<100 + cluster),liver: 96.6,Cluster 83: Liver - Metabolism
-CYP39A1,96.3,liver protein (nTPM<100 + cluster + enrichment),liver: 96.3,Cluster 83: Liver - Metabolism
-ALDH5A1,95.8,liver protein (nTPM<100 + enrichment),liver: 95.8,Cluster 19: Non-specific - Basic cellular processes
-PCTP,95.0,liver protein (nTPM<100 + cluster + enrichment),liver: 95.0,Cluster 1: Liver & Kidney - Metabolism
-BOK,94.7,liver protein (nTPM<100 + enrichment),brain: 114.5;liver: 94.7,Cluster 9: Oligodendrocytes - Myelination
-AGTR1,93.7,liver protein (nTPM<100 + cluster),liver: 93.7;placenta: 137.0,Cluster 11: Liver - Plasma proteins
-SLC46A3,93.1,liver protein (nTPM<100 + cluster),intestine: 73.9;liver: 93.1,Cluster 37: Liver & Intestine - Lipid metabolism
-LACTB2,93.0,liver protein (nTPM<100 + cluster),liver: 93.0,Cluster 1: Liver & Kidney - Metabolism
-H6PD,92.1,liver protein (nTPM<100 + cluster),liver: 92.1,Cluster 83: Liver - Metabolism
-MARCO,92.1,liver protein (nTPM<100 + cluster + enrichment),liver: 92.1;lung: 193.5;lymphoid tissue: 85.7,Cluster 11: Liver - Plasma proteins
-TTC39C,91.9,liver protein (nTPM<100 only),liver: 91.9;retina: 138.7,Cluster 40: Non-specific - Transcription
-ACBD4,90.7,liver protein (nTPM<100 + cluster + enrichment),liver: 90.7,Cluster 83: Liver - Metabolism
-PKLR,89.7,liver protein (nTPM<100 + cluster + enrichment),bone marrow: 19.3;kidney: 24.2;liver: 89.7,Cluster 1: Liver & Kidney - Metabolism
-KMO,88.8,liver protein (nTPM<100 + cluster),kidney: 30.3;liver: 88.8,Cluster 1: Liver & Kidney - Metabolism
-CPT2,88.3,liver protein (nTPM<100 + cluster + enrichment),liver: 88.3,Cluster 37: Liver & Intestine - Lipid metabolism
-ARSL,88.3,liver protein (nTPM<100 only),kidney: 35.3;liver: 88.3;pancreas: 101.8,Cluster 68: Non-specific - Protein processing
-GNE,87.8,liver protein (nTPM<100 + cluster + enrichment),intestine: 46.8;liver: 87.8;salivary gland: 53.7,Cluster 83: Liver - Metabolism
-MGMT,87.1,liver protein (nTPM<100 + cluster + enrichment),liver: 87.1,Cluster 83: Liver - Metabolism
-GCDH,86.9,liver protein (nTPM<100 + cluster + enrichment),liver: 86.9,Cluster 83: Liver - Metabolism
-SNTB1,86.7,liver protein (nTPM<100 + enrichment),liver: 86.7,Cluster 68: Non-specific - Protein processing
-PNPO,86.0,liver protein (nTPM<100 + cluster + enrichment),liver: 86.0,Cluster 1: Liver & Kidney - Metabolism
-KYNU,85.7,liver protein (nTPM<100 + cluster),liver: 85.7;urinary bladder: 49.7,Cluster 11: Liver - Plasma proteins
-GBP1,85.5,liver protein (nTPM<100 + cluster),liver: 85.5,Cluster 11: Liver - Plasma proteins
-SLC25A15,85.5,liver protein (nTPM<100 + cluster),intestine: 36.5;liver: 85.5;pancreas: 50.2,Cluster 83: Liver - Metabolism
-SLC6A1,85.4,liver protein (nTPM<100 + enrichment),brain: 107.9;liver: 85.4;retina: 36.1,Cluster 61: Brain - Neuronal signaling
-PROX1,84.2,liver protein (nTPM<100 + cluster),liver: 84.2,Cluster 31: Liver - Plasma proteins
-CDA,84.0,liver protein (nTPM<100 only),bone marrow: 191.4;esophagus: 84.6;liver: 84.0,Cluster 77: Bone marrow - Cell proliferation
-SLC30A1,83.6,liver protein (nTPM<100 + cluster),liver: 83.6,Cluster 83: Liver - Metabolism
-MPDZ,83.1,liver protein (nTPM<100 + cluster + enrichment),liver: 83.1,Cluster 69: Liver - Oxidoreductase activity
-MTARC1,82.5,liver protein (nTPM<100 + cluster + enrichment),adipose tissue: 165.0;breast: 83.5;liver: 82.5,Cluster 11: Liver - Plasma proteins
-BPHL,82.0,liver protein (nTPM<100 + cluster + enrichment),kidney: 106.1;liver: 82.0,Cluster 1: Liver & Kidney - Metabolism
-GRTP1,81.8,liver protein (nTPM<100 + cluster),liver: 81.8,Cluster 37: Liver & Intestine - Lipid metabolism
-PIK3AP1,80.7,liver protein (nTPM<100 only),liver: 80.7;lymphoid tissue: 60.6;salivary gland: 71.6,Cluster 70: Lymphoid tissue - Immune response
-SLC25A42,80.0,liver protein (nTPM<100 only),liver: 80.0,Cluster 19: Non-specific - Basic cellular processes
-CPN1,79.5,liver protein (nTPM<100 + cluster + enrichment),liver: 79.5,Cluster 31: Liver - Plasma proteins
-PZP,79.0,liver protein (nTPM<100 + cluster),liver: 79.0,Cluster 31: Liver - Plasma proteins
-ABCB11,78.1,liver protein (nTPM<100 + cluster),liver: 78.1,Cluster 83: Liver - Metabolism
-PDIA5,77.8,liver protein (nTPM<100 + cluster + enrichment),liver: 77.8,Cluster 83: Liver - Metabolism
-OGDHL,77.6,liver protein (nTPM<100 + enrichment),choroid plexus: 123.4;kidney: 117.5;liver: 77.6,Cluster 52: Kidney - Transmembrane transport
-CLEC1B,77.6,liver protein (nTPM<100 + cluster + enrichment),liver: 77.6,Cluster 83: Liver - Metabolism
-CLRN3,77.4,liver protein (nTPM<100 + cluster + enrichment),intestine: 86.6;kidney: 42.3;liver: 77.4,Cluster 37: Liver & Intestine - Lipid metabolism
-SARDH,76.3,liver protein (nTPM<100 + enrichment),epididymis: 40.6;liver: 76.3;pancreas: 40.9,Cluster 53: Non-specific - Glycosylation
-BCKDHB,75.9,liver protein (nTPM<100 + cluster + enrichment),liver: 75.9,Cluster 1: Liver & Kidney - Metabolism
-ABCA6,75.6,liver protein (nTPM<100 + cluster + enrichment),liver: 75.6,Cluster 83: Liver - Metabolism
-FGGY,75.2,liver protein (nTPM<100 + enrichment),liver: 75.2,Cluster 53: Non-specific - Glycosylation
-GNPNAT1,74.8,liver protein (nTPM<100 + cluster + enrichment),liver: 74.8,Cluster 83: Liver - Metabolism
-LPA,74.5,liver protein (nTPM<100 + cluster + enrichment),liver: 74.5,Cluster 31: Liver - Plasma proteins
-SHFL,73.8,liver protein (nTPM<100 + cluster),liver: 73.8,Cluster 83: Liver - Metabolism
-PDXP,72.7,liver protein (nTPM<100 only),brain: 257.4;liver: 72.7,Cluster 61: Brain - Neuronal signaling
-SLC35D1,72.5,liver protein (nTPM<100 + cluster + enrichment),liver: 72.5,Cluster 83: Liver - Metabolism
-GLTPD2,72.0,liver protein (nTPM<100 + cluster),liver: 72.0,Cluster 1: Liver & Kidney - Metabolism
-SLC6A12,70.7,liver protein (nTPM<100 + cluster + enrichment),brain: 30.8;kidney: 35.0;liver: 70.7,Cluster 69: Liver - Oxidoreductase activity
-RPRD1B,70.7,liver protein (nTPM<100 + cluster),liver: 70.7,Cluster 83: Liver - Metabolism
-CYP4F11,70.5,liver protein (nTPM<100 + cluster + enrichment),intestine: 23.1;liver: 70.5,Cluster 83: Liver - Metabolism
-ADGRG6,69.7,liver protein (nTPM<100 + cluster),liver: 69.7;placenta: 45.9,Cluster 11: Liver - Plasma proteins
-GK,69.4,liver protein (nTPM<100 only),intestine: 85.0;kidney: 101.6;liver: 69.4,Cluster 55: Kidney & Intestine - Metabolism
-PLA2G12B,68.8,liver protein (nTPM<100 + cluster + enrichment),intestine: 32.1;kidney: 13.8;liver: 68.8,Cluster 37: Liver & Intestine - Lipid metabolism
-IDNK,68.3,liver protein (nTPM<100 + enrichment),liver: 68.3,Cluster 52: Kidney - Transmembrane transport
-TACO1,67.5,liver protein (nTPM<100 + enrichment),liver: 67.5,Cluster 23: Non-specific - Cellular respiration
-TPMT,66.7,liver protein (nTPM<100 only),kidney: 73.7;liver: 66.7;thyroid gland: 74.6,Cluster 55: Kidney & Intestine - Metabolism
-XDH,66.4,liver protein (nTPM<100 + cluster + enrichment),breast: 40.8;intestine: 48.1;liver: 66.4,Cluster 37: Liver & Intestine - Lipid metabolism
-DPYD,66.4,liver protein (nTPM<100 + cluster + enrichment),liver: 66.4,Cluster 11: Liver - Plasma proteins
-SMOC1,66.2,liver protein (nTPM<100 only),brain: 64.8;liver: 66.2,Cluster 33: Brain - Neuronal signaling
-UGT1A3,66.0,liver protein (nTPM<100 only),liver: 66.0,
-DNAJC12,65.4,liver protein (nTPM<100 + cluster),adrenal gland: 68.1;brain: 83.3;liver: 65.4,Cluster 69: Liver - Oxidoreductase activity
-AADAT,65.0,liver protein (nTPM<100 + cluster + enrichment),liver: 65.0,Cluster 69: Liver - Oxidoreductase activity
-CYP1A1,64.1,liver protein (nTPM<100 + cluster + enrichment),liver: 64.1;urinary bladder: 61.4,Cluster 83: Liver - Metabolism
-COLEC10,63.7,liver protein (nTPM<100 + cluster + enrichment),liver: 63.7,Cluster 83: Liver - Metabolism
-ABHD6,62.9,liver protein (nTPM<100 only),liver: 62.9,Cluster 25: Small intestine - Absorption
-FOXA3,62.6,liver protein (nTPM<100 only),intestine: 17.0;liver: 62.6;pancreas: 46.7;stomach 1: 35.9,Cluster 48: Stomach - Proteolysis
-MSRA,62.4,liver protein (nTPM<100 + enrichment),kidney: 83.6;liver: 62.4,Cluster 43: Non-specific - Mitochondrial translation
-ABCG8,61.9,liver protein (nTPM<100 + cluster + enrichment),intestine: 30.6;liver: 61.9,Cluster 37: Liver & Intestine - Lipid metabolism
-NAPRT,61.5,liver protein (nTPM<100 + cluster),liver: 61.5,Cluster 37: Liver & Intestine - Lipid metabolism
-GPHN,60.9,liver protein (nTPM<100 + cluster + enrichment),brain: 65.2;liver: 60.9,Cluster 69: Liver - Oxidoreductase activity
-CLEC4M,60.8,liver protein (nTPM<100 + cluster),liver: 60.8;lymphoid tissue: 16.0,Cluster 31: Liver - Plasma proteins
-AGMAT,60.1,liver protein (nTPM<100 + cluster),kidney: 129.1;liver: 60.1;skeletal muscle: 33.0,Cluster 1: Liver & Kidney - Metabolism
-RAPH1,59.7,liver protein (nTPM<100 + cluster + enrichment),liver: 59.7,Cluster 83: Liver - Metabolism
-FMO4,59.4,liver protein (nTPM<100 + cluster + enrichment),kidney: 46.8;liver: 59.4,Cluster 1: Liver & Kidney - Metabolism
-DHRS1,59.4,liver protein (nTPM<100 + cluster + enrichment),esophagus: 66.9;liver: 59.4,Cluster 37: Liver & Intestine - Lipid metabolism
-NSUN6,59.3,liver protein (nTPM<100 + cluster),liver: 59.3,Cluster 83: Liver - Metabolism
-AMDHD1,59.2,liver protein (nTPM<100 + cluster + enrichment),liver: 59.2;skeletal muscle: 26.2,Cluster 83: Liver - Metabolism
-SRD5A2,59.0,liver protein (nTPM<100 + enrichment),epididymis: 23.0;fallopian tube: 19.8;liver: 59.0;prostate: 16.2;seminal vesicle: 17.4,Cluster 53: Non-specific - Glycosylation
-GDA,58.8,liver protein (nTPM<100 only),brain: 71.1;intestine: 92.1;kidney: 41.4;liver: 58.8,Cluster 25: Small intestine - Absorption
-CHST13,58.1,liver protein (nTPM<100 + cluster + enrichment),liver: 58.1;testis: 17.8,Cluster 83: Liver - Metabolism
-TMEM53,58.0,liver protein (nTPM<100 + enrichment),liver: 58.0,Cluster 78: Testis - Transcription
-CACFD1,57.2,liver protein (nTPM<100 only),liver: 57.2,Cluster 43: Non-specific - Mitochondrial translation
-RDH5,57.1,liver protein (nTPM<100 + cluster + enrichment),adipose tissue: 91.2;liver: 57.1,Cluster 11: Liver - Plasma proteins
-MVK,56.7,liver protein (nTPM<100 + cluster),liver: 56.7,Cluster 37: Liver & Intestine - Lipid metabolism
-UGT3A1,56.2,liver protein (nTPM<100 + cluster),kidney: 49.2;liver: 56.2,Cluster 1: Liver & Kidney - Metabolism
-PI4K2B,56.1,liver protein (nTPM<100 + cluster + enrichment),liver: 56.1,Cluster 37: Liver & Intestine - Lipid metabolism
-PHAF1,55.9,liver protein (nTPM<100 only),liver: 55.9,Cluster 19: Non-specific - Basic cellular processes
-SMLR1,54.9,liver protein (nTPM<100 + cluster + enrichment),liver: 54.9,Cluster 83: Liver - Metabolism
-PALM3,54.4,liver protein (nTPM<100 + cluster),kidney: 45.6;liver: 54.4;stomach 1: 29.6,Cluster 1: Liver & Kidney - Metabolism
-HOGA1,53.5,liver protein (nTPM<100 + cluster + enrichment),kidney: 49.9;liver: 53.5,Cluster 1: Liver & Kidney - Metabolism
-CLEC4G,52.9,liver protein (nTPM<100 + cluster + enrichment),brain: 23.0;liver: 52.9,Cluster 83: Liver - Metabolism
-ART4,51.6,liver protein (nTPM<100 + cluster + enrichment),liver: 51.6;lymphoid tissue: 18.5,Cluster 83: Liver - Metabolism
-TMEM82,51.5,liver protein (nTPM<100 + cluster + enrichment),intestine: 23.7;kidney: 11.2;liver: 51.5,Cluster 37: Liver & Intestine - Lipid metabolism
-CES3,51.2,liver protein (nTPM<100 + cluster + enrichment),intestine: 37.1;liver: 51.2;skeletal muscle: 23.9,Cluster 37: Liver & Intestine - Lipid metabolism
-BCO2,50.7,liver protein (nTPM<100 only),heart muscle: 45.7;liver: 50.7;retina: 54.2,Cluster 3: Non-specific - Unknown function
-DCPS,49.1,liver protein (nTPM<100 + cluster),liver: 49.1,Cluster 83: Liver - Metabolism
-ABCC3,49.1,liver protein (nTPM<100 only),adrenal gland: 57.3;liver: 49.1,Cluster 68: Non-specific - Protein processing
-PFKFB1,49.0,liver protein (nTPM<100 + enrichment),adipose tissue: 27.3;liver: 49.0;skeletal muscle: 107.6;tongue: 39.1,Cluster 19: Non-specific - Basic cellular processes
-FAM20A,49.0,liver protein (nTPM<100 + cluster),liver: 49.0,Cluster 1: Liver & Kidney - Metabolism
-SULT1A2,48.9,liver protein (nTPM<100 + cluster + enrichment),intestine: 50.7;liver: 48.9,Cluster 37: Liver & Intestine - Lipid metabolism
-AMT,47.9,liver protein (nTPM<100 + enrichment),liver: 47.9,Cluster 68: Non-specific - Protein processing
-NAGS,47.0,liver protein (nTPM<100 + cluster),intestine: 15.4;liver: 47.0,Cluster 83: Liver - Metabolism
-ATP11C,47.0,liver protein (nTPM<100 + cluster + enrichment),liver: 47.0,Cluster 1: Liver & Kidney - Metabolism
-GCLM,47.0,liver protein (nTPM<100 + cluster),liver: 47.0,Cluster 1: Liver & Kidney - Metabolism
-GALT,45.9,liver protein (nTPM<100 + cluster + enrichment),liver: 45.9,Cluster 83: Liver - Metabolism
-ABCC6,45.9,liver protein (nTPM<100 + cluster + enrichment),kidney: 22.4;liver: 45.9,Cluster 1: Liver & Kidney - Metabolism
-RAB43,45.8,liver protein (nTPM<100 + cluster),liver: 45.8,Cluster 83: Liver - Metabolism
-APOL6,45.1,liver protein (nTPM<100 + cluster),liver: 45.1,Cluster 11: Liver - Plasma proteins
-RBKS,45.0,liver protein (nTPM<100 only),liver: 45.0,Cluster 55: Kidney & Intestine - Metabolism
-CISD2,44.9,liver protein (nTPM<100 only),liver: 44.9,Cluster 43: Non-specific - Mitochondrial translation
-SLC22A9,44.9,liver protein (nTPM<100 + cluster + enrichment),liver: 44.9,Cluster 31: Liver - Plasma proteins
-GPLD1,44.7,liver protein (nTPM<100 + cluster + enrichment),liver: 44.7,Cluster 83: Liver - Metabolism
-ACOT1,43.2,liver protein (nTPM<100 + cluster),liver: 43.2,Cluster 1: Liver & Kidney - Metabolism
-AASS,43.0,liver protein (nTPM<100 only),liver: 43.0,Cluster 53: Non-specific - Glycosylation
-ITPR2,43.0,liver protein (nTPM<100 + cluster + enrichment),liver: 43.0,Cluster 83: Liver - Metabolism
-MET,41.6,liver protein (nTPM<100 + cluster),liver: 41.6,Cluster 11: Liver - Plasma proteins
-ST3GAL6,40.8,liver protein (nTPM<100 + cluster),liver: 40.8,Cluster 83: Liver - Metabolism
-EXOC3L4,40.1,liver protein (nTPM<100 + cluster),intestine: 17.6;liver: 40.1,Cluster 37: Liver & Intestine - Lipid metabolism
-PROSER2,40.0,liver protein (nTPM<100 + cluster),liver: 40.0,Cluster 83: Liver - Metabolism
-SEC16B,40.0,liver protein (nTPM<100 + cluster),intestine: 28.6;liver: 40.0,Cluster 37: Liver & Intestine - Lipid metabolism
-RTN4RL2,39.7,liver protein (nTPM<100 + cluster),brain: 35.2;liver: 39.7;thyroid gland: 29.5,Cluster 69: Liver - Oxidoreductase activity
-SLC16A2,39.5,liver protein (nTPM<100 + cluster + enrichment),liver: 39.5,Cluster 1: Liver & Kidney - Metabolism
-CYP4F12,39.2,liver protein (nTPM<100 + cluster + enrichment),intestine: 40.4;liver: 39.2,Cluster 37: Liver & Intestine - Lipid metabolism
-ACSS3,38.8,liver protein (nTPM<100 + cluster),liver: 38.8,Cluster 1: Liver & Kidney - Metabolism
-GAS2,38.5,liver protein (nTPM<100 + cluster + enrichment),liver: 38.5,Cluster 83: Liver - Metabolism
-SCLY,38.1,liver protein (nTPM<100 only),liver: 38.1,Cluster 78: Testis - Transcription
-SLC9B2,37.5,liver protein (nTPM<100 + cluster + enrichment),liver: 37.5,Cluster 69: Liver - Oxidoreductase activity
-AR,37.1,liver protein (nTPM<100 + cluster + enrichment),liver: 37.1,Cluster 1: Liver & Kidney - Metabolism
-AMN,36.9,liver protein (nTPM<100 only),intestine: 81.3;kidney: 38.7;liver: 36.9,Cluster 55: Kidney & Intestine - Metabolism
-TRIM55,36.8,liver protein (nTPM<100 only),heart muscle: 59.6;liver: 36.8;skeletal muscle: 28.5;tongue: 32.3,Cluster 23: Non-specific - Cellular respiration
-SULT1E1,36.0,liver protein (nTPM<100 + cluster + enrichment),intestine: 26.7;liver: 36.0;skin 1: 18.7;vagina: 29.5,Cluster 37: Liver & Intestine - Lipid metabolism
-GCH1,35.8,liver protein (nTPM<100 only),bone marrow: 31.0;liver: 35.8,Cluster 77: Bone marrow - Cell proliferation
-ADAMTSL2,35.0,liver protein (nTPM<100 + enrichment),heart muscle: 70.8;liver: 35.0,Cluster 43: Non-specific - Mitochondrial translation
-CHDH,34.9,liver protein (nTPM<100 only),kidney: 36.2;liver: 34.9,Cluster 52: Kidney - Transmembrane transport
-SLC30A10,33.7,liver protein (nTPM<100 + cluster + enrichment),intestine: 23.8;liver: 33.7,Cluster 37: Liver & Intestine - Lipid metabolism
-TNFAIP8L1,33.3,liver protein (nTPM<100 + cluster + enrichment),intestine: 30.3;liver: 33.3,Cluster 37: Liver & Intestine - Lipid metabolism
-ACY3,33.0,liver protein (nTPM<100 + enrichment),intestine: 75.4;kidney: 56.6;liver: 33.0;pancreas: 21.5,Cluster 55: Kidney & Intestine - Metabolism
-HSD17B7,32.8,liver protein (nTPM<100 only),liver: 32.8,Cluster 53: Non-specific - Glycosylation
-XYLB,32.4,liver protein (nTPM<100 + cluster + enrichment),liver: 32.4,Cluster 1: Liver & Kidney - Metabolism
-DNAJC25,31.1,liver protein (nTPM<100 + cluster + enrichment),liver: 31.1,Cluster 83: Liver - Metabolism
-ADHFE1,30.4,liver protein (nTPM<100 + enrichment),liver: 30.4;skeletal muscle: 28.2;tongue: 30.1,Cluster 23: Non-specific - Cellular respiration
-GRB14,30.2,liver protein (nTPM<100 + enrichment),epididymis: 24.6;liver: 30.2;tongue: 44.5,Cluster 53: Non-specific - Glycosylation
-ACOT13,29.7,liver protein (nTPM<100 + enrichment),liver: 29.7,Cluster 3: Non-specific - Unknown function
-ANGPTL6,29.4,liver protein (nTPM<100 + cluster + enrichment),liver: 29.4,Cluster 83: Liver - Metabolism
-SFXN5,28.5,liver protein (nTPM<100 + enrichment),brain: 36.1;liver: 28.5,Cluster 33: Brain - Neuronal signaling
-SRD5A1,28.1,liver protein (nTPM<100 + cluster + enrichment),liver: 28.1,Cluster 37: Liver & Intestine - Lipid metabolism
-TTPAL,28.0,liver protein (nTPM<100 + cluster),liver: 28.0,Cluster 83: Liver - Metabolism
-FRRS1,27.7,liver protein (nTPM<100 + cluster),liver: 27.7,Cluster 83: Liver - Metabolism
-SUGCT,27.6,liver protein (nTPM<100 + cluster + enrichment),kidney: 42.8;liver: 27.6,Cluster 1: Liver & Kidney - Metabolism
-ACADL,27.2,liver protein (nTPM<100 + enrichment),liver: 27.2;pancreas: 27.6,Cluster 68: Non-specific - Protein processing
-SELENOO,27.2,liver protein (nTPM<100 + cluster),liver: 27.2,Cluster 83: Liver - Metabolism
-PDF,27.1,liver protein (nTPM<100 only),liver: 27.1,Cluster 43: Non-specific - Mitochondrial translation
-PEX11G,25.8,liver protein (nTPM<100 + enrichment),liver: 25.8;testis: 28.2,Cluster 44: Testis - Spermatogenesis
-NIT2,25.6,liver protein (nTPM<100 + cluster + enrichment),liver: 25.6,Cluster 1: Liver & Kidney - Metabolism
-SEPSECS,25.3,liver protein (nTPM<100 + cluster),liver: 25.3,Cluster 83: Liver - Metabolism
-IGSF9,24.2,liver protein (nTPM<100 + cluster),liver: 24.2;retina: 27.3;skin 1: 22.7,Cluster 37: Liver & Intestine - Lipid metabolism
-MMAA,23.7,liver protein (nTPM<100 + cluster + enrichment),liver: 23.7,Cluster 1: Liver & Kidney - Metabolism
-CA5A,23.5,liver protein (nTPM<100 + cluster),liver: 23.5,Cluster 31: Liver - Plasma proteins
-SLC23A1,21.9,liver protein (nTPM<100 only),fallopian tube: 52.4;intestine: 63.5;kidney: 38.7;liver: 21.9,Cluster 55: Kidney & Intestine - Metabolism
-C1orf226,21.4,liver protein (nTPM<100 + cluster),liver: 21.4,Cluster 37: Liver & Intestine - Lipid metabolism
-CYP7B1,20.8,liver protein (nTPM<100 + cluster + enrichment),liver: 20.8,Cluster 1: Liver & Kidney - Metabolism
-THNSL1,20.7,liver protein (nTPM<100 + cluster + enrichment),liver: 20.7,Cluster 1: Liver & Kidney - Metabolism
-SLC2A9,20.7,liver protein (nTPM<100 + cluster),kidney: 28.2;liver: 20.7,Cluster 1: Liver & Kidney - Metabolism
-SPRYD4,20.0,liver protein (nTPM<100 + cluster + enrichment),liver: 20.0,Cluster 83: Liver - Metabolism
-SEC14L4,18.7,liver protein (nTPM<100 + cluster),bone marrow: 8.0;liver: 18.7,Cluster 83: Liver - Metabolism
-SOWAHB,18.6,liver protein (nTPM<100 + cluster + enrichment),liver: 18.6,Cluster 37: Liver & Intestine - Lipid metabolism
-MAGIX,18.6,liver protein (nTPM<100 only),liver: 18.6,Cluster 68: Non-specific - Protein processing
-C2orf72,18.2,liver protein (nTPM<100 + cluster + enrichment),brain: 5.6;liver: 18.2,Cluster 69: Liver - Oxidoreductase activity
-GCK,17.8,liver protein (nTPM<100 + cluster + enrichment),brain: 11.4;liver: 17.8;pituitary gland: 22.7,Cluster 69: Liver - Oxidoreductase activity
-CYP26A1,17.4,liver protein (nTPM<100 + cluster),liver: 17.4,Cluster 83: Liver - Metabolism
-ASB9,16.9,liver protein (nTPM<100 + enrichment),kidney: 16.2;liver: 16.9;testis: 25.1,Cluster 78: Testis - Transcription
-MMACHC,16.8,liver protein (nTPM<100 + cluster),liver: 16.8,Cluster 83: Liver - Metabolism
-SLC26A1,16.4,liver protein (nTPM<100 + cluster + enrichment),liver: 16.4,Cluster 83: Liver - Metabolism
-TMEM86B,16.3,liver protein (nTPM<100 + cluster),gallbladder: 10.7;liver: 16.3,Cluster 37: Liver & Intestine - Lipid metabolism
-ACOT4,16.2,liver protein (nTPM<100 + cluster),kidney: 14.4;liver: 16.2,Cluster 1: Liver & Kidney - Metabolism
-MOCOS,15.6,liver protein (nTPM<100 + cluster),adrenal gland: 9.9;liver: 15.6,Cluster 83: Liver - Metabolism
-HEPACAM,15.5,liver protein (nTPM<100 + enrichment),adipose tissue: 15.2;brain: 52.3;liver: 15.5,Cluster 33: Brain - Neuronal signaling
-C1orf53,14.7,liver protein (nTPM<100 + cluster + enrichment),liver: 14.7,Cluster 69: Liver - Oxidoreductase activity
-ELFN1,14.2,liver protein (nTPM<100 + cluster + enrichment),liver: 14.2,Cluster 69: Liver - Oxidoreductase activity
-ENTPD8,14.1,liver protein (nTPM<100 + cluster + enrichment),intestine: 26.9;liver: 14.1;stomach 1: 8.6,Cluster 37: Liver & Intestine - Lipid metabolism
-UGT2A3,12.9,liver protein (nTPM<100 only),intestine: 30.5;kidney: 20.4;liver: 12.9;pancreas: 15.8,Cluster 55: Kidney & Intestine - Metabolism
-HNF1A,10.9,liver protein (nTPM<100 + cluster),intestine: 13.7;kidney: 8.4;liver: 10.9;pancreas: 4.8;stomach 1: 3.7,Cluster 37: Liver & Intestine - Lipid metabolism
+AK4,99.2,liver protein (nTPM≥100 + cluster + enrichment),kidney: 174.9;liver: 99.2,Cluster 1: Liver & Kidney - Metabolism
+ACOT12,97.6,liver protein (nTPM≥100 + cluster + enrichment),liver: 97.6,Cluster 31: Liver - Plasma proteins
+UAP1,97.4,liver protein (nTPM≥100 + cluster),liver: 97.4,Cluster 83: Liver - Metabolism
+GBP7,97.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 97.1,Cluster 31: Liver - Plasma proteins
+BTD,97.0,liver protein (nTPM≥100 only),liver: 97.0,Cluster 53: Non-specific - Glycosylation
+SFXN1,96.6,liver protein (nTPM≥100 + cluster + enrichment),liver: 96.6,Cluster 83: Liver - Metabolism
+FCN2,96.6,liver protein (nTPM≥100 + cluster),liver: 96.6,Cluster 83: Liver - Metabolism
+CYP39A1,96.3,liver protein (nTPM≥100 + cluster + enrichment),liver: 96.3,Cluster 83: Liver - Metabolism
+ALDH5A1,95.8,liver protein (nTPM≥100 + enrichment),liver: 95.8,Cluster 19: Non-specific - Basic cellular processes
+PCTP,95.0,liver protein (nTPM≥100 + cluster + enrichment),liver: 95.0,Cluster 1: Liver & Kidney - Metabolism
+BOK,94.7,liver protein (nTPM≥100 + enrichment),brain: 114.5;liver: 94.7,Cluster 9: Oligodendrocytes - Myelination
+AGTR1,93.7,liver protein (nTPM≥100 + cluster),liver: 93.7;placenta: 137.0,Cluster 11: Liver - Plasma proteins
+SLC46A3,93.1,liver protein (nTPM≥100 + cluster),intestine: 73.9;liver: 93.1,Cluster 37: Liver & Intestine - Lipid metabolism
+LACTB2,93.0,liver protein (nTPM≥100 + cluster),liver: 93.0,Cluster 1: Liver & Kidney - Metabolism
+H6PD,92.1,liver protein (nTPM≥100 + cluster),liver: 92.1,Cluster 83: Liver - Metabolism
+MARCO,92.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 92.1;lung: 193.5;lymphoid tissue: 85.7,Cluster 11: Liver - Plasma proteins
+TTC39C,91.9,liver protein (nTPM≥100 only),liver: 91.9;retina: 138.7,Cluster 40: Non-specific - Transcription
+ACBD4,90.7,liver protein (nTPM≥100 + cluster + enrichment),liver: 90.7,Cluster 83: Liver - Metabolism
+PKLR,89.7,liver protein (nTPM≥100 + cluster + enrichment),bone marrow: 19.3;kidney: 24.2;liver: 89.7,Cluster 1: Liver & Kidney - Metabolism
+KMO,88.8,liver protein (nTPM≥100 + cluster),kidney: 30.3;liver: 88.8,Cluster 1: Liver & Kidney - Metabolism
+CPT2,88.3,liver protein (nTPM≥100 + cluster + enrichment),liver: 88.3,Cluster 37: Liver & Intestine - Lipid metabolism
+ARSL,88.3,liver protein (nTPM≥100 only),kidney: 35.3;liver: 88.3;pancreas: 101.8,Cluster 68: Non-specific - Protein processing
+GNE,87.8,liver protein (nTPM≥100 + cluster + enrichment),intestine: 46.8;liver: 87.8;salivary gland: 53.7,Cluster 83: Liver - Metabolism
+MGMT,87.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 87.1,Cluster 83: Liver - Metabolism
+GCDH,86.9,liver protein (nTPM≥100 + cluster + enrichment),liver: 86.9,Cluster 83: Liver - Metabolism
+SNTB1,86.7,liver protein (nTPM≥100 + enrichment),liver: 86.7,Cluster 68: Non-specific - Protein processing
+PNPO,86.0,liver protein (nTPM≥100 + cluster + enrichment),liver: 86.0,Cluster 1: Liver & Kidney - Metabolism
+KYNU,85.7,liver protein (nTPM≥100 + cluster),liver: 85.7;urinary bladder: 49.7,Cluster 11: Liver - Plasma proteins
+GBP1,85.5,liver protein (nTPM≥100 + cluster),liver: 85.5,Cluster 11: Liver - Plasma proteins
+SLC25A15,85.5,liver protein (nTPM≥100 + cluster),intestine: 36.5;liver: 85.5;pancreas: 50.2,Cluster 83: Liver - Metabolism
+SLC6A1,85.4,liver protein (nTPM≥100 + enrichment),brain: 107.9;liver: 85.4;retina: 36.1,Cluster 61: Brain - Neuronal signaling
+PROX1,84.2,liver protein (nTPM≥100 + cluster),liver: 84.2,Cluster 31: Liver - Plasma proteins
+CDA,84.0,liver protein (nTPM≥100 only),bone marrow: 191.4;esophagus: 84.6;liver: 84.0,Cluster 77: Bone marrow - Cell proliferation
+SLC30A1,83.6,liver protein (nTPM≥100 + cluster),liver: 83.6,Cluster 83: Liver - Metabolism
+MPDZ,83.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 83.1,Cluster 69: Liver - Oxidoreductase activity
+MTARC1,82.5,liver protein (nTPM≥100 + cluster + enrichment),adipose tissue: 165.0;breast: 83.5;liver: 82.5,Cluster 11: Liver - Plasma proteins
+BPHL,82.0,liver protein (nTPM≥100 + cluster + enrichment),kidney: 106.1;liver: 82.0,Cluster 1: Liver & Kidney - Metabolism
+GRTP1,81.8,liver protein (nTPM≥100 + cluster),liver: 81.8,Cluster 37: Liver & Intestine - Lipid metabolism
+PIK3AP1,80.7,liver protein (nTPM≥100 only),liver: 80.7;lymphoid tissue: 60.6;salivary gland: 71.6,Cluster 70: Lymphoid tissue - Immune response
+SLC25A42,80.0,liver protein (nTPM≥100 only),liver: 80.0,Cluster 19: Non-specific - Basic cellular processes
+CPN1,79.5,liver protein (nTPM≥100 + cluster + enrichment),liver: 79.5,Cluster 31: Liver - Plasma proteins
+PZP,79.0,liver protein (nTPM≥100 + cluster),liver: 79.0,Cluster 31: Liver - Plasma proteins
+ABCB11,78.1,liver protein (nTPM≥100 + cluster),liver: 78.1,Cluster 83: Liver - Metabolism
+PDIA5,77.8,liver protein (nTPM≥100 + cluster + enrichment),liver: 77.8,Cluster 83: Liver - Metabolism
+OGDHL,77.6,liver protein (nTPM≥100 + enrichment),choroid plexus: 123.4;kidney: 117.5;liver: 77.6,Cluster 52: Kidney - Transmembrane transport
+CLEC1B,77.6,liver protein (nTPM≥100 + cluster + enrichment),liver: 77.6,Cluster 83: Liver - Metabolism
+CLRN3,77.4,liver protein (nTPM≥100 + cluster + enrichment),intestine: 86.6;kidney: 42.3;liver: 77.4,Cluster 37: Liver & Intestine - Lipid metabolism
+SARDH,76.3,liver protein (nTPM≥100 + enrichment),epididymis: 40.6;liver: 76.3;pancreas: 40.9,Cluster 53: Non-specific - Glycosylation
+BCKDHB,75.9,liver protein (nTPM≥100 + cluster + enrichment),liver: 75.9,Cluster 1: Liver & Kidney - Metabolism
+ABCA6,75.6,liver protein (nTPM≥100 + cluster + enrichment),liver: 75.6,Cluster 83: Liver - Metabolism
+FGGY,75.2,liver protein (nTPM≥100 + enrichment),liver: 75.2,Cluster 53: Non-specific - Glycosylation
+GNPNAT1,74.8,liver protein (nTPM≥100 + cluster + enrichment),liver: 74.8,Cluster 83: Liver - Metabolism
+LPA,74.5,liver protein (nTPM≥100 + cluster + enrichment),liver: 74.5,Cluster 31: Liver - Plasma proteins
+SHFL,73.8,liver protein (nTPM≥100 + cluster),liver: 73.8,Cluster 83: Liver - Metabolism
+PDXP,72.7,liver protein (nTPM≥100 only),brain: 257.4;liver: 72.7,Cluster 61: Brain - Neuronal signaling
+SLC35D1,72.5,liver protein (nTPM≥100 + cluster + enrichment),liver: 72.5,Cluster 83: Liver - Metabolism
+GLTPD2,72.0,liver protein (nTPM≥100 + cluster),liver: 72.0,Cluster 1: Liver & Kidney - Metabolism
+SLC6A12,70.7,liver protein (nTPM≥100 + cluster + enrichment),brain: 30.8;kidney: 35.0;liver: 70.7,Cluster 69: Liver - Oxidoreductase activity
+RPRD1B,70.7,liver protein (nTPM≥100 + cluster),liver: 70.7,Cluster 83: Liver - Metabolism
+CYP4F11,70.5,liver protein (nTPM≥100 + cluster + enrichment),intestine: 23.1;liver: 70.5,Cluster 83: Liver - Metabolism
+ADGRG6,69.7,liver protein (nTPM≥100 + cluster),liver: 69.7;placenta: 45.9,Cluster 11: Liver - Plasma proteins
+GK,69.4,liver protein (nTPM≥100 only),intestine: 85.0;kidney: 101.6;liver: 69.4,Cluster 55: Kidney & Intestine - Metabolism
+PLA2G12B,68.8,liver protein (nTPM≥100 + cluster + enrichment),intestine: 32.1;kidney: 13.8;liver: 68.8,Cluster 37: Liver & Intestine - Lipid metabolism
+IDNK,68.3,liver protein (nTPM≥100 + enrichment),liver: 68.3,Cluster 52: Kidney - Transmembrane transport
+TACO1,67.5,liver protein (nTPM≥100 + enrichment),liver: 67.5,Cluster 23: Non-specific - Cellular respiration
+TPMT,66.7,liver protein (nTPM≥100 only),kidney: 73.7;liver: 66.7;thyroid gland: 74.6,Cluster 55: Kidney & Intestine - Metabolism
+XDH,66.4,liver protein (nTPM≥100 + cluster + enrichment),breast: 40.8;intestine: 48.1;liver: 66.4,Cluster 37: Liver & Intestine - Lipid metabolism
+DPYD,66.4,liver protein (nTPM≥100 + cluster + enrichment),liver: 66.4,Cluster 11: Liver - Plasma proteins
+SMOC1,66.2,liver protein (nTPM≥100 only),brain: 64.8;liver: 66.2,Cluster 33: Brain - Neuronal signaling
+UGT1A3,66.0,liver protein (nTPM≥100 only),liver: 66.0,
+DNAJC12,65.4,liver protein (nTPM≥100 + cluster),adrenal gland: 68.1;brain: 83.3;liver: 65.4,Cluster 69: Liver - Oxidoreductase activity
+AADAT,65.0,liver protein (nTPM≥100 + cluster + enrichment),liver: 65.0,Cluster 69: Liver - Oxidoreductase activity
+CYP1A1,64.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 64.1;urinary bladder: 61.4,Cluster 83: Liver - Metabolism
+COLEC10,63.7,liver protein (nTPM≥100 + cluster + enrichment),liver: 63.7,Cluster 83: Liver - Metabolism
+ABHD6,62.9,liver protein (nTPM≥100 only),liver: 62.9,Cluster 25: Small intestine - Absorption
+FOXA3,62.6,liver protein (nTPM≥100 only),intestine: 17.0;liver: 62.6;pancreas: 46.7;stomach 1: 35.9,Cluster 48: Stomach - Proteolysis
+MSRA,62.4,liver protein (nTPM≥100 + enrichment),kidney: 83.6;liver: 62.4,Cluster 43: Non-specific - Mitochondrial translation
+ABCG8,61.9,liver protein (nTPM≥100 + cluster + enrichment),intestine: 30.6;liver: 61.9,Cluster 37: Liver & Intestine - Lipid metabolism
+NAPRT,61.5,liver protein (nTPM≥100 + cluster),liver: 61.5,Cluster 37: Liver & Intestine - Lipid metabolism
+GPHN,60.9,liver protein (nTPM≥100 + cluster + enrichment),brain: 65.2;liver: 60.9,Cluster 69: Liver - Oxidoreductase activity
+CLEC4M,60.8,liver protein (nTPM≥100 + cluster),liver: 60.8;lymphoid tissue: 16.0,Cluster 31: Liver - Plasma proteins
+AGMAT,60.1,liver protein (nTPM≥100 + cluster),kidney: 129.1;liver: 60.1;skeletal muscle: 33.0,Cluster 1: Liver & Kidney - Metabolism
+RAPH1,59.7,liver protein (nTPM≥100 + cluster + enrichment),liver: 59.7,Cluster 83: Liver - Metabolism
+FMO4,59.4,liver protein (nTPM≥100 + cluster + enrichment),kidney: 46.8;liver: 59.4,Cluster 1: Liver & Kidney - Metabolism
+DHRS1,59.4,liver protein (nTPM≥100 + cluster + enrichment),esophagus: 66.9;liver: 59.4,Cluster 37: Liver & Intestine - Lipid metabolism
+NSUN6,59.3,liver protein (nTPM≥100 + cluster),liver: 59.3,Cluster 83: Liver - Metabolism
+AMDHD1,59.2,liver protein (nTPM≥100 + cluster + enrichment),liver: 59.2;skeletal muscle: 26.2,Cluster 83: Liver - Metabolism
+SRD5A2,59.0,liver protein (nTPM≥100 + enrichment),epididymis: 23.0;fallopian tube: 19.8;liver: 59.0;prostate: 16.2;seminal vesicle: 17.4,Cluster 53: Non-specific - Glycosylation
+GDA,58.8,liver protein (nTPM≥100 only),brain: 71.1;intestine: 92.1;kidney: 41.4;liver: 58.8,Cluster 25: Small intestine - Absorption
+CHST13,58.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 58.1;testis: 17.8,Cluster 83: Liver - Metabolism
+TMEM53,58.0,liver protein (nTPM≥100 + enrichment),liver: 58.0,Cluster 78: Testis - Transcription
+CACFD1,57.2,liver protein (nTPM≥100 only),liver: 57.2,Cluster 43: Non-specific - Mitochondrial translation
+RDH5,57.1,liver protein (nTPM≥100 + cluster + enrichment),adipose tissue: 91.2;liver: 57.1,Cluster 11: Liver - Plasma proteins
+MVK,56.7,liver protein (nTPM≥100 + cluster),liver: 56.7,Cluster 37: Liver & Intestine - Lipid metabolism
+UGT3A1,56.2,liver protein (nTPM≥100 + cluster),kidney: 49.2;liver: 56.2,Cluster 1: Liver & Kidney - Metabolism
+PI4K2B,56.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 56.1,Cluster 37: Liver & Intestine - Lipid metabolism
+PHAF1,55.9,liver protein (nTPM≥100 only),liver: 55.9,Cluster 19: Non-specific - Basic cellular processes
+SMLR1,54.9,liver protein (nTPM≥100 + cluster + enrichment),liver: 54.9,Cluster 83: Liver - Metabolism
+PALM3,54.4,liver protein (nTPM≥100 + cluster),kidney: 45.6;liver: 54.4;stomach 1: 29.6,Cluster 1: Liver & Kidney - Metabolism
+HOGA1,53.5,liver protein (nTPM≥100 + cluster + enrichment),kidney: 49.9;liver: 53.5,Cluster 1: Liver & Kidney - Metabolism
+CLEC4G,52.9,liver protein (nTPM≥100 + cluster + enrichment),brain: 23.0;liver: 52.9,Cluster 83: Liver - Metabolism
+ART4,51.6,liver protein (nTPM≥100 + cluster + enrichment),liver: 51.6;lymphoid tissue: 18.5,Cluster 83: Liver - Metabolism
+TMEM82,51.5,liver protein (nTPM≥100 + cluster + enrichment),intestine: 23.7;kidney: 11.2;liver: 51.5,Cluster 37: Liver & Intestine - Lipid metabolism
+CES3,51.2,liver protein (nTPM≥100 + cluster + enrichment),intestine: 37.1;liver: 51.2;skeletal muscle: 23.9,Cluster 37: Liver & Intestine - Lipid metabolism
+BCO2,50.7,liver protein (nTPM≥100 only),heart muscle: 45.7;liver: 50.7;retina: 54.2,Cluster 3: Non-specific - Unknown function
+DCPS,49.1,liver protein (nTPM≥100 + cluster),liver: 49.1,Cluster 83: Liver - Metabolism
+ABCC3,49.1,liver protein (nTPM≥100 only),adrenal gland: 57.3;liver: 49.1,Cluster 68: Non-specific - Protein processing
+PFKFB1,49.0,liver protein (nTPM≥100 + enrichment),adipose tissue: 27.3;liver: 49.0;skeletal muscle: 107.6;tongue: 39.1,Cluster 19: Non-specific - Basic cellular processes
+FAM20A,49.0,liver protein (nTPM≥100 + cluster),liver: 49.0,Cluster 1: Liver & Kidney - Metabolism
+SULT1A2,48.9,liver protein (nTPM≥100 + cluster + enrichment),intestine: 50.7;liver: 48.9,Cluster 37: Liver & Intestine - Lipid metabolism
+AMT,47.9,liver protein (nTPM≥100 + enrichment),liver: 47.9,Cluster 68: Non-specific - Protein processing
+NAGS,47.0,liver protein (nTPM≥100 + cluster),intestine: 15.4;liver: 47.0,Cluster 83: Liver - Metabolism
+ATP11C,47.0,liver protein (nTPM≥100 + cluster + enrichment),liver: 47.0,Cluster 1: Liver & Kidney - Metabolism
+GCLM,47.0,liver protein (nTPM≥100 + cluster),liver: 47.0,Cluster 1: Liver & Kidney - Metabolism
+GALT,45.9,liver protein (nTPM≥100 + cluster + enrichment),liver: 45.9,Cluster 83: Liver - Metabolism
+ABCC6,45.9,liver protein (nTPM≥100 + cluster + enrichment),kidney: 22.4;liver: 45.9,Cluster 1: Liver & Kidney - Metabolism
+RAB43,45.8,liver protein (nTPM≥100 + cluster),liver: 45.8,Cluster 83: Liver - Metabolism
+APOL6,45.1,liver protein (nTPM≥100 + cluster),liver: 45.1,Cluster 11: Liver - Plasma proteins
+RBKS,45.0,liver protein (nTPM≥100 only),liver: 45.0,Cluster 55: Kidney & Intestine - Metabolism
+CISD2,44.9,liver protein (nTPM≥100 only),liver: 44.9,Cluster 43: Non-specific - Mitochondrial translation
+SLC22A9,44.9,liver protein (nTPM≥100 + cluster + enrichment),liver: 44.9,Cluster 31: Liver - Plasma proteins
+GPLD1,44.7,liver protein (nTPM≥100 + cluster + enrichment),liver: 44.7,Cluster 83: Liver - Metabolism
+ACOT1,43.2,liver protein (nTPM≥100 + cluster),liver: 43.2,Cluster 1: Liver & Kidney - Metabolism
+AASS,43.0,liver protein (nTPM≥100 only),liver: 43.0,Cluster 53: Non-specific - Glycosylation
+ITPR2,43.0,liver protein (nTPM≥100 + cluster + enrichment),liver: 43.0,Cluster 83: Liver - Metabolism
+MET,41.6,liver protein (nTPM≥100 + cluster),liver: 41.6,Cluster 11: Liver - Plasma proteins
+ST3GAL6,40.8,liver protein (nTPM≥100 + cluster),liver: 40.8,Cluster 83: Liver - Metabolism
+EXOC3L4,40.1,liver protein (nTPM≥100 + cluster),intestine: 17.6;liver: 40.1,Cluster 37: Liver & Intestine - Lipid metabolism
+PROSER2,40.0,liver protein (nTPM≥100 + cluster),liver: 40.0,Cluster 83: Liver - Metabolism
+SEC16B,40.0,liver protein (nTPM≥100 + cluster),intestine: 28.6;liver: 40.0,Cluster 37: Liver & Intestine - Lipid metabolism
+RTN4RL2,39.7,liver protein (nTPM≥100 + cluster),brain: 35.2;liver: 39.7;thyroid gland: 29.5,Cluster 69: Liver - Oxidoreductase activity
+SLC16A2,39.5,liver protein (nTPM≥100 + cluster + enrichment),liver: 39.5,Cluster 1: Liver & Kidney - Metabolism
+CYP4F12,39.2,liver protein (nTPM≥100 + cluster + enrichment),intestine: 40.4;liver: 39.2,Cluster 37: Liver & Intestine - Lipid metabolism
+ACSS3,38.8,liver protein (nTPM≥100 + cluster),liver: 38.8,Cluster 1: Liver & Kidney - Metabolism
+GAS2,38.5,liver protein (nTPM≥100 + cluster + enrichment),liver: 38.5,Cluster 83: Liver - Metabolism
+SCLY,38.1,liver protein (nTPM≥100 only),liver: 38.1,Cluster 78: Testis - Transcription
+SLC9B2,37.5,liver protein (nTPM≥100 + cluster + enrichment),liver: 37.5,Cluster 69: Liver - Oxidoreductase activity
+AR,37.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 37.1,Cluster 1: Liver & Kidney - Metabolism
+AMN,36.9,liver protein (nTPM≥100 only),intestine: 81.3;kidney: 38.7;liver: 36.9,Cluster 55: Kidney & Intestine - Metabolism
+TRIM55,36.8,liver protein (nTPM≥100 only),heart muscle: 59.6;liver: 36.8;skeletal muscle: 28.5;tongue: 32.3,Cluster 23: Non-specific - Cellular respiration
+SULT1E1,36.0,liver protein (nTPM≥100 + cluster + enrichment),intestine: 26.7;liver: 36.0;skin 1: 18.7;vagina: 29.5,Cluster 37: Liver & Intestine - Lipid metabolism
+GCH1,35.8,liver protein (nTPM≥100 only),bone marrow: 31.0;liver: 35.8,Cluster 77: Bone marrow - Cell proliferation
+ADAMTSL2,35.0,liver protein (nTPM≥100 + enrichment),heart muscle: 70.8;liver: 35.0,Cluster 43: Non-specific - Mitochondrial translation
+CHDH,34.9,liver protein (nTPM≥100 only),kidney: 36.2;liver: 34.9,Cluster 52: Kidney - Transmembrane transport
+SLC30A10,33.7,liver protein (nTPM≥100 + cluster + enrichment),intestine: 23.8;liver: 33.7,Cluster 37: Liver & Intestine - Lipid metabolism
+TNFAIP8L1,33.3,liver protein (nTPM≥100 + cluster + enrichment),intestine: 30.3;liver: 33.3,Cluster 37: Liver & Intestine - Lipid metabolism
+ACY3,33.0,liver protein (nTPM≥100 + enrichment),intestine: 75.4;kidney: 56.6;liver: 33.0;pancreas: 21.5,Cluster 55: Kidney & Intestine - Metabolism
+HSD17B7,32.8,liver protein (nTPM≥100 only),liver: 32.8,Cluster 53: Non-specific - Glycosylation
+XYLB,32.4,liver protein (nTPM≥100 + cluster + enrichment),liver: 32.4,Cluster 1: Liver & Kidney - Metabolism
+DNAJC25,31.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 31.1,Cluster 83: Liver - Metabolism
+ADHFE1,30.4,liver protein (nTPM≥100 + enrichment),liver: 30.4;skeletal muscle: 28.2;tongue: 30.1,Cluster 23: Non-specific - Cellular respiration
+GRB14,30.2,liver protein (nTPM≥100 + enrichment),epididymis: 24.6;liver: 30.2;tongue: 44.5,Cluster 53: Non-specific - Glycosylation
+ACOT13,29.7,liver protein (nTPM≥100 + enrichment),liver: 29.7,Cluster 3: Non-specific - Unknown function
+ANGPTL6,29.4,liver protein (nTPM≥100 + cluster + enrichment),liver: 29.4,Cluster 83: Liver - Metabolism
+SFXN5,28.5,liver protein (nTPM≥100 + enrichment),brain: 36.1;liver: 28.5,Cluster 33: Brain - Neuronal signaling
+SRD5A1,28.1,liver protein (nTPM≥100 + cluster + enrichment),liver: 28.1,Cluster 37: Liver & Intestine - Lipid metabolism
+TTPAL,28.0,liver protein (nTPM≥100 + cluster),liver: 28.0,Cluster 83: Liver - Metabolism
+FRRS1,27.7,liver protein (nTPM≥100 + cluster),liver: 27.7,Cluster 83: Liver - Metabolism
+SUGCT,27.6,liver protein (nTPM≥100 + cluster + enrichment),kidney: 42.8;liver: 27.6,Cluster 1: Liver & Kidney - Metabolism
+ACADL,27.2,liver protein (nTPM≥100 + enrichment),liver: 27.2;pancreas: 27.6,Cluster 68: Non-specific - Protein processing
+SELENOO,27.2,liver protein (nTPM≥100 + cluster),liver: 27.2,Cluster 83: Liver - Metabolism
+PDF,27.1,liver protein (nTPM≥100 only),liver: 27.1,Cluster 43: Non-specific - Mitochondrial translation
+PEX11G,25.8,liver protein (nTPM≥100 + enrichment),liver: 25.8;testis: 28.2,Cluster 44: Testis - Spermatogenesis
+NIT2,25.6,liver protein (nTPM≥100 + cluster + enrichment),liver: 25.6,Cluster 1: Liver & Kidney - Metabolism
+SEPSECS,25.3,liver protein (nTPM≥100 + cluster),liver: 25.3,Cluster 83: Liver - Metabolism
+IGSF9,24.2,liver protein (nTPM≥100 + cluster),liver: 24.2;retina: 27.3;skin 1: 22.7,Cluster 37: Liver & Intestine - Lipid metabolism
+MMAA,23.7,liver protein (nTPM≥100 + cluster + enrichment),liver: 23.7,Cluster 1: Liver & Kidney - Metabolism
+CA5A,23.5,liver protein (nTPM≥100 + cluster),liver: 23.5,Cluster 31: Liver - Plasma proteins
+SLC23A1,21.9,liver protein (nTPM≥100 only),fallopian tube: 52.4;intestine: 63.5;kidney: 38.7;liver: 21.9,Cluster 55: Kidney & Intestine - Metabolism
+C1orf226,21.4,liver protein (nTPM≥100 + cluster),liver: 21.4,Cluster 37: Liver & Intestine - Lipid metabolism
+CYP7B1,20.8,liver protein (nTPM≥100 + cluster + enrichment),liver: 20.8,Cluster 1: Liver & Kidney - Metabolism
+THNSL1,20.7,liver protein (nTPM≥100 + cluster + enrichment),liver: 20.7,Cluster 1: Liver & Kidney - Metabolism
+SLC2A9,20.7,liver protein (nTPM≥100 + cluster),kidney: 28.2;liver: 20.7,Cluster 1: Liver & Kidney - Metabolism
+SPRYD4,20.0,liver protein (nTPM≥100 + cluster + enrichment),liver: 20.0,Cluster 83: Liver - Metabolism
+SEC14L4,18.7,liver protein (nTPM≥100 + cluster),bone marrow: 8.0;liver: 18.7,Cluster 83: Liver - Metabolism
+SOWAHB,18.6,liver protein (nTPM≥100 + cluster + enrichment),liver: 18.6,Cluster 37: Liver & Intestine - Lipid metabolism
+MAGIX,18.6,liver protein (nTPM≥100 only),liver: 18.6,Cluster 68: Non-specific - Protein processing
+C2orf72,18.2,liver protein (nTPM≥100 + cluster + enrichment),brain: 5.6;liver: 18.2,Cluster 69: Liver - Oxidoreductase activity
+GCK,17.8,liver protein (nTPM≥100 + cluster + enrichment),brain: 11.4;liver: 17.8;pituitary gland: 22.7,Cluster 69: Liver - Oxidoreductase activity
+CYP26A1,17.4,liver protein (nTPM≥100 + cluster),liver: 17.4,Cluster 83: Liver - Metabolism
+ASB9,16.9,liver protein (nTPM≥100 + enrichment),kidney: 16.2;liver: 16.9;testis: 25.1,Cluster 78: Testis - Transcription
+MMACHC,16.8,liver protein (nTPM≥100 + cluster),liver: 16.8,Cluster 83: Liver - Metabolism
+SLC26A1,16.4,liver protein (nTPM≥100 + cluster + enrichment),liver: 16.4,Cluster 83: Liver - Metabolism
+TMEM86B,16.3,liver protein (nTPM≥100 + cluster),gallbladder: 10.7;liver: 16.3,Cluster 37: Liver & Intestine - Lipid metabolism
+ACOT4,16.2,liver protein (nTPM≥100 + cluster),kidney: 14.4;liver: 16.2,Cluster 1: Liver & Kidney - Metabolism
+MOCOS,15.6,liver protein (nTPM≥100 + cluster),adrenal gland: 9.9;liver: 15.6,Cluster 83: Liver - Metabolism
+HEPACAM,15.5,liver protein (nTPM≥100 + enrichment),adipose tissue: 15.2;brain: 52.3;liver: 15.5,Cluster 33: Brain - Neuronal signaling
+C1orf53,14.7,liver protein (nTPM≥100 + cluster + enrichment),liver: 14.7,Cluster 69: Liver - Oxidoreductase activity
+ELFN1,14.2,liver protein (nTPM≥100 + cluster + enrichment),liver: 14.2,Cluster 69: Liver - Oxidoreductase activity
+ENTPD8,14.1,liver protein (nTPM≥100 + cluster + enrichment),intestine: 26.9;liver: 14.1;stomach 1: 8.6,Cluster 37: Liver & Intestine - Lipid metabolism
+UGT2A3,12.9,liver protein (nTPM≥100 only),intestine: 30.5;kidney: 20.4;liver: 12.9;pancreas: 15.8,Cluster 55: Kidney & Intestine - Metabolism
+HNF1A,10.9,liver protein (nTPM≥100 + cluster),intestine: 13.7;kidney: 8.4;liver: 10.9;pancreas: 4.8;stomach 1: 3.7,Cluster 37: Liver & Intestine - Lipid metabolism
 GLOD5,7.9,liver protein (nTPM<100 + enrichment),epididymis: 5.6;intestine: 10.3;kidney: 10.8;liver: 7.9,Cluster 55: Kidney & Intestine - Metabolism
 AKR1C8,7.0,liver protein (nTPM<100 + enrichment),epididymis: 2.9;liver: 7.0,
 PPP1R3G,6.0,liver protein (nTPM<100 + cluster),heart muscle: 5.7;liver: 6.0,Cluster 69: Liver - Oxidoreductase activity

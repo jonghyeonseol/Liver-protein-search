@@ -331,22 +331,24 @@ print(f"Genes in all 4 categories: {len(liver_ntpm_high_genes & liver_ntpm_low_g
 # Create 4-way Venn diagram using two 3-way diagrams
 fig = plt.figure(figsize=FIGURE_SIZE_VENN)
 
-# Add overall title with statistics
-title_text = f'Liver Protein Classification (4 Criteria: nTPM Split by Threshold 100)'
-subtitle_text = f'Total: {total_genes} proteins | Liver candidates: {liver_candidates} ({liver_candidates/total_genes*100:.1f}%) | Non-liver: {len(non_liver_genes)}'
-fig.suptitle(title_text, fontsize=18, fontweight='bold', y=0.98)
-plt.text(0.5, 0.93, subtitle_text, ha='center', fontsize=13, transform=fig.transFigure)
+# Add overall title with statistics (improved layout)
+title_text = f'Liver Protein Classification'
+subtitle_text = f'nTPM Threshold: {NTPM_HIGH_THRESHOLD} | Total: {total_genes:,} genes | Liver: {liver_candidates:,} ({liver_candidates/total_genes*100:.1f}%) | Non-liver: {len(non_liver_genes):,} ({len(non_liver_genes)/total_genes*100:.1f}%)'
+fig.suptitle(title_text, fontsize=22, fontweight='bold', y=0.97)
+plt.text(0.5, 0.93, subtitle_text, ha='center', fontsize=12, transform=fig.transFigure,
+         bbox=dict(boxstyle='round,pad=0.5', facecolor='#F0F0F0', edgecolor='#CCCCCC', linewidth=1.5, alpha=0.8))
 
-# Left subplot: nTPM >= 100 with cluster and enrichment
+# Left subplot: nTPM >= threshold with cluster and enrichment
 ax1 = fig.add_subplot(121)
 venn1 = venn3(
     [liver_ntpm_high_genes, liver_cluster_genes, liver_enrichment_genes],
     set_labels=('', '', ''),
     set_colors=('#FF6B6B', '#87CEEB', '#98FB98'),
-    alpha=0.65,
+    alpha=0.7,
     ax=ax1
 )
-ax1.set_title('nTPM ≥ 100 (liver mentioned)', fontsize=14, fontweight='bold', pad=15)
+ax1.set_title(f'High Expression (nTPM ≥ {NTPM_HIGH_THRESHOLD})', fontsize=15, fontweight='bold', pad=20,
+              bbox=dict(boxstyle='round,pad=0.5', facecolor='#FFE6E6', edgecolor='#FF6B6B', linewidth=2))
 
 # Customize subset labels for left diagram (nTPM >= 100)
 only_ntpm_high = len(liver_ntpm_high_genes - liver_cluster_genes - liver_enrichment_genes)
@@ -359,55 +361,57 @@ all_three_high = len(liver_ntpm_high_genes & liver_cluster_genes & liver_enrichm
 
 if venn1.get_label_by_id('100'):
     venn1.get_label_by_id('100').set_text(f"{only_ntpm_high}")
-    venn1.get_label_by_id('100').set_fontsize(12)
+    venn1.get_label_by_id('100').set_fontsize(14)
     venn1.get_label_by_id('100').set_fontweight('bold')
 if venn1.get_label_by_id('010'):
     venn1.get_label_by_id('010').set_text(f"{only_cluster_left}")
-    venn1.get_label_by_id('010').set_fontsize(12)
+    venn1.get_label_by_id('010').set_fontsize(14)
     venn1.get_label_by_id('010').set_fontweight('bold')
 if venn1.get_label_by_id('001'):
     venn1.get_label_by_id('001').set_text(f"{only_enrichment_left}")
-    venn1.get_label_by_id('001').set_fontsize(12)
+    venn1.get_label_by_id('001').set_fontsize(14)
     venn1.get_label_by_id('001').set_fontweight('bold')
 if venn1.get_label_by_id('110'):
     venn1.get_label_by_id('110').set_text(f"{ntpm_high_cluster}")
-    venn1.get_label_by_id('110').set_fontsize(12)
+    venn1.get_label_by_id('110').set_fontsize(14)
     venn1.get_label_by_id('110').set_fontweight('bold')
 if venn1.get_label_by_id('101'):
     venn1.get_label_by_id('101').set_text(f"{ntpm_high_enrichment}")
-    venn1.get_label_by_id('101').set_fontsize(12)
+    venn1.get_label_by_id('101').set_fontsize(14)
     venn1.get_label_by_id('101').set_fontweight('bold')
 if venn1.get_label_by_id('011'):
     venn1.get_label_by_id('011').set_text(f"{cluster_enrichment_left}")
-    venn1.get_label_by_id('011').set_fontsize(12)
+    venn1.get_label_by_id('011').set_fontsize(14)
     venn1.get_label_by_id('011').set_fontweight('bold')
 if venn1.get_label_by_id('111'):
     venn1.get_label_by_id('111').set_text(f"{all_three_high}")
-    venn1.get_label_by_id('111').set_fontsize(13)
+    venn1.get_label_by_id('111').set_fontsize(16)
     venn1.get_label_by_id('111').set_fontweight('bold')
-    venn1.get_label_by_id('111').set_color('#8B0000')
+    venn1.get_label_by_id('111').set_color('#FFFFFF')
+    venn1.get_label_by_id('111').set_bbox(dict(boxstyle='round,pad=0.5', facecolor='#8B0000', edgecolor='white', linewidth=2))
 
-# Add custom set labels for left diagram
-ax1.text(-0.65, 0.4, 'nTPM ≥ 100\n(liver)', ha='center', va='center',
-        fontsize=10, fontweight='bold', color='#8B0000',
-        bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#FF6B6B', linewidth=2))
-ax1.text(0.65, 0.4, 'Cluster', ha='center', va='center',
-        fontsize=10, fontweight='bold', color='#00008B',
-        bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#87CEEB', linewidth=2))
-ax1.text(0, -0.72, 'Enrichment', ha='center', va='center',
-        fontsize=10, fontweight='bold', color='#006400',
-        bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#98FB98', linewidth=2))
+# Add custom set labels for left diagram (improved positioning and styling)
+ax1.text(-0.7, 0.45, f'nTPM ≥ {NTPM_HIGH_THRESHOLD}', ha='center', va='center',
+        fontsize=11, fontweight='bold', color='white',
+        bbox=dict(boxstyle='round,pad=0.5', facecolor='#FF6B6B', edgecolor='#8B0000', linewidth=2.5, alpha=0.9))
+ax1.text(0.7, 0.45, 'Tissue\nCluster', ha='center', va='center',
+        fontsize=11, fontweight='bold', color='white',
+        bbox=dict(boxstyle='round,pad=0.5', facecolor='#5DADE2', edgecolor='#1F618D', linewidth=2.5, alpha=0.9))
+ax1.text(0, -0.75, 'Cell Type\nEnrichment', ha='center', va='center',
+        fontsize=11, fontweight='bold', color='white',
+        bbox=dict(boxstyle='round,pad=0.5', facecolor='#58D68D', edgecolor='#1E8449', linewidth=2.5, alpha=0.9))
 
-# Right subplot: nTPM < 100 with cluster and enrichment
+# Right subplot: nTPM < threshold with cluster and enrichment
 ax2 = fig.add_subplot(122)
 venn2 = venn3(
     [liver_ntpm_low_genes, liver_cluster_genes, liver_enrichment_genes],
     set_labels=('', '', ''),
     set_colors=('#FFB6C1', '#87CEEB', '#98FB98'),
-    alpha=0.65,
+    alpha=0.7,
     ax=ax2
 )
-ax2.set_title('nTPM < 100 (liver mentioned)', fontsize=14, fontweight='bold', pad=15)
+ax2.set_title(f'Low Expression (nTPM < {NTPM_HIGH_THRESHOLD})', fontsize=15, fontweight='bold', pad=20,
+              bbox=dict(boxstyle='round,pad=0.5', facecolor='#FFE6F0', edgecolor='#FFB6C1', linewidth=2))
 
 # Customize subset labels for right diagram (nTPM < 100)
 only_ntpm_low = len(liver_ntpm_low_genes - liver_cluster_genes - liver_enrichment_genes)
@@ -420,44 +424,45 @@ all_three_low = len(liver_ntpm_low_genes & liver_cluster_genes & liver_enrichmen
 
 if venn2.get_label_by_id('100'):
     venn2.get_label_by_id('100').set_text(f"{only_ntpm_low}")
-    venn2.get_label_by_id('100').set_fontsize(12)
+    venn2.get_label_by_id('100').set_fontsize(14)
     venn2.get_label_by_id('100').set_fontweight('bold')
 if venn2.get_label_by_id('010'):
     venn2.get_label_by_id('010').set_text(f"{only_cluster_right}")
-    venn2.get_label_by_id('010').set_fontsize(12)
+    venn2.get_label_by_id('010').set_fontsize(14)
     venn2.get_label_by_id('010').set_fontweight('bold')
 if venn2.get_label_by_id('001'):
     venn2.get_label_by_id('001').set_text(f"{only_enrichment_right}")
-    venn2.get_label_by_id('001').set_fontsize(12)
+    venn2.get_label_by_id('001').set_fontsize(14)
     venn2.get_label_by_id('001').set_fontweight('bold')
 if venn2.get_label_by_id('110'):
     venn2.get_label_by_id('110').set_text(f"{ntpm_low_cluster}")
-    venn2.get_label_by_id('110').set_fontsize(12)
+    venn2.get_label_by_id('110').set_fontsize(14)
     venn2.get_label_by_id('110').set_fontweight('bold')
 if venn2.get_label_by_id('101'):
     venn2.get_label_by_id('101').set_text(f"{ntpm_low_enrichment}")
-    venn2.get_label_by_id('101').set_fontsize(12)
+    venn2.get_label_by_id('101').set_fontsize(14)
     venn2.get_label_by_id('101').set_fontweight('bold')
 if venn2.get_label_by_id('011'):
     venn2.get_label_by_id('011').set_text(f"{cluster_enrichment_right}")
-    venn2.get_label_by_id('011').set_fontsize(12)
+    venn2.get_label_by_id('011').set_fontsize(14)
     venn2.get_label_by_id('011').set_fontweight('bold')
 if venn2.get_label_by_id('111'):
     venn2.get_label_by_id('111').set_text(f"{all_three_low}")
-    venn2.get_label_by_id('111').set_fontsize(13)
+    venn2.get_label_by_id('111').set_fontsize(16)
     venn2.get_label_by_id('111').set_fontweight('bold')
-    venn2.get_label_by_id('111').set_color('#8B0000')
+    venn2.get_label_by_id('111').set_color('#FFFFFF')
+    venn2.get_label_by_id('111').set_bbox(dict(boxstyle='round,pad=0.5', facecolor='#8B0000', edgecolor='white', linewidth=2))
 
-# Add custom set labels for right diagram
-ax2.text(-0.65, 0.4, 'nTPM < 100\n(liver)', ha='center', va='center',
-        fontsize=10, fontweight='bold', color='#8B0000',
-        bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#FFB6C1', linewidth=2))
-ax2.text(0.65, 0.4, 'Cluster', ha='center', va='center',
-        fontsize=10, fontweight='bold', color='#00008B',
-        bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#87CEEB', linewidth=2))
-ax2.text(0, -0.72, 'Enrichment', ha='center', va='center',
-        fontsize=10, fontweight='bold', color='#006400',
-        bbox=dict(boxstyle='round,pad=0.3', facecolor='white', edgecolor='#98FB98', linewidth=2))
+# Add custom set labels for right diagram (improved positioning and styling)
+ax2.text(-0.7, 0.45, f'nTPM < {NTPM_HIGH_THRESHOLD}', ha='center', va='center',
+        fontsize=11, fontweight='bold', color='white',
+        bbox=dict(boxstyle='round,pad=0.5', facecolor='#FFB6C1', edgecolor='#C70039', linewidth=2.5, alpha=0.9))
+ax2.text(0.7, 0.45, 'Tissue\nCluster', ha='center', va='center',
+        fontsize=11, fontweight='bold', color='white',
+        bbox=dict(boxstyle='round,pad=0.5', facecolor='#5DADE2', edgecolor='#1F618D', linewidth=2.5, alpha=0.9))
+ax2.text(0, -0.75, 'Cell Type\nEnrichment', ha='center', va='center',
+        fontsize=11, fontweight='bold', color='white',
+        bbox=dict(boxstyle='round,pad=0.5', facecolor='#58D68D', edgecolor='#1E8449', linewidth=2.5, alpha=0.9))
 
 # Save the Venn diagram
 OUTPUT_DIR.mkdir(exist_ok=True)
